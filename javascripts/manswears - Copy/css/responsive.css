@@ -1,0 +1,145 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {    
+    /*bg */
+/*************************************************** home page ****************************************/
+
+.modal{
+	padding-top:25%;}
+.modal-content {
+    width: 90%;
+
+}
+    
+/* Small Devices, Tablets */
+@media only screen and (max-width : 980px) {
+/*************************************************** home page ****************************************/
+  #cover{
+background-size:120% 100%;
+padding-top:2%;
+height:500px;
+
+ }  
+#coveradd{
+height:250px;
+width:60%;
+}
+
+.hovereffect h2 {
+	margin-top:20%;
+	font-size:24px;}
+.hovereffect a.info{
+	font-size:24px;}
+h7{
+	font-size:1.9em;
+	height:44px;}	
+.containerimage {
+margin:2% 0 0 6.5%;
+
+
+}
+	
+	
+	
+	
+	
+}	
+	
+
+@media only screen and (max-width : 640px) {
+/*************************************************** home page ****************************************/
+#cover{
+background-size:120% 100%;
+height:500px;
+background-color:#000;
+ }  
+#coveradd{
+height:225px;
+width:60%;
+margin-top:30%;
+}
+#coveradd h4{
+	font-size:1.2em;}
+	
+#coveradd p{
+	font-size:.8em;
+	}
+ .navbar {
+  
+	  background-color:#082125 !important;  
+	
+  }	
+  .dropdown-content {
+ 
+	 
+	  background-color:#082125 !important;  
+}
+
+
+.hovereffect h2 {
+	margin-top:20%;
+	font-size:20px;}
+.hovereffect a.info{
+	font-size:20px;}
+h7{
+	font-size:1em;
+	height:24px;}
+.hrbox{
+	
+	height:24px;
+}
+	
+.containerimage {
+	width:100%;
+	margin:20px 0 0 0;}	
+
+.modal-box{
+	width:100%;
+	}	
+	
+}
+
+/* Smaller Mobile Devices */
+@media only screen and (max-width : 480px) {
+/*************************************************** home page ****************************************/	
+	.hovereffect h2 {
+	margin-top:20%;
+	font-size:18px;}
+.hovereffect a.info{
+	font-size:18px;}
+	
+h7{
+	font-size:.8em;
+	height:20px;}
+.hrbox{
+	
+	height:10px;
+	}
+	
+.modal-box img{
+	height:400px;
+	width:100%;
+	position: static;
+	}	
+	
+.modal-content {
+    width: 90%;
+	height:900px;
+
+}	
+
+.modal{
+	padding-top:20%;}
+	
+.modal-box h1{
+	margin:8% 2% 1% 5%;
+	font-size:2em;
+}	
+		
+	
+}
+/* Smallest Mobile Devices */
+@media only screen and (max-width : 320px) {
+/*************************************************** home page ****************************************/   
+}
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+
+#body
+{
+height: 500px;
+width: 100%;
+margin: auto auto;
+border: solid medium thick;
+}
+
+#body1
+{
+height: 500px;
+width: 100%;
+margin: auto auto;
+border: solid medium thick;
+display: hidden;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<div id="body" hidden="">
+ <h1>Numbers</h1>
+ </div>
+ <div id="body1" hidden="hidden">
+ Body 1
+ </div>
+ 
+ <script>
+ 
+ 
+ function changeDiv()
+      {
+      document.getElementById('body').hidden = "hidden"; // hide body div tag
+      document.getElementById('body1').hidden = ""; // show body1 div tag
+      document.getElementById('body1').innerHTML = "If you can see this, JavaScript function worked"; 
+      // display text if JavaScript worked
+       }
+ 
+ 
+ </script>
+</body>
+</html>

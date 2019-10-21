@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper
+{
+	width:100%;
+	height:850px;
+	
+	
+	margin:0 auto;}
+body{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	}
+
+.sidebar{
+	width:9%;
+	
+	height:800px;
+	padding:3% 1% 0 1% ;
+	 background: #1c3414; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #3a8d1b ,#7ebd39); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #3a8d1b ,#7ebd39); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #3a8d1b , #7ebd39); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #3a8d1b , #7ebd39); /* Standard syntax */
+	
+	float:left;}
+	
+	
+	
+	h2{
+		color:#FFF;}
+		h1{
+		color: #000;
+		font-size:2.5em;
+		text-align:center;
+		letter-spacing:.40em;
+		text-transform:uppercase;
+		font-family:Verdana, Geneva, sans-serif;
+		text-shadow:2px 2px 2px #999999;
+		color:#3a8d1b;}	
+		#tab
+	{width:89%;
+	height:700px;
+	padding-top:5%;
+	background-color:#eff8e7;
+	float:left;}
+
+table
+
+{
+	width:89%;
+	height:600px;
+	color:#fff;
+	text-transform:uppercase;
+	border-spacing: 1px 0px;
+	
+	
+	
+	margin:0 auto;}
+	
+		
+		
+	
+	
+	
+	
+		td,th{ width:16%;
+		
+		
+		color:#000;
+		
+	}
+	
+/************* 1st row ***************/	
+.a
+{
+		color:#FFF;
+	 background: #1c3414; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #465e3e, #1c3414); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right,#465e3e,#1c3414); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #465e3e, #1c3414); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #465e3e, #1c3414); /* Standard syntax */
+  border-radius:5px 5px 0px 0px ;
+ 
+
+
+ 
+  height:30px;}	
+.b
+{
+	background-color:#1d3f15;
+
+	 background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #486a3f, #1d3f15); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right,#486a3f,#1d3f15); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #486a3f, #1d3f15); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #486a3f, #1d3f15); /* Standard syntax */
+ 
+   border-radius:5px 5px 0px 0px ; 
+  height:30px;
+  color:#FFF;}	
+	.c
+{
+	
+	background-color:#224435;
+	 background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #5f8775, #224435); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right,#45f8775,#1224435); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #5f8775, #224435); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5f8775, #224435); /* Standard syntax */
+
+   border-radius:5px 5px 0px 0px ; 
+  color:#FFF;
+  height:30px;}	
+	.d
+{
+	background-color:#1f3740;
+	 background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #48626c, #1f3740); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right,#48626c,#1f3740); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #48626c, #1f3740); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #48626c, #1f3740); /* Standard syntax */
+  border-radius:5px 5px 0px 0px ; 
+   color:#FFF;
+  height:30px;}	
+	.e
+{
+	background-color:#27536f;
+	 background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #5582a0, #27536f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right,#5582a0,#27536f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #5582a0, #27536f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5582a0, #27536f); /* Standard syntax */
+   border-radius:5px 5px 0px 0px ; 
+  color:#FFF;
+  height:30px;}		
+/************* 2nd row ***************/	
+.f
+{
+  background:  #7ebd39; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#7ebd39, #3a8d1b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#7ebd39,  #3a8d1b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#7ebd39,  #3a8d1b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#7ebd39, #3a8d1b); /* Standard syntax */
+	color:#FFF;
+	height:100px;
+   
+  
+}
+.g
+{
+  background:  #2c7c1d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#65bd43, #2c7c1d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#65bd43,  #2c7c1d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#65bd43,  #2c7c1d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#65bd43, #2c7c1d); /* Standard syntax */
+	color:#FFF;
+	height:100px;
+   
+  
+}
+.h
+{
+  background:  #17562b; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#46af86, #17562b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#46af86,  #17562b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#46af86,  #17562b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#46af86, #17562b); /* Standard syntax */
+	height:100px;
+   color:#FFF;
+  
+}
+.i
+{
+  background:  #1f5785; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#47a7bf, #1f5785); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#47a7bf,  #1f5785); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#47a7bf,  #1f5785); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#47a7bf, #1f5785); /* Standard syntax */
+	height:100px;
+	color:#FFF;
+   
+  
+}
+.j
+{
+  background:  #2775c9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#57bbe7, #2775c9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#57bbe7,  #2775c9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#57bbe7,  #2775c9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#57bbe7, #2775c9); /* Standard syntax */
+	height:100px;
+   color:#FFF;
+  
+}
+/************* 3rd row ***************/	
+input[type=submit]{
+	width:70%;
+	height:35px;
+	color:#FFF;
+	text-transform:capitalize;
+	font-weight:bold;
+	background: #3d8613; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#6ba61a, #3d8613); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6ba61a, #3d8613); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6ba61a, #3d8613); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6ba61a, #3d8613); /* Standard syntax */
+	border-radius:5px;
+	border: #3d8613;
+	color:#FFF;
+	}
+	input[type=submit]:hover{
+		background-color:#165027;
+		color: #910000;
+		cursor: pointer;
+		}
+.k
+{
+  background:  #eaf3de; /* For browsers that do not support gradients */
+  height:100px;}
+  .l
+{
+  background:  #e7f3e4; /* For browsers that do not support gradients */
+  height:100px;}
+   .m
+{
+  background:  #daebe3; /* For browsers that do not support gradients */
+  height:100px;}
+   .n
+{
+  background:  #d7e9ed; /* For browsers that do not support gradients */
+  height:100px;}
+   .o
+{
+  background:  #e4f2fb; /* For browsers that do not support gradients */
+  height:100px;}
+  /************* grey ***************/	
+  .grey{
+	  height:40px;
+	  background-color: #CCC;}
+	  .greylight{
+	  height:40px;
+	  background-color: #E9E9E9;}
+	  /************* 1st row ***************/	
+  .lemonlight{
+	  height:40px;
+	  background-color: #eaf3de;}
+	  .lemondark{
+	  height:40px;
+	  background-color: #cbe1ab;}
+	  
+	  .lemonlight:hover{
+			background-color:#7bbd38;
+			width:17%;	}
+			
+			.lemondark:hover{
+			background-color:#7bbd38;
+			width:17%;	}
+	   /************* 2nd row ***************/	
+  .greenlight{
+	  height:40px;
+	  background-color: #daebe3;}
+	  .greendark{
+	  height:40px;
+	  background-color: #b1d7a7;}
+	   .greenlight:hover{
+			background-color:#64bc43;
+			width:17%;	}
+			
+			.greendark:hover{
+			background-color:#64bc43;
+			width:17%;	}
+	   /************* 3rd row ***************/	
+  .cgreenlight{
+	  height:40px;
+	  background-color: #d7e9ed;;}
+	  .cgreendark{
+	  height:40px;
+	  background-color: #a7cfbd;}
+	  
+	  .cgreenlight:hover{
+			background-color:#46ad82;
+			width:17%;	}
+			
+			.cgreendark:hover{
+			background-color:#46ad82;
+			width:17%;	}
+	  /************* 4th row ***************/	
+  .bluelight{
+	  height:40px;
+	  background-color:   #d7e9ed;}
+	  .bluedark{
+	  height:40px;
+	  background-color: #a9cdd9;}
+	   .bluelight:hover{
+			background-color:#46a6be;
+			width:17%;	}
+			
+			.bluedark:hover{
+			background-color:#46a6be;
+			width:17%;	}
+	  
+	   /************* 5th row ***************/	
+  .skybluelight{
+	  height:40px;
+	  background-color:   #e4f2fb}
+	  .skybluedark{
+	  height:40px;
+	  background-color:#b5ddf7;}
+	  .skybluelight:hover{
+			background-color:#51b3e2;
+			width:17%;	}
+			
+			.skybluedark:hover{
+			background-color:#51b3e2;
+			width:17%;	}
+	  

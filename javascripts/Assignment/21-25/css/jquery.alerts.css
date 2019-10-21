@@ -1,0 +1,372 @@
+
+BODY{
+				
+				color:#fff;
+				/*background-image:url(../img/bg1-01-01.jpg);
+				background-repeat:no-repeat;
+				background-size:100% 100%;
+				background-attachment:fixed;*/
+				
+ background-image:url(../img/Untitled-1-01.jpg);
+				background-repeat:no-repeat;
+				background-size:100% 100%;
+				background-attachment:fixed;
+				margin:0 auto;
+
+				font-family: "Comic Sans MS", cursive;
+			}
+			
+
+	
+
+	
+	
+
+			
+#wrapper{
+				width:85%;
+				margin:10px  5%;
+				height:800px;
+				position: fixed;
+				background-color:#FFF;
+				border-radius:15px;
+				background-position:center;
+				 
+                border:25px solid  #b7c63f;
+				background-color: transparent;
+    
+                 box-shadow:10px 10px 5px 5px #d4dd8c inset;
+				
+	
+			
+				
+				
+		}
+		
+		
+		#wrapper2{
+				width:88%;
+				margin:10px  5%;
+				height:825px;
+				position:fixed;
+				
+				border-radius:15px;
+				background-position:center;
+			
+    
+                 box-shadow:20px 20px 50px 20px #2e3210;
+				
+	
+			
+				
+				
+		}
+		
+	#wrapper1{
+				width:85%;
+				margin:25px  5% 45px;
+				height: auto;
+				position:relative;
+				
+				
+				
+				background-position:center;
+				
+				 
+                
+				
+	
+			
+				
+				
+		}	
+		
+		
+		
+h1 {
+				font-size: 2.6em;
+				text-transform:capitalize;
+				text-align:center;
+				padding:12% 1% 0% 1%;
+				line-height:.5em;
+				color:#9fa737;
+				font-weight: bold;
+			}
+			
+hr{
+	border:thin solid #9fa737;
+	width:39%;}
+span {
+    border-bottom: 2px solid #89952f;
+	text-align:justify;
+	line-height:1.8em;
+}
+.box{
+
+width:90%;
+margin:4%  auto 0 auto;
+padding:0 3%;
+height:auto;
+
+}			
+	
+ul {
+list-style-image: url(../img/hand-01.png);
+
+
+}
+p
+{border-bottom: 2px solid #89952f ;
+    content: '';
+	font-size:1.8em;
+	width:20%;
+    display: block;
+    position: relative;
+	color: #acb539;
+    bottom: -0.5em;}
+	
+						
+li{
+	color: #acb539;
+	
+	list-style-position: inside;
+	line-height:1.4em;
+	margin:25px 0px 15px 0;
+	font-size:1.8em;}
+	
+ol li{
+	font-size:1em;
+	}	
+
+.prompt_button{
+	width:200px !important;
+	height:43px;
+	margin-bottom:2%;
+	
+	color: #50541c;
+	word-spacing:.35em;
+	
+	font-size:1em;
+	font-weight:bold;
+				
+/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #9fa737 , #c5ca87); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #9fa737 ,#c5ca87); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #9fa737 ,#c5ca87); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #9fa737 ,#c5ca87); /* Standard syntax */
+	
+	-webkit-border-radius:2em 0;
+		-moz-border-radius:2em 0;
+		border-radius:4em 0;
+		 outline: none;
+		 cursor:pointer;
+		
+}
+
+.prompt_button:hover{
+	background:#757729;}
+
+
+
+
+
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 17px;
+	font-weight:550;
+	min-width: 500px; /* Dialog will be no smaller than this */
+	max-width: 700px; /* Dialog will wrap after this width */
+	min-height: 200px;
+	max-height:300px;
+	border:solid 4px #757729;
+	
+	color: #50541c;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(, #d9dcaf , #ecedd7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #d9dcaf ,#ecedd7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #d9dcaf ,#ecedd7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #d9dcaf ,#ecedd7); /* Standard syntax */
+	 outline: none;
+}
+
+#popup_title {
+	font-size: 1.1em;
+	font-weight:500;
+	line-height: 1.5em;
+		padding:1% 0 0 10px;
+	color: #50541c;
+	
+	height:35px;
+	text-align:left;
+	
+	
+
+	border-bottom: solid 3px #757729;
+	cursor: default;
+		margin: 0em;
+		
+		/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(, #9fa737 , #c5ca87); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #9fa737 ,#c5ca87); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #9fa737 ,#c5ca87); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #9fa737 ,#c5ca87); /* Standard syntax */
+	 outline: none;
+}
+
+#popup_content {
+	
+	padding: 1em 2em;
+	margin: 0em;
+	
+	
+}
+
+#popup_content.alert {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popup_content.prompt {
+	
+}
+
+#popup_message {
+	padding-left: 12px;
+	
+	
+		
+}
+
+#popup_panel {
+	text-align: center;
+	
+
+	margin: 2.5em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+	height:25px;
+	color: #666;
+	font-weight:bold;
+	
+	border: 2px solid  #757729 !important;
+		-moz-box-shadow: 0 0 2px #757729 ;
+-webkit-box-shadow: 0 0 2px #757729 ;
+box-shadow: 0 0 2px #757729 ;
+	 outline: none;
+	
+	
+}
+
+
+
+#popup_content.prompt INPUT[type='button'] {
+	width:100px;
+	height:30px;
+	margin:0 2%;
+	border: outset 2px #757729;
+	
+	color: #fff;
+		/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(, #9fa737 , #c5ca87); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #9fa737 ,#c5ca87); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #9fa737 ,#c5ca87); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #9fa737 ,#c5ca87); /* Standard syntax */
+	 outline: none;}
+				
+#popup_panel INPUT[type='button'] {
+	width:100px;
+	height:30px;
+	margin:0 2%;
+	border: outset 2px #757729;
+	
+	color: #fff;
+		/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(, #9fa737 , #c5ca87); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #9fa737 ,#c5ca87); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #9fa737 ,#c5ca87); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #9fa737 ,#c5ca87); /* Standard syntax */
+	 outline: none;
+}
+
+#popup_panel INPUT[type='button']:hover{
+	background:#757729;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+@media only screen and (max-width : 1024px) { 
+h1 {padding:12% 1% 0% 1%;}
+
+
+#wrapper{
+				width:85%;
+				
+				height:1200px;		
+		}
+		
+		
+		#wrapper2{
+				width:88%;
+				height:1225px;}
+		
+				   
+    
+}
+@media only screen and (max-width : 980px) {
+	h1 {padding:12% 1% 0% 1%;}	
+	#wrapper{
+				width:85%;
+				
+				height:1600px;		
+		}
+		
+		
+		#wrapper2{
+				width:88%;
+				height:1625px;}}
+	
+@media only screen and (max-width : 640px) {
+	
+	h1 {padding:35% 1% 0% 1%;}}	
+	
+@media only screen and (max-width : 480px) {}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

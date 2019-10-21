@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	border:50px  groove #d1711b;
+	background-color:#f9f4ea;
+	height:auto;
+}
+h1{
+	text-align:center;
+	font-size:2em;
+	font-family: font-family:Helvetica, sans-serif;
+	font-weight:500;
+	line-height:.5em;
+	text-transform:uppercase;
+	letter-spacing:.055em;
+	color:#d1711b;}
+
+h2{
+	text-align:center;
+	font-size:1.5em;
+	font-family: font-family:Helvetica, sans-serif;
+	font-weight:500;
+	line-height:.5em;
+	text-transform:uppercase;
+	letter-spacing:.055em;
+	color:#d1711b;}
+
+
+b{
+	font-weight:550;}
+
+
+.wrapper{
+	width:90%;
+	margin:0 auto;
+	font-family:Helvetica, sans-serif;
+	height:1140px;}
+fieldset{
+	border:1px solid #d1711b;
+	border-radius:5px;
+	margin:5% 0;
+}
+legend{
+	color:#d1711b;}	
+	
+	
+fieldset p{ display:inline-block;
+width:8%;
+color:#d1711b;}	
+
+input[type=text],input[type=number]{ width:40%;
+margin-left:1%;
+   height:30px;
+   color:#e05629;
+		background-color:#fffdf0;
+		padding-left:4px;
+		border: 1px  dashed #e05629;}
+		
+		
+		
+   
+	
+   
+   button{ width:40%;
+margin-left:1%;
+   height:35px;
+   font-weight:600;
+   letter-spacing:.095em;
+   
+   background-color:#e05629;
+		
+		-webkit-border-radius:2em 0;
+		-moz-border-radius:2em 0;
+		border-radius:2em 0;
+
+
+		text-align:center;
+		border: 3px  outset #e05629;
+		color:#fffdf0;}
+		
+		 button:hover{
+		
+		border: 1px  outset #e05629;
+		background-color:#d84b25;
+		-webkit-border-radius:2em 0;
+		-moz-border-radius:2em 0;
+		border-radius:2em 0;
+		
+		
+		
+
+}
+button:focus{
+		
+		border:none;
+		background-color:#d84b25;
+		-webkit-border-radius:2em 0;
+		-moz-border-radius:2em 0;
+		border-radius:2em 0;
+		
+		
+		
+
+}
+   
+  table{
+	  width:61%;
+	  float:left;
+	  border:8px  groove #d1711b;
+	  	  height:500px;
+		  -moz-box-shadow: 0 0 20px #404040;
+-webkit-box-shadow: 0 0 20px #404040;
+box-shadow: 0 0 20px #404040;
+	  margin:4% auto;}
+	  
+	   
+	  td{ width:50%;
+	  padding:0 4px;
+	  background-color:#fffdf0;
+	  border:thin  inset #d1711b;
+	  text-transform:capitalize;
+	  color: #d1711b;
+	  font-weight:400;
+	  	  height:30px;
+	  margin:0 auto;}
+   
+   
+ins{
+	color:#F00;
+	font-weight:bold;}   
+   .kid{
+	   width:200px;
+	   height:300px;
+	   margin-top:25%;
+	   float:left;
+	   }
+  

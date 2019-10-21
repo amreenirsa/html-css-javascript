@@ -1,0 +1,180 @@
+*{font-family:Arial, Helvetica, sans-serif;
+
+
+}
+
+.wrapper
+{width:100%;
+background-color:#F1F2F2;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+margin-bottom:0px;
+float:left;}
+h1{
+    
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    background:#46120C; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, #46120C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, #46120C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, #46120C); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( red, #46120C); /* Standard syntax */ 
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 4px;
+   padding-left: 10px;
+}
+h2{
+    font-size: 1.8em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #46120C;
+    
+
+
+
+}
+p{
+    color: black;
+
+}
+
+dt{ color: #46120C;
+font-weight: bold;}
+
+
+
+dfn{
+
+color: red;
+font-size: .8em;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table
+{
+    width: 60%;
+  
+    height: auto;
+    margin-left: 10px;
+    color: #46120C;
+    font-weight: bold;
+    
+    
+}
+td{
+ 
+ padding-top: 10px;
+  
+    
+
+
+}
+
+input:focus {
+    border: 3px solid #6D6E71;
+    
+
+}
+ select:focus {
+    border: 3px solid #6D6E71;
+    
+
+}
+input
+{
+	width:50%;
+	height:20px;
+    color: #46120C;
+	border-radius:4px;
+	 border: 2px solid #46120C ;
+     outline: none;
+     
+	
+	}
+    select:focus {
+    border: 3px solid #6D6E71;
+    
+
+}
+    select
+{
+	width:51%;
+	height:26px;
+	border-radius:4px;
+	 border: 2px solid #46120C ;
+     outline: none;
+     
+	
+	}
+
+    textarea:focus {
+    border: 3px solid #6D6E71;
+    
+
+}
+    textarea
+    {
+	width:73%;
+	height:200px;
+	border-radius:4px;
+	 border: 2px solid #46120C ;
+     outline: none;
+     background-color:#F1F2F2;
+    resize: none;
+     
+	
+	}
+     file:focus {
+    border: 3px solid #6D6E71;
+    
+
+}
+   input[type=file]
+    {
+	width:51%;
+	height:21px;
+	border-radius:4px;
+	 border: 2px solid #46120C ;
+     outline: none;
+     
+	
+	}
+     input[type=submit]
+    {
+	width:auto;
+	height:30px;
+    color: white;
+     background:#46120C; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, #46120C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, #46120C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, #46120C); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( red, #46120C); /* Standard syntax */ 
+   box-shadow: 2px 2px #6D6E71;
+	
+	 border-style: 2px solid #46120C ;
+     bo
+     outline: none;
+     
+	
+}

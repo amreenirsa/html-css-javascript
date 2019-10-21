@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0071)file:///D:/sir%20syed%20uni/lab%20class/bootstape/bootstrape/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>The Summer Times Holidays</title>
+ <!-- ===========================
+    Logo Icon
+    =========================== -->
+   <link rel="icon" href="img/toplogo0.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/toplogo%2001.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/toplogo02.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/toplogo03.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/toplogo04.png">
+      <!-- ===========================
+    css stylesheet
+    =========================== -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+     <link rel="stylesheet" href="css/responsive.css">
+     <!-- ===========================
+    Bootstarp
+    =========================== -->
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    
+   <!-- ===========================
+lightbox
+    =========================== -->   
+   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/MAgallery.css">
+    <style>
+    #myGallery { min-height:300px;}
+	
+   
+    </style>
+     <!-- ===========================
+testimonial
+    =========================== -->  
+    <script src="jquery.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	var w,mHeight,tests=$("#testimonials");
+	w=tests.outerWidth();
+	mHeight=0;
+	tests.find(".testimonial").each(function(index){
+		$("#t_pagers").find(".pager:eq(0)").addClass("active");	//make the first pager active initially
+		if(index==0)
+			$(this).addClass("active");	//make the first slide active initially
+		if($(this).height()>mHeight)	//just finding the max height of the slides
+			mHeight=$(this).height();
+		var l=index*w;				//find the left position of each slide
+		$(this).css("left",l);			//set the left position
+		tests.find("#test_container").height(mHeight);	//make the height of the slider equal to the max height of the slides
+	});
+	$(".pager").on("click",function(e){	//clicking action for pagination
+		e.preventDefault();
+		next=$(this).index(".pager");
+		clearInterval(t_int);	//clicking stops the autoplay we will define later
+		moveIt(next);
+	});
+	var t_int=setInterval(function(){	//for autoplay
+		var i=$(".testimonial.active").index(".testimonial");
+		if(i==$(".testimonial").length-1)
+			next=0;
+		else
+			next=i+1;
+		moveIt(next);
+	},3000);
+});
+function moveIt(next){	//the main sliding function
+	var c=parseInt($(".testimonial.active").removeClass("active").css("left"));	//current position
+	var n=parseInt($(".testimonial").eq(next).addClass("active").css("left"));	//new position
+	$(".testimonial").each(function(){	//shift each slide
+		if(n>c)
+			$(this).animate({'left':'-='+(n-c)+'px'});
+		else
+			$(this).animate({'left':'+='+Math.abs(n-c)+'px'});
+	});
+	$(".pager.active").removeClass("active");	//very basic
+	$("#t_pagers").find(".pager").eq(next).addClass("active");	//very basic
+}
+</script>
+     
+    
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- ===========================
+  Background
+    =========================== -->
+<div id="background">
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ===========================
+         NAVBAR START
+         =========================== -->
+         <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+       
+
+
+       
+
+     <!-- ===========================
+   Form
+    =========================== -->
+    <div id="formbg">
+    <h2>BOOK YOUR FLIGHT</h2>
+   <form>
+  
+<div class="form-group">
+      <div class="col-lg-2 col-sm-3">
+        <label for="ex1">From</label>
+        <input class="form-control" id="ex1" type="text" placeholder="eg. Melbourn">
+      </div>
+ <div class="col-lg-2 col-sm-3">
+        <label for="ex1">To</label>
+        <input class="form-control" id="ex1" type="text" placeholder="eg. New Yourk">
+      </div>
+ <div class="col-lg-2 col-sm-3">
+        <label for="ex1">Deperture</label>
+        <input class="form-control" id="ex1" type="text" placeholder="MM/DD/YYYY">
+      </div>
+  <div class="col-lg-2 col-sm-3">
+        <label for="ex1">Return</label>
+        <input class="form-control" id="ex1" type="text" placeholder="MM/DD/YYYY">
+      </div>     
+
+ <div class="col-lg-2 col-sm-3">
+        <label for="ex1">Adult</label>
+        <input class="form-control" min="1" max="10" id="ex1" type="text" placeholder="2">
+      </div> 
+
+<div class="col-lg-2 col-sm-3">
+ <label for="ex1"><br></label>
+<button type="submit" class="form-control btn btn-small  btn-theme-color btn-rounded">Search Flight</button>
+</div>
+
+   
+    </form><!--formbg end-->
+  <div id="slidebg">
+  
+  <div class="slidebar  col-lg-2 col-sm-3">
+  <img src="img/icon1 (2).png">Flights
+  </div>  
+    
+   <div class="slidebar  col-lg-2 col-sm-3">
+  <img src="img/icon1 (1).png">Hotels
+  </div> 
+  
+  <div class="slidebar  col-lg-2 col-sm-3">
+  <img src="img/icon1 (4).png">CRUISES
+  </div> 
+  
+  <div class="slidebar  col-lg-2 col-sm-3">
+  <img src="img/icon1 (5).png">PACKAGES
+  </div> 
+  
+  <div class="slidebar  col-lg-2 col-sm-3">
+  <img src="img/icon1 (6).png">DATE SELECT
+  </div> 
+  
+ 
+</div>    
+    
+    
+    
+    </div>
+    
+    
+    </div><!--bg end-->
+ <!-- ===========================
+   services
+    =========================== -->
+<div id="service">
+<div class=" container-fluid">
+<img src="img/top_icon.png">
+<p>WHAT WE DO</p>
+<h3>OUR SERVICES</h3>
+<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore</p>
+</div>
+</div><!--services-->
+
+<div class=" container-fluid">
+<div class="service col-lg-4 col-md-6 col-sm-12">
+<img src="img/service_icon1.png">
+<h3>BEST LUXURY HOTEL</h3>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+
+</div>
+ 
+ 
+ <div class="service col-lg-4 col-md-6 col-sm-12">
+<img src="img/service_icon2.png">
+<h3>SECURE BOOKING</h3>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+
+</div>
+
+<div class="service col-lg-4 col-md-6 col-sm-12">
+<img src="img/service_icon3.png">
+<h3>BEST PRICE EVER</h3>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+
+</div> 
+
+</div>
+<!-- ===========================
+  Travelbg
+    =========================== --> 
+    
+    <div id="travelbg">
+    <div class=" container-fluid">
+    <img src="img/building-01.png">
+    <h5>UPCOMING DEAL</h5>
+    <h1>EXPLORE THE BEAUTY OF PARIS</h1>
+    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus. Cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+     
+    <input type="submit" value="Book now" ></div></div> 
+     
+     
+ <!-- ===========================
+  Travelbg
+    =========================== -->  
+<div id="service">
+<div class="container">
+
+<p>WHAT WE OFFER</p>
+<h3>MOST POPULAR PACKAGES</h3>
+<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore</p>
+</div>
+</div><!--services-->
+
+<div class="container ">
+
+<div class="traveloffer col-lg-6 col-md-6 col-sm-12 "> 
+<img class="img-responsive margin" style="width:100%" height="455" alt="Image"  src="img/travel_blogimg1.jpg" ></div>
+
+<div class="traveltext col-lg-6 col-md-6 col-sm-12 ">
+<h3>EXPLORE DESERT AT MIDDLE EAST</h3>
+<h6>5 DAYS 4 NIGHTS</h6>
+<p>Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.</p>
+<h4>$3250</h4>
+<h6>5 DAYS 4 NIGHTS</h6>
+
+<h3>BOOK THIS PACKAGE</h3>
+</div>
+
+<div class="traveltext col-lg-6 col-md-6 col-sm-12">
+<h3>GREEN ISLAND AT BEAUTIFUL MALDIVES</h3>
+<h6>5 DAYS 4 NIGHTS</h6>
+<p>Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.</p>
+<h4>$3250</h4>
+<h6>5 DAYS 4 NIGHTS</h6>
+<h3>BOOK THIS PACKAGE</h3>
+</div>
+
+<div class="traveloffer col-lg-6 col-md-6 col-sm-12 "><img src="img/travel_blogimg2.jpg" class="img-responsive margin" style="width:100%" alt="Image"></div>
+
+<div class="traveloffer col-lg-6 col-md-6 col-sm-12"><img src="img/travel_blogimg3.jpg" class="img-responsive margin" style="width:100%" alt="Image"></div>
+
+<div class="traveltext col-lg-6 col-md-6 ">
+<h3>HERITAGE VISIT AT EGYPT</h3>
+<h6>5 DAYS 4 NIGHTS</h6>
+<p>Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.</p>
+<h4>$3250</h4>
+<h6>5 DAYS 4 NIGHTS</h6>
+<h3>BOOK THIS PACKAGE</h3>
+</div>
+
+
+
+
+
+
+</div>
+<!-- ===========================
+  Travelightbox
+    =========================== -->  
+<div id="service">
+<div class="container">
+
+<p>ALL TIME OFFER</p>
+<h3>REGULAR PACKAGES</h3>
+<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore
+</p>
+</div>
+</div><!--services-->
+
+
+	<div class="container ">
+<ul id="myGallery" class="gallery col-xs-12">
+				<li class=" col-sm-4"><span><img src="img/port1.jpg"/></span></li>
+				<li class="col-sm-4"><span><img src="img/port2.jpg"/></span></li>
+				<li class="col-sm-4"><span><img src="img/port3.jpg"/></span></li>
+                <li class=" col-sm-4"><span><img src="img/port4.jpg"/></span></li>
+                <li class="col-sm-4"><span><img src="img/port5.jpg"/></span></li>
+                <li class=" col-sm-4"><span><img src="img/port6.jpg"/></span></li>
+    		</ul>
+		
+	</div>
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/MAgallery.js"></script>
+	<script type="text/javascript">
+    		MAgallery("myGallery");
+	</script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- ===========================
+ Add
+    =========================== -->  
+
+<div id="add">
+
+
+<div class="container ">
+<p>ARE YOU IMPRESSED WITH OUR OFFER?</p>
+<input type="submit" value="Read More" class="col-lg-3 col-md-6 col-sm-12" >
+<h2>DISCOVER OUR TOP TOURS FROM $50 ONLY</h2>
+
+</div>
+
+
+
+</div>
+
+
+
+<!-- ===========================
+  slider
+    =========================== -->  
+
+
+<div id="service">
+<div class="container">
+
+<p>TRAVEL TIPS
+
+</p>
+<h3>KNOW BEFORE TRAVEL</h3>
+<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore
+</p>
+</div>
+</div><!--services-->
+
+<div class="container">
+
+<div class="col-lg-6">
+<div class="icon">
+<img src="img/tips1.png" /></div>
+<h4>USE LIFE JACKET DURING SHIP TRAVEL</h4>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p></div>
+
+<div class="col-lg-6">
+<div class="icon">
+<img src="img/tips2.png" /></div>
+<h4>USE LIFE JACKET DURING SHIP TRAVEL</h4>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p></div>
+
+
+<div class="col-lg-6 ">
+<div class="icon">
+<img src="img/tips3.png" /></div>
+<h4>USE LIFE JACKET DURING SHIP TRAVEL</h4>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p></div>
+
+<div class="col-lg-6">
+<div class="icon">
+<img src="img/tips4.png" /></div>
+<h4>USE LIFE JACKET DURING SHIP TRAVEL</h4>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p></div>
+
+<div class="col-lg-6">
+<div class="icon">
+<img src="img/tips5.png" /></div>
+<h4>USE LIFE JACKET DURING SHIP TRAVEL</h4>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p></div>
+<div class="col-lg-6">
+<div class="icon">
+<img src="img/tips6.png" /></div>
+<h4>USE LIFE JACKET DURING SHIP TRAVEL</h4>
+<p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p></div>
+</div>
+
+
+<!-- ===========================
+testimonial
+    =========================== -->  
+<div id="testimonialsbg"><div id="testimonials">
+		<h2>TESTIMONIALS</h2>
+		<div id="test_container">
+			<div class="testimonial">
+				<div class="testimonial_text">
+                
+                <strong>Knock Knock.</strong><br>Who's there?<br>To.<br>To Who?<br>To <u><strong>Whom</strong></u>?</div>
+				<h3 class="testimonial_name">-Grammar Nazi</h3>
+				<div class="testimonial_designation">CEO, I Don't Care Inc.</div>
+			</div>
+			<div class="testimonial">
+				<div class="testimonial_text">Code Affair is new but has really interesting thoughts, keep going bro!</div>
+				<h3 class="testimonial_name">-Larry Page</h3>
+				<div class="testimonial_designation">CEO, Google Inc.</div>
+			</div>
+			<div class="testimonial">
+				<div class="testimonial_text">The guy is super cool, I wish I were like him :P</div>
+				<h3 class="testimonial_name">-Bill Gates</h3>
+				<div class="testimonial_designation">Founder, Microsoft</div>
+			</div>
+		</div>
+		<div id="t_pagers"><a class="pager"></a><a class="pager"></a><a class="pager"></a></div>
+</div></div>
+
+
+
+
+
+
+</body></html>

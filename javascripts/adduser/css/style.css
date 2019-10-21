@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+#wrapper{
+	
+
+	width:100%;
+	min-height:800PX;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(74,74,74,1) 0%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(74,74,74,1)), color-stop(82%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+background:-webkit-radial-gradient(center, ellipse cover, rgba(74,74,74,1) 0%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(74,74,74,1) 0%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(74,74,74,1) 0%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* ie10+ */
+background:radial-gradient(ellipse at center, rgba(74,74,74,1) 0%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* w3c */
+padding:10% 0;
+	
+	
+	}
+
+		
+		
+		
+
+#addwrapper{
+	background:	rgba(0,0,0,.5);
+
+	width:700px;
+	height:550px;
+	border-radius:10px;
+	margin:0 auto;
+	
+	}
+	
+	
+#user{
+	width:350px;
+	height:550px;
+	padding:18% 11%;
+	text-align:center;
+	float:left;
+	background:	rgba(0,0,0,.7);
+}	
+
+#adduser{
+	width:350px;
+	height:550px;
+	padding:2% 4%;
+	color:#CCC;
+	float:left;
+	background:rgb(0,0,0);
+	overflow: auto;
+}
+#head{
+	padding-bottom:18px !important;
+	font-size:1.2em;
+	font-weight:700;
+	}	
+	
+#headadd{
+	padding-top:20px !important;
+	font-size:1.2em;
+	
+	}	
+#headt{
+	padding-top:30px !important;
+	font-size:1.2em;
+	text-transform:capitalize;
+	font-weight:700;
+	}
+	
+tbody{
+	background :#333; }
+	
+table{
+	background:rgba(0,0,0 ,.4);}
+	
+	
+	

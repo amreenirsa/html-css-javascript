@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:black;
+	}
+.wrapper
+{
+	width:auto;
+	height:1000px;}
+
+h1{
+	color:#356A6A;
+	text-shadow: 2px -2px 4px #346969;
+	text-align:center;
+	font-size:5em;}
+
+a{
+	text-decoration:none;
+	color:#356A6A;
+	}
+.index{
+	
+	height:32px;
+	text-align:center;
+	text-decoration:none;
+	color:#67B4B4;
+	
+	font-size:20px;
+	
+	}
+	  	
+h2{
+	color:#356A6A;
+	text-decoration: underline;}
+dt{
+	background-color: #4A9595;
+	text-shadow: 2px 2px 2px  #285151;
+	padding-left:20px;
+	color:#FFF;
+	
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

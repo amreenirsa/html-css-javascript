@@ -1,0 +1,529 @@
+/* Medium Devices, Desktops */
+
+
+@media only screen and (max-width : 1024px) {    
+
+#head{
+	
+	padding:10% 0 0 8%;}
+	
+#headoval{
+	width:92%;
+	
+	}
+  
+#headovalshade{
+	
+	}
+	
+#hwrapper{
+	
+	padding:15% 0 0 3%;
+	
+	
+	}		
+#head h11{
+	
+	font-size: 2.5em;
+	
+	
+   
+	
+	
+
+	}
+	
+	#head h12{
+	
+	font-size: 2.2em;
+	margin:3% 0 0 0;
+	
+	}
+	
+	
+	
+#head h13{
+	
+	font-size: 2.6em;
+	 margin:3% 0 0 0;
+	
+	}	
+	
+#head h14{
+	
+font-size: 2.8em;
+margin:3% 0 0 0;
+	
+	}		
+	
+	
+	
+	
+#circle1{
+	
+	width:200px;
+	height:200px;
+	padding:13% 2% 0 2%;
+	margin:3% 0 0 0;
+	
+	
+	  }	
+	  
+#circle1 h10{
+	font-size:1.8em;
+	
+	
+	}	  
+	  
+	
+#circle2{
+	width:200px;
+	height:200px;
+	padding:13% 2% 0 2%;
+	
+	
+	  }	
+	  
+#circle2 h10{
+	font-size:1.8em;
+	
+	}		  
+
+#circle3{
+	width:200px;
+	height:200px;
+	padding:17% 2% 0 2%;
+	
+
+	  }	  	
+	
+#circle3 h10{
+	font-size:1.8em;
+	
+	}
+	
+	
+	.box h1{
+	font-size:4em;}
+	
+	
+	.overlayu .closebtn {
+   
+    top:10px;
+    right: 35px;
+    font-size: 60px;
+	font-weight:bold;
+	
+  
+	
+	
+	
+}
+	
+	
+	
+
+}
+
+ 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 980px) {
+/*************************************************** home page ****************************************/
+#head{
+	
+	padding:10% 0 0 8%;}
+	
+#headoval{
+	width:92%;
+	height:450px;
+	
+	}
+  
+#headovalshade{
+	
+	}
+	
+#hwrapper{
+	
+	padding:12% 0 0 1%;
+	
+	
+	}		
+#head h11{
+	
+	font-size: 2.4em;
+	
+	
+   
+	
+	
+
+	}
+	
+	#head h12{
+	
+	font-size: 2em;
+	margin:3% 0 0 0;
+	
+	}
+	
+	
+	
+#head h13{
+	
+	font-size: 2.2em;
+	 margin:3% 0 0 0;
+	
+	}	
+	
+#head h14{
+	
+font-size: 2.4em;
+margin:3% 0 0 0;
+	
+	}		
+	
+	
+	
+	
+#circle1{
+	
+	width:150px;
+	height:150px;
+	border:15px solid #FFF;
+	padding:18% 2% 0 2%;
+	margin:3% 0 0 0;
+	
+	
+	  }	
+	  
+#circle1 h10{
+	font-size:1.2em;
+	
+	
+	}	  
+	  
+	
+#circle2{
+	width:150px;
+	height:150px;
+	border:15px solid #FFF;
+	padding:18% 2% 0 2%;
+	
+	
+	  }	
+	  
+#circle2 h10{
+	font-size:1.2em;
+	
+	}		  
+
+#circle3{
+	width:150px;
+	height:150px;
+	border:15px solid #FFF;
+	padding:18% 2% 0 2%;
+	
+
+	  }	  	
+	
+#circle3 h10{
+	font-size:1.2em;
+	
+	}		
+	
+.overlayu .closebtn {
+   
+    top:-10px;
+    right: 25px;
+    font-size: 60px;
+	font-weight:bold;}
+	
+  
+	
+		
+	
+.box1 h1{
+	font-size:4em;	}
+	
+.box1 li.accordion {
+	font-size: 1.8em;	}
+	
+	
+.box p{
+	
+	letter-spacing:5px;
+	font-size: 1.4em;
+	
+}	
+	
+	
+.box h1{
+font-size:3em;}
+	
+.box1 div.panel1 li {
+    
+	font-size:1.3em;
+}
+	
+	
+	
+	
+	
+}	
+	
+
+@media only screen and (max-width : 640px) {
+/*************************************************** home page ****************************************/
+	
+	
+	
+	#head{
+	
+	padding:10% 0 0 8%;}
+	
+#headoval{
+	width:92%;
+	height:250px;
+	
+	}
+  
+#headovalshade{
+	
+	}
+	
+#hwrapper{
+	
+	padding:15% 0 0 1%;
+	
+	
+	}		
+#head h11{
+	
+	font-size: 1.2em;
+	letter-spacing:1px;
+	
+	
+   
+	
+	
+
+	}
+	
+	#head h12{
+	
+	font-size: 1em;
+	margin:3% 0 0 0;
+	letter-spacing:1px;
+	
+	}
+	
+	
+	
+#head h13{
+	
+	font-size: 1.2em;
+	 margin:3% 0 0 0;
+	
+	}	
+	
+#head h14{
+	
+font-size: 1.4em;
+margin:3% 0 0 0;
+	
+	}		
+	
+	
+	
+	
+#circle1{
+	
+	width:75px;
+	height:75px;
+	border:10px solid #FFF;
+	padding:18% 2% 0 2%;
+	margin:3% 0 0 0;
+	
+	
+	  }	
+	  
+#circle1 h10{
+	font-size:.6em;
+	
+	
+	}	  
+	  
+	
+#circle2{
+	width:75px;
+	height:75px;
+	border:10px solid #FFF;
+	padding:18% 2% 0 2%;
+	
+	
+	  }	
+	  
+#circle2 h10{
+	font-size:.6em;
+	
+	}		  
+
+#circle3{
+	width:75px;
+	height:75px;
+	border:10px solid #FFF;
+	padding:18% 2% 0 2%;
+	
+
+	  }	  	
+	
+#circle3 h10{
+	font-size:.6em;
+	
+	}
+	
+	
+		
+.box1 h1{
+	font-size:2em;	}
+	
+.box1 li.accordion {
+	font-size: 1em;	}
+	
+	
+.box p{
+	
+	letter-spacing:1px;
+	font-size: 1em;
+	
+}	
+	
+	
+.box h1{
+font-size:2em;}
+	
+	
+.box1 li.accordion {
+  
+    font-size: 1em;	
+
+	}
+	
+	
+	
+	.box1 li a {
+	font-size: 1em;	}	
+	
+.box1 div.panel1 li {
+    
+	font-size:1em;
+	text-align:left;
+}
+	.box ol li{
+	
+	
+	font-size:1.1em;
+	
+	}
+	
+	
+	
+	
+	
+}
+
+@media only screen and (max-width : 480px) {
+
+#head{
+	
+	}
+	
+	#headoval{
+
+	}
+  
+	
+		
+	
+	
+#headovalshade{
+	
+	}		  
+   	
+	
+	
+	
+	
+	
+	
+	
+	
+#head h11{
+	
+   
+	
+	
+	
+	}
+	
+	#head h12{
+
+
+	
+	
+	}
+	
+	
+	
+#head h13{
+	
+		
+	
+	}	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlayu {overflow-y: auto;}
+  .overlayu a {font-size: 20px}
+  .overlayu .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  
+ 
+
+}	
+
+
+/* Smallest Mobile Devices */
+@media only screen and (max-width : 320px) {
+/*************************************************** home page ****************************************/
+}

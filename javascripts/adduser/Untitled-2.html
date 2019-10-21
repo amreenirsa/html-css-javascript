@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<!--<div><div id='T1' onclick='ShowContainer(this);'>Tab 1</div><div id='T2' onclick='ShowContainer(this);'>Tab 2</div></div><div><div id='CT1' class='containers'>Tab Container1</div><div id='CT1' class='containers'>Tab Container 2</div> </div></div> -->
+<script> 
+
+/*
+
+
+function ShowContainer(obj) { for(var i = 0 ; i < document.getElementsByClassName("containers").length;i++){document.getElementsByClassName("containers")[i].style.display='none' } 
+}
+document.getElementById('C'+ obj.id).style.display='';
+</script>
+*/
+
+
+
+
+function showStuff(id, text, btn) {
+    document.getElementById(id).style.display = 'block';
+    // hide the lorem ipsum text
+    document.getElementById(text).style.display = 'none';
+    // hide the link
+    btn.style.display = 'none';
+}
+</script>
+
+
+<td class="post">
+
+<a href="#" onclick="showStuff('answer1', 'text1', this); return false;">Edit</a>
+<span id="answer1" style="display: none;">
+<textarea rows="10" cols="115"></textarea>
+</span>
+
+<span id="text1">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</span>
+</td>
+</body>
+</html>

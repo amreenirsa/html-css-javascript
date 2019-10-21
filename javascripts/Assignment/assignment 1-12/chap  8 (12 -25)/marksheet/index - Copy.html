@@ -1,0 +1,746 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Lab Assignment</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="description" content="This is a demonstration page." />
+		<meta name="keywords" content="alert, confirm, prompt, demo" />
+		
+		<style type="text/css">
+			BODY,
+			HTML {
+				padding: 0px;
+				margin: 0px;
+			}
+		
+      			BODY {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				background: #FFF;
+				padding: 15px;
+			}
+			
+			H1 {
+				font-size: 20px;
+				color:#5b912d;
+				font-weight: normal;
+			}
+			
+			
+			
+			FIELDSET {
+				border: solid 1px  #5b912d;
+				-moz-border-radius: 16px;
+				-webkit-border-radius: 16px;
+				border-radius: 16px;
+				padding: 1em 2em;
+				margin: 1em 0em;
+			}
+			
+			
+			input [type=button]{
+				margin-top:50px !important;
+				height:500px;}
+			
+			LEGEND {
+				color: #3f652d;
+				font-size: 1.5em;
+				font-weight:bold;
+				padding: 0em .5em;
+			}
+			
+			
+			
+			PRE {
+				font-family: "Courier New", monospace;
+				font-size: 17px;
+				color: #666;
+				background: #F8F8F8;
+				padding: 1em;
+				-moz-border-radius: 8px;
+				-webkit-border-radius: 8px;
+				border-radius: 8px;
+			}
+			
+			/* Custom dialog styles */
+			#popup_container.style_1 {
+				
+				color: #A4C6E2;
+				background: #eaecee;
+				border-color: #219aa0;
+			}
+			
+			#popup_container.style_1 #popup_title {
+				color: #FFF;
+				height:35px;
+				font-weight: normal;
+				text-align: left;
+				background: #57bfc1;
+				padding:2% 0 0;
+				border-bottom:solid 2px #219aa0;
+						
+			
+				padding-left: 1em;
+			}
+			
+			#popup_container.style_1 #popup_content {
+				background: none;
+				color:#000;
+			}
+			
+			#popup_container.style_1 #popup_message {
+				padding-left: 0em;
+				font-size:1.5em;
+				
+
+			}
+			
+			#popup_container.style_1 INPUT[type='button'] {
+				margin-top:10%;
+				width:30%;
+				height:30px;
+				border: outset 2px #219aa0;
+				color: #fff;
+				background: #57bfc1;
+			}
+li{
+	color: #000;
+	margin:10px 0;
+	font-size:1.5em;}	
+	
+li li{
+	color: #000;
+	
+	font-size:1em;}
+	
+p{font-size:1.5em;}	
+	
+.prompt_button{
+	width:150px !important;
+	height:30px;
+	border: outset 1px   #fff;
+				color: #fff;
+				
+			/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(, #5b912d , #69a62a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #5b912d ,#69a62a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #5b912d ,#69a62a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #5b912d ,#69a62a); /* Standard syntax */}	
+	
+	
+			
+		</style>
+		
+		<!-- Dependencies -->
+
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.ui.draggable.js" type="text/javascript"></script>
+		
+		<!-- Core files -->
+		<script src="js/jquery.alerts.js" type="text/javascript"></script>
+		<link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<!-- Example script -->
+		<script type="text/javascript">
+			
+			$(document).ready( function() {
+				
+				
+				
+				
+	<!-- =====17alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt17").click( function() {
+	
+   jPrompt("Check the number is devisible by 3 or not.","","Program", function(r) {
+						if( r ) 
+{
+   r = parseInt(r);
+   
+   
+ if(r%3 == 0){
+	x ="The number is divisible by 3";
+	}
+	
+else 	
+{
+	
+	x ="The number is not divisible by 3";}
+	
+	
+	
+	
+	  
+                        jAlert(x ,"Program"); 
+							
+					};
+					});
+						});
+				
+				
+				
+				
+		
+																	
+						
+<!-- =====18alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt18").click( function() {
+	
+   var x = prompt("A Team has been scored","","Scored Board");
+    var y = prompt("B Team has been scored","","Scored Board");
+   
+   x = parseInt(x);
+    y = parseInt(y);
+   
+ 
+if(x > y){
+	z ="Team A won the match";
+	}
+	
+	
+else if(x < y)	
+{
+	
+	z ="Team B won the match";}
+	
+else if(x = y)	
+{
+	
+	z ="A Match is tie";}	
+	
+	
+	
+	  
+                        jAlert(z ,"Scored Board"); 
+							
+						});														
+						
+						
+	<!-- =====19alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt19").click( function() {
+	
+   var x = prompt("Please enter a string or a number or a Boolean","","Program");
+   
+   
+   
+   
+ 
+x=typeof(x);
+	
+	
+	  
+                        jAlert(x ,"Program"); 
+							
+						});						
+						
+						
+<!-- =====20alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt20").click( function() {
+	
+   var x = prompt("Write a program that checks whether the given input is an even number or an odd number.","","Program");
+   
+   
+   x = parseInt(x);
+   
+   
+ 
+if(x%2 == 0){
+	z ="Even";
+	}
+	
+else 	
+{
+	
+	z ="Odd";}
+	
+
+	
+	
+	
+	  
+                        jAlert(z ,"Program"); 
+							
+						});								
+						
+						
+	<!-- =====21alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt21").click( function() {
+	
+   var t = prompt("write a program that takes temperature as input and shows a message based on following criteria","","Program");
+   
+   
+   x = parseInt(t);
+   
+   
+ 
+if(t>40){
+	z ="It is too hot outside.";
+	}
+	
+else if(t>30) {
+	
+	z ="The Weather today is Normal.";}
+	
+else if(t>20) {
+	
+	z ="Today’s Weather is cool.";}	
+	
+else if(t>10) {
+	
+	z ="OMG! Today’s weather is so Cool.";}	
+	
+	
+	
+	  
+                        jAlert(z ,"Program"); 
+							
+						});						
+	<!-- =====22alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt22").click( function() {
+	
+   var x = prompt("Please enter 1 1st Number","","Program");
+    var y = prompt("Please enter 2 nd Number","","Program");
+	 var z= prompt("Please enter  Operator (+, -, *, /, %)","","Program");
+   
+   
+   x = parseInt(x);
+   y = parseInt(y);
+  
+   
+   
+ 
+if(z==="+"){
+	z =x + y;
+	}
+	
+else if(z==="-") {
+	
+	z =x - y;
+	
+	}
+	
+else if(z==="*") {
+	
+	z =x * y;
+	
+	}	
+	
+else if(z==="/") {
+	
+	z =x / y;}	
+	
+else if(z==="%") {
+	
+	z =x % y;}		
+	
+	
+	
+	  
+                        jAlert( z   ,"Program"); 
+							
+						});	
+	<!-- =====23alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt23").click( function() {
+	
+   var z = prompt("Please enter a day","","Program");
+   
+   
+   
+   
+   
+   
+ 
+if(z==="sunday"){
+	z ="Yay! It’s a holiday”.";
+	}
+	
+else if(z==="saturday") {
+	
+	z ="It’s weekend.";
+	
+	}
+
+	
+else if(z!=="sunday","saturday") {
+	
+	z ="It’s a week day";}		
+	
+	
+	
+	  
+                        jAlert( z   ,"Program"); 
+							
+						});													
+	<!-- =====24alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt24").click( function() {
+	
+   var z = prompt("Write a program that takes input user’s score, if it’s greater than 50, say “You are passed”. Otherwise, show “Try again!”","","Program");
+   
+   
+   
+    z = parseInt(z);
+   
+   
+ 
+if(z<=50){
+	z ="Try again!";
+	}
+	
+
+else if(z>=51) {
+	
+	z ="You are passed.";}		
+	
+	
+	
+	  
+                        jAlert( z   ,"Program"); 
+							
+						});		
+						
+<!-- =====25alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt25").click( function() {
+	
+   var x = prompt("Show the output to make sure it works”","","Program");
+   
+   var y = prompt("Show the output to make sure it works","","Program");
+   
+   
+     x = parseInt(x);
+    y = parseInt(y);
+   
+   
+ 
+if(x<y){
+	z = x + "is smaller than" + y;
+	}
+	
+
+else if(x>y) {
+	
+	z = x + "is grater than" + y;}
+	
+else if(x=y) {
+	
+	z = x + "are equal to" + y;}				
+	
+	
+	
+	  
+                        jAlert( z   ,"Program"); 
+							
+						});							
+	<!-- =====26alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt26").click( function() {
+	
+   var x = prompt("a language code 'urdu', 'japness', 'franch'","","Program");
+      
+   
+    
+   
+   
+ 
+if(x===""){
+	z = "こんにちは世界ライト" ;
+	}
+	
+
+else if(x==="urdu") {
+	
+	z = "ہیلو دنیا " ;}
+	
+else if(x==="franch") {
+	
+	z = "Bonjour tout le monde écrire" ;}				
+	
+	
+	
+	  
+                        jAlert( z   ,"Program"); 
+							
+						});	
+						
+						
+<!-- =====27alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt27").click( function() {
+	
+   var x = prompt("Write a program to take input a number & tell whether it’s a positive or negative number.","","Program");
+   
+  
+   
+     
+   
+   
+   
+ 
+if(x=== "+"){
+	y ="Positive number" ;
+	}
+	
+
+else if(x=== "-") {
+	
+	y = "Negative number";}
+	
+				
+	
+	
+	
+	  
+                        jAlert( y   ,"Program"); 
+							
+						});							
+	
+	<!-- =====28alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt28").click( function() {
+	
+   var x = prompt("a noun","","Program");
+   
+   
+   var y = prompt("a number","","Program");
+  
+   
+     
+   
+ 	
+				
+	
+	
+	
+	  
+                        jAlert( x + y   ,"Program"); 
+							
+						});						
+						
+											
+											
+				});
+	
+		</script>
+
+		
+	</head>
+	
+	<body>
+		
+		
+		
+		<fieldset>
+			<legend>VARIABLES FOR STRINGS</legend>
+            <h1>|
+CONCATENATING
+TEXT
+STRINGS
+|
+PROMPTS
+|
+IF
+STATEMENTS
+|
+COMPARISON
+OPERATORS
+|</h1>
+			<ol start="12">
+            
+  
+
+
+
+<!-- =====12===== -->	
+  
+   <li>Write a program to check whether the given number is
+divisible by 3. Show the message to the user if the number is
+divisible by 3.</li>
+
+<input class="prompt_button prompt17" type="button" value="Show Prompt"/> 
+
+</p>
+
+<!-- =====13===== -->
+  
+   <li>Names & Total scores of two teams are taken as input. Write
+a program that shows which team has won the game or show if
+there is a tie. (Team A or Team B)</li>
+
+<input class="prompt_button prompt18" type="button" value="Show Prompt"/> 
+
+
+<!-- =====14===== -->
+  
+   <li>Take a string, a number and a Boolean in three variables.
+Write a program that checks the type of variables & responds
+accordingly. Like </li>
+
+<input class="prompt_button prompt19" type="button" value="Show Prompt"/> 	
+
+
+
+<!-- =====14===== -->
+  
+   <li>Write a program that checks whether the given input is an
+even number or an odd number. </li>
+
+<input class="prompt_button prompt20" type="button" value="Show Prompt"/> 	
+
+<!-- =====15===== -->
+  
+   <li>Weather in Karachi nowadays is too cool, write a program
+that takes temperature as input and shows a message based on
+following criteria. 
+</li>
+<ol start="a">
+<li>T > 40 then “It is too hot outside".</li>
+<li>T > 30 then “The Weather today is Normal".</li>
+<li>T > 20 then “Today’s Weather is cool".</li>
+<li>T > 20 then “Today’s Weather is cool".</li>
+<li>T > 10 then “OMG! Today’s weather is so Cool.”</li>
+</ol>
+<input class="prompt_button prompt21" type="button" value="Show Prompt"/> 	
+<!-- =====16===== -->
+  
+   <li>Write a program to create a calculator for +,-,*, / & % using if
+statements. Take the following input: 
+</li>
+<ol start="a">
+<li>First number.</li>
+<li>Second number.</li>
+<li>Operation (+, -, *, /, %).</li>
+<p>Compute & show the calculated result to user.</p>
+</ol>
+<input class="prompt_button prompt22" type="button" value="Show Prompt"/> 
+
+<!-- =====17===== -->
+  
+   <li>Write a program that takes user input day name. If the day is
+Monday, Tuesday, Wednesday, Thursday or Friday, then show
+“It’s a week day”. If the day is Saturday then show “It’s
+weekend”. If the day is Sunday then show “Yay! It’s a holiday”.</li>
+
+<input class="prompt_button prompt23" type="button" value="Show Prompt"/> 
+
+<!-- =====18===== -->
+  
+   <li>Write a program that takes input user’s score, if it’s greater
+than 50, say “You are passed”. Otherwise, show “Try again!”.</li>
+
+<input class="prompt_button prompt24" type="button" value="Show Prompt"/> 
+
+<!-- =====19===== -->
+  
+   <li>Write a program that takes input user’s score, if it’s greater
+than 50, say “You are passed”. Otherwise, show “Try again!”.</li>
+
+<ol start="a">
+<li>takes 2 numbers.</li>
+<li>tells whichever number is the greater (higher) number.</li>
+<li>tells if they are equal.</li>
+<li>Show the output to make sure it works (e.g. "The greater
+number of 5 and 10 is 10.").</li>
+</ol>
+<input class="prompt_button prompt25" type="button" value="Show Prompt"/> 
+<!-- =====20===== -->
+  
+   <li>The Translator:
+Write a program that:.</li>
+
+<ol start="a">
+<li>takes 1 input, a language code (e.g. "es", "de", "en").</li>
+<li>tells "Hello, World" for the given language, for atleast 3
+languages. It should default to returning English.
+(Hint: use translate.google.com to check the translation of
+hello world in different languages).</li>
+</ol>
+
+<input class="prompt_button prompt26" type="button" value="Show Prompt"/>
+
+
+
+<!-- =====21===== -->
+  
+   <li>Write a program to take input a number & tell whether it’s a
+positive or negative number.</li>
+
+
+<input class="prompt_button prompt27" type="button" value="Show Prompt"/>
+
+
+<!-- =====22===== -->
+  
+   <li>The Pluralizer: Write a program that:</li>
+<ol start="a">
+<li>takes 2 inputs, a noun and a number.</li>
+<li>tells the number and pluralized form, like "5 cats" or "1
+dog".</li>
+<p>Run the program for a few different inputs and show the result
+to make sure it works.</p>
+</ol>
+
+<input class="prompt_button prompt28" type="button" value="Show Prompt"/>
+
+            </ol>
+				
+		
+		
+	</body>
+
+	
+</html>

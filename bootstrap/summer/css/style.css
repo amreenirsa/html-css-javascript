@@ -1,0 +1,375 @@
+@charset "utf-8";
+/* CSS Document */
+/*************************************** Heading *****************************************/	
+h2{
+	color:#FFF;}
+
+h3{ color:#f7941e !important; }
+
+h4{color:#fcc066!important;}
+.slideanim {visibility:hidden;}
+
+/*************************************** background *****************************************/	
+
+#background{
+	width:100%;
+	height:850px;
+	
+	background-image:url(../img/bg.jpg);
+	background-repeat:no-repeat;
+	
+	}
+	
+/*************************************** Nav bar *****************************************/	
+	
+
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+	  height:75px;
+      background-color: #000 !important;
+      border: 0;
+	  border-color:#fff !important;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar-brand{
+	  padding-top:0px !important ;}
+	  
+	  
+  .navbar li a, .navbar{ 
+      color: #fff!important;
+	  background-color:#000;
+	  padding-top:12px ;
+  }
+  .navbar-nav li a:hover {
+      color: #fbb040 !important;
+  }
+  .navbar-nav li a {
+     
+      background-color:black !important;
+  }
+  
+  .navbar-default .navbar-toggle {
+      border-color:#fff;
+	  
+	  background-color:#000;
+  }
+ 
+ .icon-bar{
+      
+      background-color:#fff  !important;
+	  }
+	  
+	 
+	   .navbar button:hover{
+      
+      background-color:#fbb040 !important;
+	  margin-bottom:20px !important;}
+	  
+	 
+	  
+	  
+  .open .dropdown-toggle {
+      color: #fff !important;
+      background-color: #000 !important;
+	 
+	  border: none !important;
+  }
+  .dropdown-menu li a {
+      color: #fff!important;
+	    
+  }
+  .dropdown-menu li a:hover {
+	  color: #fff!important;
+      background-color: #fbb040 !important;
+  }
+/*************************************** Form bg *****************************************/	
+			#formbg{
+	width:100%;
+	height:auto;
+	margin:41.5% 0 0 0;
+	padding:2% 0 0 0;
+	color:#FFF;
+	float:left;
+	background-color:rgba(0,0,0,.40);
+	
+	
+	
+	}
+#formbg h2{ padding-left:2%;
+font-weight:300;}	
+ input[type=text]{
+	height:50px;}	
+
+#formbg button[type=submit]{
+	height:50px !important;
+	font-weight:bold;
+	font-size:1.2em;
+	background-color: #fbb040;
+	color:#FFF;}
+	#formbg button:hover[type=submit]{
+	height:50px !important;
+	background-color:#FFF;
+	color:#fbb040;}
+
+	
+#slidebg{
+	width:100%;
+	height:auto;
+	
+	margin:3% 0 0 0;
+	padding:0 0 0 2%;
+	color:#FFF;
+	float:left;
+	background-color:rgba(0,0,0,.60);
+	
+	
+	}
+.slidebar{
+	
+	margin:0 0 0 1%;
+	padding:36px 0 0 0 ;
+	height:122px;
+	text-align: center;
+	font-weight:bold;
+	float:left;
+	-webkit-transition:  -webkit-transform 7s; /* Safari */
+    transition:  transform 7s;
+	
+	}
+	.slidebar:hover{
+ -webkit-transform: rotate(360deg);
+ color:#fbb040;
+ /* Safari */
+    transform: rotate(360deg);
+	cursor:pointer;
+}
+
+
+
+	
+/*************************************** Form bg *****************************************/		
+#service{
+	width:100%;
+	margin:0 auto;
+	padding:5% 0;
+	height:350px;
+	float:left;
+	text-align:center;
+	}
+	
+.service{
+	
+	margin:0 0 0 0;
+	
+	height:375px;
+	float:left;
+	text-align:center;
+	
+	}
+		
+/*************************************** Building bg *****************************************/			
+#travelbg{
+	width:100%;
+	height:500px;
+	margin:0 auto;
+	padding:10% 0 0 0 ;
+	text-align:center;
+	color:#FFF;
+	float:left;
+	background-image:url(../img/travel_para.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	
+	}
+	#travelbg input[type=submit]{
+	margin:2% auto;
+	width:300px;
+	border:none;
+	color:#FFF;
+height:60px;
+	font-size:1.5em;
+	font-weight:bold;
+	
+	background-color:#ec9f48 ;
+	text-align:center;
+	}
+
+	#travelbg input[type=submit]:hover{color:#ec9f48 ;
+	cursor:pointer;
+	background-color:#fff ;}
+	
+	
+/*************************************** Building bg *****************************************/			
+.traveloffer{
+	
+	padding:0px 0px !important;
+	float:left;
+	height:412px;
+	overflow:hidden;
+	
+	
+	
+	color:#999;}
+		
+	.traveltext{
+		
+	float:left;
+	height:412px;
+	
+	
+	padding:8% 4% 0 4%;
+	text-align:center;
+	
+	color:#999;}	
+	
+/*************************************** Add *****************************************/	
+#add{
+	width:100%;
+	height:auto;
+	margin-top:2%;
+	padding:4% 0 3% 0;
+	letter-spacing:.5em;
+	color:#FFF;
+	background-color:#333;}
+	
+	#add h2{display:inline;
+	margin-bottom:2%;
+	letter-spacing:.1em;}
+	
+	h2 a{color:#ec9f48 ;
+	text-decoration:none;
+	}
+	h2 a:hover{color:#ec9f48 ;
+	text-decoration:none; }
+		
+	#add input[type=submit]{
+	
+	
+	border:none;
+	color:#FFF;
+height:50px;
+
+	font-size:1.2em;
+	font-weight:bold;
+	float:right;
+	
+	background-color: #666;
+	text-align:center;
+	}
+
+	#add input[type=submit]:hover{color:#ec9f48 ;
+	cursor:pointer;
+	background-color:#fff ;}
+	
+.icon{ 
+
+display:inline;
+float:left;
+
+}
+.iconbg{float:left;
+
+}
+
+	
+	/*************************************** testtonomial *****************************************/
+	#testimonialsbg{
+		width:100%;
+		height:400px;
+		margin:3% auto 0;
+		padding-top:4%;
+		background-attachment:fixed;
+	background-repeat:no-repeat;
+	
+		background-image:url(../img/bg3x.jpg);}
+		#testimonials{
+	background: url('../img/quote.png') no-repeat 40% 21px;
+	margin:50px auto;
+	text-align:center;
+	padding: 0 0 0 0;
+	
+	
+	position:relative;
+}
+#testimonials .testimonial{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:225px;
+	
+	z-index:1;
+}
+#testimonials h2{
+	color:#f25911;
+	font-size:22px;
+	font-style:normal;
+	line-height:22px;
+	margin-bottom:10px;
+}
+#test_container{
+	position:relative;
+	overflow:hidden;
+}
+#testimonials .testimonial_text{
+	font-size:14px;
+	font-family:verdana;
+	font-style:italic;
+}
+#testimonials .testimonial_name{
+	font-size:14px;
+	margin:10px auto 3px;
+	font-style:normal;
+	font-family:arial;
+}
+#testimonials .testimonial_designation{
+	font-size: 12px;
+	line-height: 14px;
+	font-family:verdana;
+}
+#t_pagers{
+	position:absolute;
+	left:49%;
+	bottom:10px;
+	z-index:2;
+}
+#t_pagers .pager{
+	display:inline-block;
+	text-decoration:none;
+	width:10px;
+	min-height:10px;
+	margin-top:20%;
+	margin-right:5px;
+	background:#ccc;
+	border-radius:50%;
+	cursor:pointer;
+}
+#t_pagers .pager.active{
+	background:#f25911;
+}
+.testpic{
+	width:100px;
+	height:100px;}
+
+
+
+
+
+
+/*************************************** Footer *****************************************/
+#footer{
+	width:100%;
+	height:200px;
+	font-size:1.3em;
+	color:#FFF;
+	padding:5% 0 0 5%;
+	font-family: Courier, monospace;
+
+	
+
+	
+	background-color: #000;}
+	#footer h6{ font-size:1.5em;}

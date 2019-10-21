@@ -1,0 +1,233 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	background: #FFFFFF url(images/img02.jpg) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #990066;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+h6 {
+	font-size: 2.8em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: underline;
+	color: #FFD4F4;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Header */
+
+#header-wrapper {
+	height: 125px;
+}
+
+#header {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+#logo h1, #logo p {
+}
+
+#logo h1 {
+	margin-left: 30px;
+	padding: 20px 0px 0px 0px;
+	letter-spacing: -1px;
+
+	font-size: 3.8em;
+	color:#FFF;
+}
+
+
+
+
+#logo p {
+	margin: 0;
+	padding: 20px 0 0 32px;
+	font: normal 14px Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #FFFFFF;
+} 
+
+
+
+
+
+
+
+/* Page */
+
+#page {
+	width: 980px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+#page-bgtop {
+	padding: 20px 0px;
+}
+/* Content */
+
+#content {
+	float: left;
+	width: 650px;
+	padding: 0px 0px 0px 0px;
+}
+
+.post {
+}
+
+.post .title {
+	height: 41px;
+	padding: 0px 0px 0px 30px;
+	letter-spacing: -1px;
+}
+
+.post .title a {
+	text-decoration: none;
+	color: #5A1F4B;
+	border: none;
+}
+
+.post .meta {
+	height: 38px;
+	margin: 0px;
+	padding: 12px 30px 0px 30px;
+	background: url(images/img03.jpg) no-repeat left top;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.post .meta .date {
+	float: left;
+}
+
+.post .meta .posted {
+	float: right;
+}
+
+.post .meta a {
+	color: #FFFFFF;
+}
+
+.post .entry {
+	background: #77476B;
+	padding: 20px 30px 20px 30px;
+	padding-bottom: 20px;
+	text-align: justify;
+	color:#FFF;
+}
+
+.links {
+	height: 50px;
+	background: url(images/img04.jpg) no-repeat  left top;
+	padding: 15px 30px 0px 0px;
+	text-align: right;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.links a {
+	color: #FFFFFF;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 280px;
+	margin: 0px;
+	padding: 0px 20px 0px 0px;
+	color: #787878;
+	line-height:30px;
+	font-size:  1.1em;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+#footer {
+	height: 50px;
+	margin: 0 auto;
+	padding: 0px 0 15px 0;
+	background: #77476B;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 20px;
+	line-height: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}

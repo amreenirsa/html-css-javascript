@@ -1,0 +1,308 @@
+			
+body{
+	
+	margin:0;
+	padding:0;
+	background-image:url(../img/PaintSwatches_1400x900.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-attachment:fixed;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+
+	
+.box{
+border: thin dashed #000;
+width: auto;
+margin:4%  5% 0 2%;
+padding:3% 3%;
+height:auto;
+-moz-box-shadow: 0 0 20px #2d2d2d;
+-webkit-box-shadow: 0 0 20px #2d2d2d;
+box-shadow: 0 0 20px #2d2d2d;
+}	
+
+
+h1{
+	color:#fff;
+	font-weight:700;
+	margin:3% auto;
+	letter-spacing:.10em;
+	text-transform: uppercase;
+	font-size:2.5em;
+	text-align:center;}
+	
+h4{
+	text-transform:capitalize;}	
+	
+ul {
+list-style-image: url(../img/task.png);
+
+}
+
+
+
+
+li{
+	color: #333;
+	font-size:1.3em;
+	list-style-position:inside; 
+	margin:10px 0% 3% 0% !important;
+}
+	
+ol {
+	list-style:upper-roman;
+	font-size:14px;
+
+}
+ol li{
+	color:#333;
+	font-size:1.3em;
+	list-style-position:inside; 
+	margin:10px 0% 3% 0% !important;
+	text-transform: capitalize;}
+
+
+
+
+
+p
+{border-bottom: 2px solid #89952f ;
+    content: '';
+	font-size:1.8em;
+	width:20%;
+    display: block;
+    position: relative;
+	color: #acb539;
+    bottom: -0.5em;}
+	
+						
+
+.prompt_button{
+	width:200px !important;
+	height:43px;
+	margin-bottom:2%;
+	
+	color: #fff;
+	word-spacing:.35em;
+	
+	font-size:1em;
+					
+/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #14717b, #0e5c68); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #14717b ,#0e5c68); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #14717b ,#0e5c68); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #14717b ,#0e5c68); /* Standard syntax */
+	
+	-webkit-border-radius:2em 0;
+		-moz-border-radius:2em 0;
+		border-radius:4em 0;
+		 outline: none;
+		 cursor:pointer;
+		 box-shadow:5px 5px 5px #666666; 
+		
+}
+
+.prompt_button:hover{
+	background:#1a858e;}
+
+
+
+b{
+	font-weight:300;
+	color: #003737;}
+
+#popup_container {
+
+	
+	min-width: 500px; /* Dialog will be no smaller than this */
+	max-width: 700px; /* Dialog will wrap after this width */
+	min-height: 200px;
+	max-height:300px;
+	border:solid 4px #0e5c68;
+	
+	color: #003737;
+	font-family:Geneva, sans-serif;
+	font-size:1.2em;
+	font-weight:100;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient( #0e5c68, #d2eceb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(  #0e5c68, #d2eceb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #0e5c68, #d2eceb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(  #0e5c68, #d2eceb); /* Standard syntax */
+	 outline: none;
+}
+
+#popup_title {
+	font-size: .9em;
+	font-weight:500;
+	line-height: 1.5em;
+	padding:1% 0 0 10px;
+	color: #fff;
+	height:30px;
+	text-align:left;
+	border-bottom: solid 3px  #219aa0;
+	cursor: default;
+	margin: 0em;
+    background: -webkit-linear-gradient(#14717b, #0e5c68); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #14717b, #0e5c68); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #14717b, #0e5c68); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #14717b, #0e5c68); /* Standard syntax */
+	outline: none;
+}
+
+#popup_content {
+	
+	padding: 1em 2em;
+	margin: 0em;
+	
+	
+}
+
+#popup_content.alert {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popup_content.prompt {
+	
+}
+
+#popup_message {
+	padding-left: 12px;
+	
+	
+		
+}
+
+#popup_panel {
+	text-align: center;
+	
+
+	margin: 2.5em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+	height:25px;
+	color: #666;
+	font-weight:bold;
+	
+	border: 2px solid  #0e5c68 !important;
+		-moz-box-shadow: 0 0 2px #0e5c68 ;
+-webkit-box-shadow: 0 0 2px #0e5c68 ;
+box-shadow: 0 0 2px #0e5c68;
+	 outline: none;
+	
+	
+}
+
+
+
+#popup_content.prompt INPUT[type='button'] {
+	width:100px;
+	height:30px;
+	margin:0 2%;
+	border: outset 2px #0e5c68;
+	color: #fff;
+/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #14717b, #0e5c68); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #14717b ,#0e5c68); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #14717b ,#0e5c68); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #14717b ,#0e5c68); /* Standard syntax */
+	 outline: none;}
+				
+#popup_panel INPUT[type='button'] {
+	width:100px;
+	height:30px;
+	margin:0 2%;
+	border: outset 2px #0e5c68;
+	color: #fff;
+/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #14717b, #0e5c68); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #14717b ,#0e5c68); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #14717b ,#0e5c68); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #14717b ,#0e5c68); /* Standard syntax */
+	 outline: none;
+}
+
+#popup_panel INPUT[type='button']:hover{
+	background:#1a858e;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+@media only screen and (max-width : 1024px) { 
+h1 {padding:12% 1% 0% 1%;}
+
+
+#wrapper{
+				width:85%;
+				
+				height:1200px;		
+		}
+		
+		
+		#wrapper2{
+				width:88%;
+				height:1225px;}
+		
+				   
+    
+}
+@media only screen and (max-width : 980px) {
+	h1 {padding:12% 1% 0% 1%;}	
+	#wrapper{
+				width:85%;
+				
+				height:1600px;		
+		}
+		
+		
+		#wrapper2{
+				width:88%;
+				height:1625px;}}
+	
+@media only screen and (max-width : 640px) {
+	
+	h1 {padding:35% 1% 0% 1%;}}	
+	
+@media only screen and (max-width : 480px) {}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

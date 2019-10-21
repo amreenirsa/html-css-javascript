@@ -1,0 +1,14 @@
+Fonts used in this design;
+
+Font: Aller, 
+Author: Dalton Maag Ltd, 
+Url: http://www.fontsquirrel.com/fonts/aller; 
+
+Font: Amatic, 
+Author: Vernon Adams, 
+Url: http://www.fontsquirrel.com/fonts/amatic; 
+
+Font: Raleway, 
+Author: The League of Moveable Type, 
+Url: http://www.fontsquirrel.com/fonts/raleway; 
+

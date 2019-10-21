@@ -1,0 +1,2848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Presentation</title>
+		
+		
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+        <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+		
+		<!-- Jquerry -->
+
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.ui.draggable.js" type="text/javascript"></script>
+		
+		<!-- Jquerry -->
+		<script src="js/jquery.alerts.js" type="text/javascript"></script>
+		<link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+		<!-- Function Code -->
+		<script src="js/javascript.js" type="text/javascript"></script>
+        <script src="js/javascript 1.js" type="text/javascript"></script>
+         <script src="js/javascript2.js" type="text/javascript"></script>
+        
+      
+  <!-- ===========================
+  Bootstraps
+    =========================== -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    
+    
+		
+</head>
+
+
+<body>
+<div id="head">
+
+
+
+<div id="headoval">
+
+<div id="cwrapper">
+<div id="circle1">
+
+
+
+
+
+
+
+
+
+
+
+<div id="myNav" class="overlayu">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlayu-content">
+<div id="wraper">
+
+
+<div class=" box1">
+<h1>Introduction</h1>
+<ol start="21">
+<li class="accordion">Changing case</li>
+<div class="panel1">
+<ul>
+<li><a href="#lowercase">.toLowerCase()</a></li>
+<li><a href="#uppercase">.toUpperCase()</a></li>
+  
+</ul>
+</div>
+<li class="accordion">Strings: measuring length and extracting parts</li>
+<div class="panel1">
+  <ul>
+  
+  <li><a href="#slice">slice</a></li>
+  <li><a href="#length">length</a></li>
+ 
+  
+  
+  
+  </ul>  
+  
+  
+</div>
+<li class="accordion">Strings: finding segments</li>
+<div class="panel1">
+  <ul>
+  
+  <li><a href="#indexof">indexOf</a></li>
+  <li><a href="#lastindexof">lastIndexOf</a></li>
+ 
+  
+  
+  
+  </ul>  
+</div>
+<li class="accordion">Strings: finding a character at a location</a></li>
+<div class="panel1">
+  <ul>
+  
+  <li><a href="#chart">.charAt(0)</a></li>
+  
+ 
+  
+  
+  
+  </ul>  
+
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+
+<div class=" box">
+
+ <h1>chp # 21 Changing case</h1>
+ <div class=" box">
+<h4 id="lowercase">.toLowerCase()</h4>
+<p>The keyword toLowerCase must be in camelCase.</p>
+<p>toLowerCase method converts all the characters of the string to lowercase,not just the initial letters.</p>
+
+</div>
+ 
+
+
+
+<!-- =====1st alert ===== -->	
+<div class=" box">
+ <h2>Example.1</h2>
+<ol>
+<li>var a = "karachi";</li>
+<li>var b = a.toLowerCase();</li>
+<li>alert(b)</li>
+</ol>
+
+<input class="prompt_button prompt1" type="button" value="Show Result" />
+</div>
+
+
+<div class=" box">
+<h4 id="uppercase">.toUpperCase()</h4>
+<p>The keyword toUpperCase() must be in camelCase.</p>
+<p>toLowerCase method converts all the characters of the string to uppercase not just the initial letters.</p>
+</div>
+
+<!-- =====2nd ===== -->	
+
+
+<div class=" box">
+ 
+<h2>Example.2</h2>
+<ol>
+<li>var a = "karachi" ; </li>
+<li>var b = a.toUpperCase ( ) ; </li>
+<li>alert( b );</li>
+</ol>
+
+
+<input class="prompt_button prompt2" type="button" value="Show Result" />
+</div>
+
+
+
+
+
+
+<!-- =====3rd alert ===== -->	
+<div class=" box">
+ <h2>Example.3</h2>
+<ol>
+<li>var cities = ["Karachi","Lahore","Islamabd","Hyderabad"];</li>
+<li> var myCity = "KarAchi";</li>
+<li>alert(myCity.toUpperCase());</li>
+<li>alert(myCity.toLowerCase());</li>
+<li>for(var i=0;i< cities.length;i++){</li>
+<li>if(cities[i] === myCity){</li>
+<li> alert("Yes Found");</li>
+<li>}</li>
+<li>}</li>
+</ol>
+
+<input class="prompt_button prompt3" type="button" value="Show Result" />
+</div>
+
+<!-- =====4th ===== -->	
+
+
+<div class=" box">
+ <h2>Example.4</h2>
+<ol>
+<li>var cities = ["Karachi","Lahore","Islamabd","Hyderabad"];</li>
+<li> var myCity = "KarAchi";</li>
+<li>for(var i=0;i< cities.length;i++){</li>
+<li>//if(cities[i].toLowerCase() === myCity.toLowerCase()){</li>
+<li>if(cities[i].toUpperCase() === myCity.toUpperCase()){ </li>
+
+<li> alert("Yes Found");</li>
+<li>}</li>
+<li>}</li>
+</ol>
+
+
+<input class="prompt_button prompt4" type="button" value="Show Result" />
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- =====5th ===== -->	
+
+<div class="box">
+   
+  <h2>Example.5</h2>
+<ol>
+<li>var cities = ["Karachi","Lahore","Islamabd","Hyderabad"];</li>
+<li> var myCity = "KarAchi";</li>
+<li>var myCity = myCity.toUpperCase();</li>
+<li>for(var i=0;i< cities.length;i++){</li>
+<li>if(cities[i].toUpperCase() === myCity){</li>
+
+<li> alert("Yes Found");</li>
+<li>}</li>
+<li>}</li>
+</ol>
+
+<input class="prompt_button prompt5" type="button" value="Show Result" />
+</div>
+
+
+<!-- =====6th ===== -->	
+
+<div class="box">
+   
+  
+
+<h2>Example.6</h2>
+<ol>
+<li>var cityToCheck = prompt("Enter your city");</li>
+<li>cityToCheck = cityToCheck.toLowerCase();</li>
+<li>var cleanestCities = ["cheyenne", "santa fe", "tucson", "great falls", "honolulu"];</li>
+<li>for (var i = 0; i <= 4; i++) {</li>
+<li> if (cityToCheck === cleanestCities[i]) {</li>
+<li>alert("It's one of the cleanest cities");</li>
+<li> }</li>
+<li> }</li>
+<li>if ( matchFound === false){</li>
+<li>alert("It's not one of the cleanest cities");</li>
+<li>}</li>
+
+
+</ol>
+
+<input class="prompt_button prompt6" type="button" value="Show Result" />
+</div>
+
+</div>
+
+<!--======================================CHP 22================================================-->
+ <div class="box">
+
+<h1>chp # 22 Strings : Measuring length and extracting parts</h1>
+
+
+
+
+	
+   <div class="box">
+   
+
+<h4 id="slice">slice</h4>
+<p>To copy a section of a string, you use the slice method.</p>
+<p>The first digit inside the parentheses is the index of the first element to be copied. The
+second digit is the index of the element after the last element to be copied.</p>
+<p>A string is indexed like an array. Only, instead of each index number referring to an
+element, it refers to a character.</p>
+<p>Like array indexing, string indexing begins with 0.</p>
+<p>In the slice method, the first number inside the parentheses is the index of the first
+character in the slice. The second number is not, however, the last character in the slice.
+It's the first character after the slice. If you subtract the first index from the second index,
+you'll always get the length of the slice.</p>
+</div>
+
+
+
+
+<!-- ===== 1 ===== -->	
+   <div class="box">
+  
+<h2>Example.1</h2>
+<ol>
+
+<li>var city = "karachi";</li>
+<li>var a = city.slice(0,2);</li>
+<li>alert(a);</li>
+</ol>
+
+<input class="prompt_button prompt22-1" type="button" value="Show Result" />
+</div>
+
+<!-- ===== 2 ===== -->	
+   <div class="box">
+   
+ <h2>Example.2</h2>
+<ol>
+<li>var city = "karachi";</li>
+<li>var a = city.slice(2,6);</li>
+<li>alert(a);</li>
+</ol>
+
+<input class="prompt_button prompt22-2" type="button" value="Show Result" />
+</div>
+
+
+<!-- ===== 3 ===== -->	
+<div class="box">
+<h2>Example.3</h2>
+<ol>
+<li>var city = "karachi";</li>
+<li>var a = city.slice(3,9);</li>
+<li>alert(a);</li>
+</ol>
+
+<input class="prompt_button prompt22-3" type="button" value="Show Result" />
+</div>   
+
+
+<!-- ===== 4 ===== -->
+	
+<div class="box">
+ <h2>Example.4</h2>
+<ol>
+<li>var city = "karachi";</li>
+<li>var a = city.slice(2);</li>
+<li>alert(a);</li>
+</ol>
+
+<input class="prompt_button prompt22-4" type="button" value="Show Result" />
+</div>  
+
+
+<!-- ===== 5th ===== -->
+	
+<div class="box">
+<h2>Example.5</h2>
+<ol>
+<li>var city = prompt("please enter a city name");</li>
+<li>var firstChar = city.slice(0,1);</li>
+<li>var firstChar = firstChar.toUpperCase();</li>
+<li>var otherChar = city.slice(1);</li>
+<li>var otherChar = otherChar.toLowerCase();</li>
+<li>var c = firstChar + otherChar;</li>
+<li>alert(c);</li>
+</ol>
+
+<input class="prompt_button prompt22-5" type="button" value="Show Result" />
+</div>  
+
+<div class="box">
+
+<h4 id="length">length</h4>
+<p>To find the number of characters in a string.</p>
+<p>Remember, the length is 1-based.</p>
+
+</div>
+
+<!-- ===== 6th ===== -->
+	
+<div class="box">
+<h2>Example.6</h2>
+<ol>
+<li>var city = prompt("please enter a city name");</li>
+<li>var c =  city.length;</li>
+<li>alert(c);</li>
+</ol>
+
+<input class="prompt_button prompt22-6" type="button" value="Show Result" />
+</div>  
+
+
+
+
+
+
+
+<!-- ===== 7 ===== -->
+	
+<div class="box">
+
+<h2>Example.7</h2>
+<ol>
+<li>var month = prompt("Enter a month");</li>
+<li>//var month = "Nov";</li>
+<li> alert(month);</li>
+<li>var monthLength = month.length; </li>
+<li>  alert(monthLength);</li>
+<li>if(monthLength > 3){</li>
+<li>  alert("yes");</li>
+<li>alert(month.slice(0,3));</li>
+<li>}</li>
+<li>else {</li>
+<li>alert("No");</li>
+<li>alert(month);</li>
+<li>}</li>
+
+<li>}</li></ol>
+
+<input class="prompt_button prompt22-7" type="button" value="Show Result" />
+</div>
+
+
+
+<!-- ===== 8 ===== -->
+	
+<div class="box">
+
+<h2>Example.8</h2>
+<ol>
+
+<li> var str = prompt("Enter some text");</li>
+ <li>var numChars = str.length;</li>
+ <li>var matchFound = false;</li>
+ <li>for (var i = 0; i < numChars; i++) {</li>
+	 
+     <li>if (str.slice(i, i + 2) === "  ") {</li>
+     <li>alert("double spaces!");</li>
+   <li> matchFound = true;</li>
+     <li>break;</li>
+<li>}</li>
+<li>}</li>
+<li>if (matchFound === false){</li>
+ <li>alert("No double spaces!");</li>
+<li>}</li>
+<li>}</li></ol>
+
+<input class="prompt_button prompt22-8" type="button" value="Show Result" />
+</div>
+
+</div>
+<!--======================================CHP 23================================================-->
+<div class="box">
+<h1>chp # 23 Strings : Finding segments</h1>
+
+<div class="box">
+<h4 id="indexof">indexOf</h4>
+
+<p>The method finds the index of the first character of the segment.</p>
+<p>It will count the spaces.</p>
+<p>It start with 0 index.</p>
+<p>If the segment doesn't exist, the method assigns -1.</p>
+
+ </div>   
+    <!-- =====1 ===== -->
+
+    
+<div class="box">
+<h2>Example.1</h2>
+<ol>
+<li>var text ="World War II (often abbreviated to WWII or WW2), also known as the Second World War.World War II altered the political alignment and social structure of the world World War II"; </li>
+ <li>for (var i = 0; i < text.length; i++) { </li>
+ <li>if (text.slice(i, i + 12) === "World War II") { </li>
+ <li>text = text.slice(0, i) + "the Second World War" + text.slice(i + 12); </li>
+ <li>}</li>
+<li>}</li>
+<li>alert(text)</li>
+</ol>
+<!--
+<script>
+var text ="World War II (often abbreviated to WWII or WW2), also known as the Second World War.World War II altered the political alignment and social structure of the world World War II";
+for (var i = 0; i < text.length; i++) {
+if (text.slice(i, i + 12) === "World War II") {
+text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
+}
+
+
+}
+alert(text)
+
+</script>
+-->
+
+<input class="prompt_button prompt23-1" type="button" value="Show Result" />
+</div>
+
+<!-- ===== 2 ===== -->
+	
+<div class="box">
+ <h2>Example.2</h2>
+<ol>
+    <li>var text = "The quick brown fox jumps over the lazy dog";</li>
+    <li>var indexVal1 = text.indexOf("brown");</li>
+    <li>var indexVal2 = text.indexOf("over");</li>
+    <li>var indexVal3 = text.indexOf("test");</li>
+    <li>var indexVal4 = text.indexOf("b");</li>
+    <li>var indexVal5 = text.indexOf("B");</li>
+    <li>var indexVal6 = text.indexOf("o"); // multiple existance</li>
+
+   <li> alert(indexVal1);</li>
+    <li>alert(indexVal2);</li>
+    <li>alert(indexVal3);</li>
+    <li>alert(indexVal4);</li>
+    <li>alert(indexVal5);</li>
+    <li>alert(indexVal6);</li>
+</ol>
+
+<input class="prompt_button prompt23-2" type="button" value="Show Result" />
+</div>
+
+
+<!-- ===== 3 ===== -->
+	
+<div class="box">
+ <h2>Example.3</h2>
+<ol>
+<li>var text ="World War II (often abbreviated to WWII or WW2), also known as the Second World War.World War II altered the political alignment and social structure of the world"; </li>
+<li> var firstChar = text.indexOf("World War II");</li>
+ <li>if (firstChar !== -1) {</li>
+ <li>text = text.slice(0, firstChar) + "the Second World War" + text.slice(firstChar + 12);</li>
+ <li>alert(text);</li>
+</ol>
+<input class="prompt_button prompt23-3" type="button" value="Show Result" />
+</div>
+
+
+<!-- ===== 4 ===== -->
+	
+<div class="box">
+ <h2>Example.4</h2>
+<ol>
+<li>var text = "The quick fox jumps over the brown lazy dog";</li>
+    
+    <li>var firstCharIndex = text.indexOf("brown");</li>
+  <li>  alert(firstCharIndex);</li>
+    <li>if(firstCharIndex !== -1){</li>
+        <li>var a = text.slice(0,firstCharIndex);</li>
+        <li>var b = text.slice(firstCharIndex+5);</li>
+        <li>alert(a);</li>
+       <li> alert(b);</li>
+        <li>alert(text);</li>
+
+      <li>  var c = a + "white"+ b;</li>
+        <li>alert(c);</li>
+</ol>
+<input class="prompt_button prompt23-4" type="button" value="Show Result" />
+</div>
+
+
+
+<div class="box">
+<h4 id="lastindexof">lastIndexOf</h4>
+<p>To find the last instance of a segment in a string, use lastIndexOf.</p>
+	</div>
+
+<!-- ===== 5 ===== -->
+	
+<div class="box">
+ 
+
+<h2>Example.5</h2>
+<ol>
+<li>var text = "The quick fox jumps over the brown lazy dog";</li>
+<li>var firstCharIndex = text.indexOf("o");</li>
+<li>var lastCharIndex = text.lastIndexOf("o");</li>
+<li>alert(firstCharIndex);</li>
+<li>alert(lastCharIndex);</li>
+</ol>
+
+<input class="prompt_button prompt23-5" type="button" value="Show Result" />
+</div>
+
+
+<!-- ===== 6 ===== -->
+	
+<div class="box">
+ 
+
+<h2>Example.6</h2>
+<ol>
+<li>var text = "The quick brown fox jumps over the lazy dog";</li>
+<li>var firstCharIndex = text.indexOf("o",19);</li>
+<li> alert(firstCharIndex);   </li>
+</ol>
+<input class="prompt_button prompt23-6" type="button" value="Show Result" />
+</div>
+
+
+<!-- ===== 7 ===== -->
+	
+<div class="box">
+ 
+ <h2>Example.7</h2>
+<ol>
+<li>var text = "The quick brown fox jumps over the lazy dog"; </li>
+<li>var startIndex = 0; </li>
+<li>var counter = 0; </li>
+<li>for(var a = 0; a < text.length ;a++){ </li>
+<li>var newIndex = text.indexOf("e",startIndex); </li>
+<li>if(newIndex !== -1){ </li>
+<li>counter++; </li>
+<li>startIndex = newIndex + 1; </li>
+<li>}</li>
+<li>}</li>
+ <li>alert(counter);</li>
+</ol>
+<input class="prompt_button prompt23-7" type="button" value="Show Result" />
+</div>
+
+</div>
+<!--======================================CHP 24================================================-->
+<div class="box">
+
+<h1>chp # 24 Strings : Finding a character at a location.</h1>
+<div class="box">
+<h4 id="chart">charAt(Number)</h4>
+<p>CharAt finds a single character at index-0 (or index number which in parenthesis).</p>
+<p>Note: The indexOf method can only identify the character at a particular location. It can't
+change the character at a location.</p>
+
+</div>
+<!-- =====1 ===== -->
+	
+<div class="box">
+<h2>Example.1</h2>
+<ol>
+<li>var text = "The quick brown fox jumps over the lazy dog";</li>
+<li>alert(text.charAt(13));</li>
+</ol><input class="prompt_button prompt24-1" type="button" value="Show Result" />
+</div>
+
+<!-- ===== 2 ===== -->
+	
+<div class="box">
+
+
+<h2>Example.2</h2>
+
+<ol>
+<li>var text = "The quick brown fox jumps over the lazy dog";</li>
+<li>alert(text.charAt(text.length - 1));</li>
+</ol>
+<input class="prompt_button prompt24-2" type="button" value="Show Result" />
+
+</div>
+
+<!-- ===== 3 ===== -->
+	
+<div class="box">
+ <h2>Example.3</h2>
+<ol>
+<li> var text = "Hurahh!"  </li>
+<li>for (var i = 0; i < text.length; i++) {</li>
+<li>if (text.charAt(i) === "!") {</li>
+<li>alert("Exclamation point found!");</li>
+<li>break;</li>
+<li>}</li>
+<li>}</li>
+</ol>
+
+<input class="prompt_button prompt24-3" type="button" value="Show Result" />
+</div>
+
+
+
+
+
+</div>
+</div>
+  
+  
+  
+  
+  
+  </div>
+</div>
+
+<h10 onclick="openNav()">&#9776; Chp # 21-24</h10>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+</div>
+<div id="circle2">
+
+
+
+
+
+
+
+
+
+<div id="myNava" class="overlayu">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNava()">&times;</a>
+<div class="overlayu-content">
+<div id="wraper">
+
+
+<div class=" box1">
+<h1>Introduction</h1>
+<ol start="25">
+<li class="accordion">Strings : replacing characters.</li>
+<div class="panel1">
+<ul>
+<li><a href="#replace">replace</a></li>
+<li><a href="#globalreplace">global replace</a></li>
+  
+</ul>
+</div>
+<li class="accordion">Rounding numbers.</li>
+<div class="panel1">
+  <ul>
+  
+  <li><a href="#round">Math.round(variable/number).</a></li>
+  <li><a href="#ceil">Math.ceil(variable/number).</a></li>
+   <li><a href="#floor">Math.floor(variable/number)..</a></li>
+   
+ 
+  
+  
+  
+  </ul>  
+  
+  
+</div>
+<li class="accordion">Generating random numbers.</li>
+<div class="panel1">
+  <ul>
+  
+  <li><a href="#random">Math.random()</a></li>
+ 
+ 
+  
+  
+  
+  </ul>  
+</div>
+
+
+<li class="accordion">Converting strings to integers and decimals.</a></li>
+<div class="panel1">
+  <ul>
+  <li><a href="#jst">how to treated string</a></li>
+  <li><a href="#parseint">parseInt(varibale/string)</a></li>
+  <li><a href="#parsefloat">parseFloat(varibale/string)</a></li>
+  </ul>  
+
+</div>
+
+
+<li class="accordion">Converting strings to numbers, numbers to strings</a></li>
+<div class="panel1">
+  <ul>
+  
+  <li><a href="#number">Number(variable/integerString)</a></li>
+  <li><a href="#tostring">.toString()</a></li>
+  </ul>  
+
+</div>
+
+<li class="accordion">Converting strings to numbers, numbers to strings</a></li>
+<div class="panel1">
+  <ul>
+  
+  <li><a href="#tofixed">toFixed(Nuumbers)</a></li>
+  
+  </ul>  
+
+</div>
+
+
+
+
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+
+<div class=" box">
+<h1>chp #25 Strings : Replacing characters.</h1>
+ <div class=" box">
+<h4 id="replace">replace.</h4>
+<p>.replace( "1st string", "2nd string");</p>
+<p>The first string inside the parentheses is the segment to be replaced. The second string is
+the segment to be inserted.</p>
+<p>replaced only the first instance of a string is replaced.</p>
+
+</div>
+
+
+ <div class=" box">
+<h4 id="globalreplace">global replace</h4>
+<p>If you want to replace all instances, you must let JavaScript know that you want a global replace.</p>
+
+<p>text.replace(/1st string/g, "2nd string");</p>
+<p>In a global replace, you enclose the segment to be replaced by slashes instead of
+quotation marks, and follow the closing slash with "g" for "global." The segment to be inserted
+is enclosed by quotation marks, as in a one-time replace.</p>
+
+</div>
+
+
+<!-- =====1st alert ===== -->	
+<div class=" box">
+ 
+<h2>Example.1</h2>
+<ol>
+<li>var text = "the quick brown fox jumps over the lazy dog";</li>
+<li>var nextText1 = text.replace("brown","white");</li>
+<li>var nextText2 = text.replace("hello","white");</li>
+<li>var nextText3 = text.replace(/the/g,"not");</li>
+    
+    <li>alert(text);</li>
+    <li>alert(nextText1);</li>
+    <li>alert(nextText2);</li>
+     <li>alert(nextText3);</li>
+</ol>
+
+<input class="prompt_button prompt25-1" type="button"  value="Show Result" />
+</div>
+
+</div>
+
+
+
+<!--======================================CHP 26================================================-->
+
+
+<div class=" box">
+
+<h1>chp #26 Rounding numbers</h1>
+<div class=" box">
+<h4 id="round">Math.round(variable/number).</h4>
+<p>rounds it to the nearest integer.</p>
+<p>Things to keep in mind:</p>
+<p>Math. is how all math functions begin. The "M" must be capped.</p>
+<p>The function rounds up when the decimal is .5. It rounds 1.5 to 2, 2.5 to 3, etc. It rounds -
+1.5 to -1, -2.5 to -2, etc.</p>
+</div>
+
+<!-- ===== 1  ===== -->	
+
+
+<div class=" box">
+ 
+
+<h2>Example.1</h2>
+<ol>
+<li>var a = Math.round(3.4);</li>
+<li>    alert(a);</li>
+
+ <li>   var b = Math.round(3.5);</li>
+    <li>alert(b);</li>
+
+    <li>var c = Math.round(3.7);</li>
+    <li>alert(c);</li>
+
+    <li>var d = Math.round(-3.7);</li>
+   <li> alert(d);</li>
+
+   <li> var e = Math.round(-3.5);</li>
+   <li> alert(e);</li>
+
+   <li> var f = Math.round(-3.2);</li>
+   <li> alert(f);</li>
+</ol>
+
+
+<input class="prompt_button prompt26-1"  type="button" value="Show Result" />
+</div>
+
+
+
+
+
+
+<!-- ===== 2 alert ===== -->	
+<div class=" box">
+ <h2>Example.2</h2>
+<ol>
+<li>var a = Math.round(0.0678437);</li>
+<li>    alert("A : "+a);</li>
+
+<li>    var b = Math.round(.2678437);</li>
+<li>    alert("B : " + b);</li>
+
+<li>    var c = Math.round(.6678437);</li>
+<li>    alert("C : " + c );</li>
+</ol>
+
+<input class="prompt_button prompt26-2"   type="button" value="Show Result" />
+</div>
+
+
+
+<div class=" box">
+<h4 id="ceil">Math.ceil(variable/number).</h4>
+<p>To force JavaScript to round up to the nearest integer, no matter how small the fraction,
+use ceil instead of round. The following code rounds .000001, which would normally round
+down to 0, up to the nearest integer, 1.</p>
+<p>ceil stands for "ceiling." It rounds .000001 up to 1, -.000001 up to 0, 1.00001 up to 2,
+and so on.</p>
+</div>
+<!-- ===== 3 alert ===== -->	
+
+<div class=" box">
+<h2>Example.3</h2>
+<ol>
+
+   <li> var c = Math.ceil(3.4);</li>
+   <li> alert("C : " + c);</li>
+
+  <li>  var d = Math.ceil(3.9);</li>
+  <li>  alert("D : " + d );</li>
+</ol>
+<input class="prompt_button prompt26-3"   type="button" value="Show Result" />
+</div>
+
+<!-- ===== 4 alert ===== -->	
+
+<div class=" box">
+<h2>Example.4</h2>
+<ol>
+
+   <li> var c = Math.ceil(-3.4);</li>
+   <li> alert("C : " + c);</li>
+
+  <li>  var d = Math.ceil(-3.9);</li>
+  <li>  alert("D : " + d );</li>
+</ol>
+<input class="prompt_button prompt26-4"  type="button" value="Show Result" />
+</div>
+
+
+<!-- ===== 5 alert ===== -->	
+
+
+<div class=" box">
+
+<h4 id="floor">Math.floor(variable/number).</h4>
+<p>To force JavaScript to round down to the nearest integer, no matter how large the
+fraction, use floor instead of round. The following code rounds .999999, which would
+normally round up to 1, down to 0.</p>
+<p>floor rounds .999999 down to 0, 1.9 down to 1, -.000001 down to -1, and so on.</p>
+
+
+</div>
+
+<!-- ===== 6 alert ===== -->	
+
+
+<div class=" box">
+
+<h2>Example.5</h2>
+<ol>
+<li>var a = Math.floor(3.4);</li>
+ <li>   alert("A : " + a);</li>
+
+  <li>  var b = Math.floor(3.9);</li>
+  <li>  alert("B : " + b );</li>
+
+  
+</ol>
+<input class="prompt_button prompt26-5"  type="button" value="Show Result" />
+</div>
+
+<div class=" box">
+
+<h2>Example.6</h2>
+<ol>
+<li>var a = Math.floor(-3.4);</li>
+ <li>   alert("A : " + a );</li>
+
+  <li>  var b = Math.floor(-3.9);</li>
+  <li>  alert("B : " + b );</li>
+
+   
+</ol>
+<input class="prompt_button prompt26-6"   type="button" value="Show Result" />
+
+</div>
+
+
+
+</div>
+
+
+<!--======================================CHP 27================================================-->
+
+<div class=" box">
+<h1>chp #27 Generating random numbers</h1>
+
+
+
+
+
+<div class=" box">
+<h4 id="random">Math.random().</h4>
+<p>JavaScript to generate a random number.(Well, it's almost random, technically known as pseudo-random, butit's close enough to random for most purposes.)</p>
+<p>The following code generates a pseudo-random number, with 16 decimal places, ranging
+from 0.0000000000000000 through 0.9999999999999999 and assigns it to the variable
+randomNumber.</p>
+
+<p>var randomNumber = Math.random()</p>
+
+<p>The function always delivers a 16-place decimal that ranges from 0.0000000000000000
+to 0.9999999999999999. We can convert the decimal to an integer by multiplying by one
+hundred quadrillion (1 followed by 17 zeroes):</p>
+
+<p>0.0000000000000000 * 100000000000000000 = 0 </p>
+<p>0.7474887706339359 * 100000000000000000 = 7474887706339359 </p>
+<p>0.9999999999999999 * 100000000000000000 = 9999999999999999 </p>
+
+<p>Trillions of possible numbers are more than we need in our virtual die throw. We just
+want six possible numbers, 1 through 6. So instead of multiplying by a hundred quadrillion, our
+first step is to multiply the giant decimal by 6.</p>
+
+<p>0.0000000000000000 * 6 = 0</p>
+
+<p>0.7474887706339359 * 6 = 4.7474887706339359</p>
+
+<p>0.9999999999999999 * 6 = 5.9999999999999994</p>
+
+<p>Intuition may tell you that you can finish the job by rounding, but that doesn't work out
+mathematically. Because nothing rounds up to 0 and nothing rounds down to 6, the numbers in
+the middle, which are reached both by rounding up and rounding down, will come up almost
+twice as often. But we can give all the numbers an equal chance if we add 1 to the result, then
+round down.</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- =====1 ===== -->	
+
+<div class="box">
+   
+  <h2>Example.1</h2>
+<ol>
+<li>var a = Math.random();</li>
+ <li>alert(a);</li>
+ <li>var b = a*10;</li>
+ <li>var c = a*100;</li>
+ <li>var d = a*1000;</li>
+
+
+  <li>  alert("A : " + a + " -- B : " + b);</li>
+ <li>   alert("C : " + c + " -- D : " + d);</li>
+    
+   </ol> 
+<input class="prompt_button prompt27-1"   type="button" value="Show Result" />
+
+</div>
+
+
+<!-- =====2 ===== -->	
+
+<div class="box">
+<h2>Example.2</h2>
+<ol>
+<li>var bigDecimal = Math.random();</li>
+<li>var improvedNum = (bigDecimal * 6);</li>
+ <li>var addOneInNum = improvedNum + 1;</li>
+  <li>var numberOfStars = Math.floor(addOneInNum);</li>
+
+ <li>alert(bigDecimal + " -- " + improvedNum + " -- " + addOneInNum + " -- " + numberOfStars);</li>
+</ol>
+
+<input class="prompt_button prompt27-2"   type="button" value="Show Result" />
+</div>
+
+
+
+
+<!-- =====3 ===== -->
+
+
+<div class="box">
+<h2>Example.3</h2>
+<ol>
+<li>var bigDecimal = Math.random();</li>
+<li>var improvedNum = (bigDecimal * 2);</li>
+ <li>var addOneInNum = improvedNum + 1;</li>
+  <li>var numberOfStars = Math.floor(addOneInNum);</li>
+ <li>if(numberOfStars == 1){</li>
+ <li>a ="Tail"</li>
+	
+ <li>}</li>
+ <li>else if(numberOfStars == 2){</li>
+ <li>a ="Head"</li>
+	
+ <li>}	</li>
+	
+	
+  <li>alert( numberOfStars + "\n" + "Random coin value " + a );</li>
+</ol>
+<input class="prompt_button prompt27-3"   type="button" value="Show Result" />
+</div>
+
+
+
+<!-- =====4 ===== -->
+
+
+
+<div class="box">
+
+<h2>Example.4</h2>
+<ol>
+<li>var bigDecimal = Math.random();</li>
+<li>var improvedNum = (bigDecimal * 100);</li>
+<li>var addOneInNum = improvedNum + 1;</li>
+<li>var numberOfStars = Math.floor(addOneInNum);</li>
+<li>alert("Random number between 1 and 100 is " + numberOfStars  );</li>
+</ol>
+<input class="prompt_button prompt27-4"   type="button" value="Show Result" />
+</div>
+
+<div class="box">
+
+
+
+
+<!-- ===== 5 ===== -->
+<h2>Example.5</h2>
+<ol>
+<li>var a = prompt("please enter number between 1-10");</li>
+
+<li>if(a > 10  ||  a < 1){</li>
+<li>b = "please enter number between 1-10" ; }</li>
+	
+	
+    <li>else{</li>
+    <li>var bigDecimal = Math.random();</li>
+    <li>var improvedNum = (bigDecimal * 10)</li>
+    <li>var addOneInNum = improvedNum + 1;</li>
+    <li>var numberOfStars = Math.floor(addOneInNum);</li>
+	<li>if(a === numberOfStars){</li>
+	<li>	b = "Congratulation" + a + "is secret number";}</li>
+	<li>else{</li>
+	<li>	b = "Try again the secret number is " +numberOfStars ;}</li>	
+<li>}</li>
+<li>alert( b );</li>
+<li>}</li>
+</ol>
+<input class="prompt_button prompt27-5"   type="button" value="Show Result" />
+
+</div>
+
+</div>
+
+
+<!--======================================CHP 28================================================-->
+
+
+<div class="box">
+<h1>chp #28 Converting strings to integers and decimals</h1>
+<div class="box">
+<h4 id="jst">How to treated string</h4>
+
+<p>the value comes from a user's prompt response is always string.</p>
+
+<p>But when the value appears in an arithmetic expression, the value is automatically (and temporarily) converted to a number to make the math work.</p>
+
+<p>Similarly, if you ask JavaScript to divide "100" by 2 or multiply "2.5" by 2.5, JavaScript
+seems to understand that you want the string treated as a number, and does the math. You can
+even ask JavaScript to multiply, divide, or subtract using nothing but strings as terms, and
+JavaScript, interpreting your intentions correctly, does the math.</p>
+
+<p>It probably goes without saying that the string you ask JavaScript to do math on has to be
+a number contained in quotes, like "50", not letter characters. If you write...
+</p>
+
+<p>var profit = "200" - "duck";</p>
+
+<p>an alert will display saying "NaN" meaning "not a number."</p>
+<p>If the + in the expression were one of the other
+arithmetic operators(-, *, or /), JavaScript would convert the string "200" to the number 200
+and do the math.</p>
+</div>
+
+
+
+
+<div class="box">
+
+
+
+<h2>Example.1</h2>
+<ol>
+<li> var a = 23;</li>
+
+<li>    var b = "23";</li>
+
+<li>    var c = b + 5;</li>
+
+<li>alert(c);</li>
+
+    
+</ol>
+<input class="prompt_button prompt28-1"   type="button" value="Show Result" />
+</div>
+
+
+
+<div class="box">
+
+<h2>Example.2</h2>
+<ol>
+<li>var a = 23;</li>
+
+<li>var b = "abc";</li>
+
+<li>var c = b + 5;</li>
+
+<li>alert(c);</li>
+
+    
+</ol>
+<input class="prompt_button prompt28-2"   type="button" value="Show Result" />
+
+
+</div>
+
+
+
+<div class="box">
+
+
+
+<h2>Example.3</h2>
+<ol>
+<li>var a = prompt("Enter your age");</li>
+<li>var b = a + 5;</li>
+<li>alert(a);</li>
+<li>alert(b);</li>
+
+    
+</ol>
+<input class="prompt_button  prompt28-3"   type="button" value="Show Result" />
+
+</div>
+
+
+
+<div class="box">
+
+<h2>Example.4</h2>
+<ol>
+<li>var currentAge = prompt("Enter your age.");</li>
+ <li>var yearsEligibleToVote = currentAge - 18;</li>
+   <li>var concatNumbers = currentAge + 18;</li>
+<li>alert(currentAge);</li>
+ <li>alert(yearsEligibleToVote);</li>
+<li>alert(concatNumbers);</li>
+
+    
+</ol>
+<input class="prompt_button  prompt28-4"  type="button" value="Show Result" />
+</div>
+
+
+
+<div class="box">
+
+
+<h2>Example.5</h2>
+<ol>
+<li>var profit = "200" - "150";</li>
+<li>var profit1 = "200" - "duck";</li>
+
+ <li>alert(profit);</li>
+
+ <li>alert(profit1);</li>
+
+    
+</ol>
+<input class="prompt_button  prompt28-5"   type="button" value="Show Result" />
+
+
+</div>
+
+
+<div class="box">
+<h4 id="parseint">parseInt(varibale/string)/</h4>
+
+<p>parseInt converts all strings, including strings comprising floating-point numbers, to
+integers. And shocking but true: It it doesn't round. It simply lops off the decimals.</p>
+
+
+<p>In the following statement, myInteger is assigned not 2 as you might expect, but 1.
+</p>
+<p>var myInteger = parseInt("1.9999");</p>
+
+</div>
+
+
+
+
+<div class="box">
+
+
+<h2>Example.6</h2>
+<ol>
+<li>var currentAge = prompt("Enter your age.");</li>
+<li>var qualifyingAge = parseInt(currentAge) + 1;</li>
+<li>var ageStr = currentAge + 1;</li>
+
+<li>alert(currentAge);</li>
+ <li>alert(qualifyingAge);</li>
+ <li>alert(ageStr);</li>
+</ol>
+<input class="prompt_button  prompt28-6"  onclick="chp28_6()" type="button" value="Show Result" />
+    
+</div>
+<div class="box">
+<h4 id="parsefloat">parseFloat(varibale/string)/</h4>
+<p>To preserve any decimal values, use parseFloat.</p>
+
+</div>
+
+
+<div class="box">
+
+<h2>Example.7</h2>
+<ol>
+<li>var num = "2.333"</li>
+<li>var convertedNum = parseInt(num);</li>
+<li>var convertedNumDecimal = parseFloat(num);</li>
+<li>var newVal = convertedNumDecimal + 1;</li>
+
+<li>alert(num);</li>
+<li>alert(convertedNum);</li>
+ <li>alert(convertedNumDecimal);</li>
+ <li>alert(newVal);</li>
+
+    
+</ol>
+<input class="prompt_button  prompt28-7"  type="button" value="Show Result" />
+</div>
+
+
+<div class="box">
+<h2>Example.8</h2>
+<ol>
+<li>var num = "-2.333"</li>
+<li>var convertedNum = parseInt(num);</li>
+<li>var convertedNumDecimal = parseFloat(num);</li>
+
+
+<li>alert(num);</li>
+<li>alert(convertedNum);</li>
+ <li>alert(convertedNumDecimal);</li>
+ 
+    
+</ol>
+<input class="prompt_button  prompt28-8"   type="button" value="Show Result" />
+</div>
+</div>
+
+
+
+
+
+<!--======================================CHP 29================================================-->
+
+<div class="box">
+<h1>chp #29 Converting strings to numbers , numbers to strings</h1>
+
+<div class="box">
+
+<h4 id="number">Number(variable/integerString)</h4>
+
+<p>Converts the string to the numbers.</p>
+<p>This handy conversion tool converts a string representing either an integer or a floating-point number to a number that's identical to the one inside the parentheses.</p>
+</div>
+
+
+
+
+
+
+<div class="box">
+<h2>Example.1</h2>
+<ol>
+<li>var a = "34";</li>
+<li>alert(a);</li>
+
+<li>var b = Number(a) + 4;</li>
+ <li>alert(b);</li>
+ 
+    
+</ol>
+<input class="prompt_button  prompt29-1"   type="button" value="Show Result" />
+
+</div>
+
+
+<div class="box">
+
+<h2>Example.2</h2>
+<ol>
+<li>var num = "2.333";</li>
+ <li>var convertedNum = Number(num);</li>
+ 
+ <li>var newVal = convertedNumDecimal + 1;</li>
+
+<li>alert(num);</li>
+
+ <li>alert(convertedNumDecimal);</li>
+<li>alert(newVal);</li>
+ 
+    
+</ol>
+<input class="prompt_button  prompt29-2"   type="button" value="Show Result" />
+
+</div>
+
+<div class="box">
+<h4 id="tostring">.toString()</h4>
+
+<p>Converting a number to a string.</p>
+
+</div>
+
+<div class="box">
+
+
+<h2>Example.3</h2>
+<ol>
+<li>var num = 1548;</li>
+ <li>var newVal = num + 1;</li>
+ <li> alert(num);</li>
+<li> alert(newVal);</li>
+
+<li>var numString = num.toString();</li>
+ <li>alert(numString.length);</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt29-3"  type="button" value="Show Result" /></div>
+
+</div>
+</div>
+
+
+<!--======================================CHP 30================================================-->
+<div class="box">
+
+<h1>chp #30 Controlling the length of decimals</h1>
+
+<div class="box">
+<h4 id="tofixed">toFixed(Nuumbers)</h4>
+<p>To shorten a number to no decimals, leave the parentheses empty.</p>
+<p>The number inside the parentheses tells JavaScript how many places to round the decimal to.</p>
+<p>toFixed method comes with a surprise inside. If a decimal ends in 5, it usually rounds up, as you would expect. But, depending on the browser, sometimes it rounds down! If, for example, you apply the method to 1.555, specifying 2 decimal places, it may give you "1.56". Or it may produce "1.55".</p>
+</div>
+
+<!----------   1 ---------------->
+
+<div class="box">
+<h2>Example.1</h2>
+<ol>
+<li>var a = 1.3;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-1"   type="button" value="Show Result" />
+
+</div>
+
+
+
+<!----------   2 ---------------->
+
+<div class="box">
+<h2>Example.2</h2>
+<ol>
+
+<li>var a = 1.5;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)
+
+</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-2"   type="button" value="Show Result" />
+
+</div>
+
+
+
+
+<!----------   3 ---------------->
+
+<div class="box">
+<h2>Example.3</h2>
+<ol>
+
+
+<li>var a = 1.6;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)
+
+</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-3"   type="button" value="Show Result" />
+
+</div>
+
+
+
+<!----------   4 ---------------->
+
+<div class="box">
+<h2>Example.4</h2>
+<ol>
+<li>var a = 1.49;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)
+
+
+</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-4"   type="button" value="Show Result" />
+
+</div>
+
+
+
+
+<!----------   5 ---------------->
+
+<div class="box">
+<h2>Example.5</h2>
+<ol>
+<li>var a = 1.50;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-5"   type="button" value="Show Result" />
+
+</div>
+
+
+
+<!----------   6 ---------------->
+
+<div class="box">
+<h2>Example.6</h2>
+<ol>
+<li>var a = 1.77;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-6"   type="button" value="Show Result" />
+
+</div>
+
+
+
+
+
+<!----------   7 ---------------->
+
+<div class="box">
+<h2>Example.7</h2>
+<ol>
+<li>var a = -1.3;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-1"   type="button" value="Show Result" />
+
+</div>
+
+
+
+<!----------   8 ---------------->
+
+<div class="box">
+<h2>Example.8</h2>
+<ol>
+
+<li>var a = -1.5;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)
+
+</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-8"   type="button" value="Show Result" />
+
+</div>
+
+
+
+
+<!----------   9---------------->
+
+<div class="box">
+<h2>Example.9</h2>
+<ol>
+
+
+<li>var a = -1.6;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)
+
+</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-9"   type="button" value="Show Result" />
+
+</div>
+
+
+
+<!----------   10 ---------------->
+
+<div class="box">
+<h2>Example.10</h2>
+<ol>
+<li>var a = -1.49;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)
+
+
+</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-10"   type="button" value="Show Result" />
+
+</div>
+
+
+
+
+<!----------   5 ---------------->
+
+<div class="box">
+<h2>Example.11</h2>
+<ol>
+<li>var a = -1.50;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-11"   type="button" value="Show Result" />
+
+</div>
+
+
+
+<!----------   6 ---------------->
+
+<div class="box">
+<h2>Example.12</h2>
+<ol>
+<li>var a = -1.77;</li>
+<li>var b = a.toFixed();</li>
+<li>alert(b)</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-12"   type="button" value="Show Result" />
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------   7 ---------------->
+
+
+
+
+<div class="box">
+<h2>Example.13</h2>
+<ol>
+<li>var price =  9.95;</li>
+  <li>var tax = 6.5;</li>
+ <li>var total = price * 6.5 /100;</li>
+
+<li>alert(total);</li>
+<li>var fixedValue = total.toFixed(2);</li>
+ <li>alert(fixedValue);</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-13"   type="button" value="Show Result" />
+
+</div>
+
+<div class="box">
+
+<!----------   8 ---------------->
+<h2>Example.14</h2>
+<ol>
+<li>var price =  9.95;</li>
+<li>var tax = 6.5;</li>
+ <li>var num = price * 6.5 /100;</li>
+
+<li>var str = num.toString();</li>
+ <li>if (str.charAt(str.length - 1) === "5") {</li>
+<li>str = str.slice(0, str.length - 1) + "6";</li>
+<li>}</li>
+<li>num = Number(str);</li>
+<li> prettyNum = num.toFixed(2);</li>
+<li> alert(prettyNum);</li>
+ 
+    
+</ol>
+<input class="prompt_button prompt30-14"   type="button" value="Show Result" /></div>
+</div>
+</div>
+</div>
+
+
+
+<h10 onclick="openNava()">&#9776; Chp # 25-30</h10>
+
+<script>
+function openNava() {
+    document.getElementById("myNava").style.height = "100%";
+}
+
+function closeNava() {
+    document.getElementById("myNava").style.height = "0%";
+}
+</script>
+
+
+
+
+</div>
+
+
+<div id="circle3">
+
+
+
+<div id="myNavb" class="overlayu">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNavb()">&times;</a>
+<div class="overlayu-content">
+<div id="wraper">
+
+
+<div class=" box1">
+<h1>Introduction</h1>
+<ol start="31">
+<li class="accordion">Getting the current date and time</li>
+<div class="panel1">
+<ul>
+<li><a href="#newdate">new Date()</a></li>
+<li><a href="#tostring1">.toString()</a></li>
+<li><a href="#getday">getDay()</a></li>
+<li><a href="#getmonth">getMonth()</a></li>
+  
+</ul>
+</div>
+
+<li class="accordion">Extracting parts of the date and time</li>
+<div class="panel1">
+ <ul>
+
+<li><a href="#getMonth">getMonth()</a></li>
+<li><a href="#getDate">getDate()</a></li>
+<li><a href="#getFullYear">getFullYear()</a></li>
+<li><a href="#getHours">getHours()</a></li>
+<li><a href="#getMinutes">getMinutes()</a></li>
+<li><a href="#getSeconds">getSeconds()</a></li>
+<li><a href="#getMilliseconds">getMilliseconds() </a></li>
+<li><a href="#getTime">getTime()</a></li>
+
+  
+</ul>
+  
+  
+</div>
+<li class="accordion">Specifying a date and time</li>
+<div class="panel1">
+  <ul>
+   <li><a href="#changingdays">How to change year into days/hours/minutes/seconds/milliseconds</a></li>
+   <li><a href="#changingmilliseconds">How to change Milliseconds into years/days/hours/minutes/seconds/milliseconds</a></li>
+  
+  <li><a href="#newdate2">new Date("Name of Month Date, Fullyear")</a></li>
+   <li><a href="#newdate3">new Date("Name of Month Date, Fullyear Hours:Minutes:Seconds")</a></li>
+ 
+ 
+  
+  
+  
+  </ul>  
+</div>
+
+
+<li class="accordion">Changing elements of a date and time</a></li>
+<div class="panel1">
+<ul>
+<li><a href="#setFullYear">setFullYear()</a></li>
+<li><a href="#setMonth">setMonth()</a></li>
+<li><a href="#setDate">setDate()</a></li>
+<li><a href="#setday">setDay()</a></li>
+<li><a href="#setHours">setHours()</a></li>
+<li><a href="#setMinutes">setMinutes();</a></li>
+<li><a href="#setSeconds">setSeconds()</a></li>
+<li><a href="#setMilliseconds">setMilliseconds() </a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+
+<div class=" box">
+<h1>chp #31 Getting the current date and time :</h1>
+
+ <div class=" box">
+<h4 id="newdate">new Date()</h4>
+
+<p>The statement new Date ( ) called a Date object.</p>
+<p>This is looks like.</p>
+<p>Wed Mar 29 2017 17:31:23 GMT+0500 (Pakistan Standard Time)</p>
+<p> Day of week Month Date year Hours(24 hoursformat Minutes seconds offsetfrom green which Mean time Time Zone)</p>
+<p>Note that JavaScript gets this information from the user's computer. It is only as accurate
+as the computer's date and time settings.</p>
+
+</div>
+
+
+
+
+<!-- =====1st alert ===== -->	
+<div class=" box">
+ 
+<h2>Example.1</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li>alert( "The Time is " + rightNow);</li>
+</ol>
+
+
+<input class="prompt_button prompt31-1" type="button"  value="Show Result" />
+</div>
+
+<div class=" box">
+<h4 id="tostring1">toString();</h4>
+
+<p>The Date object may resemble a string, but it isn't one. For example, you can't use
+methods on it like charAt, indexOf, or slice.</p>
+
+<p>If you need the Date object to be a string, you can convert it to one the same way you
+convert a number to a string.</p>
+
+<p>Most of the time, you'll just want to extract some of the information from the Date object
+without converting it to a string.</p>
+</div>
+
+
+<div class=" box">
+
+<!-- ===== 2 alert ===== -->	
+<h2>Example.2</h2>
+<ol>
+<li> var a = "Hello World";</li>
+<li>alert(a.indexOf("e"));</li>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow);</li>
+<li>alert(rightNow.indexOf("Feb"));</li>
+</ol>
+<input class="prompt_button prompt31-2" type="button"  value="Show Result" />
+
+</div>
+
+
+<!-- ===== 3 alert ===== -->
+<div class=" box">
+
+<h2>Example.3</h2>
+<ol>
+
+
+<li>var a = "Hello World";</li>
+<li>var b = a.slice(0 , 2);</li>
+<li>alert(b);</li>
+	
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+	
+<li>var d = rightNow.slice(0 , 2) ;</li>
+<li>alert(d);</li>
+
+
+</ol>
+<input class="prompt_button prompt31-3" type="button"  value="Show Result" />
+</div>
+
+
+
+<!-- ===== 4 alert ===== -->
+<div class=" box">
+
+<h2>Example.4</h2>
+<ol>
+
+
+<li>var a = "Hello World";</li>
+
+<li>alert(a.charAt("2"));</li>
+	
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+	
+<li>alert(rightNow.charAt("m")) ;</li>
+
+
+</ol>
+<input class="prompt_button prompt31-4" type="button"  value="Show Result" />
+</div>
+
+
+
+<!-- ===== 5 alert ===== -->
+<div class=" box">
+
+<h2>Example.5</h2>
+<ol>
+
+
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+    
+<li>var b = 45;</li>
+<li>var c = b.toString();</li>
+<li>alert(c);</li>
+
+ 
+
+<li>    var dateString = rightNow.toString();</li>
+ <li>   alert(dateString);</li>
+
+
+</ol>
+<input class="prompt_button prompt31-5" type="button"  value="Show Result" />
+</div>
+
+
+<div class=" box">
+
+<h4 id="getday">getDay();</h4>
+<p>getDay ( ) extract the day of the week from the object, it's
+represented as a number.</p>
+
+<p>Days are designated by a number from 0 for Sunday through 6 for
+Saturday.</p>
+
+</div>
+
+
+<!-- ===== 6 alert ===== -->
+
+<div class=" box">
+<h2>Example.6</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+  <li>alert(rightNow);</li>
+
+ <li>var b = rightNow.getDay();</li>
+  <li>alert(b);</li>
+
+</ol>
+<input class="prompt_button prompt31-6" type="button"  value="Show Result" />
+
+</div>
+
+<!-- ===== 7 alert ===== -->
+
+<div class=" box">
+<h2>Example.7</h2>
+<ol>
+<li>var days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];</li>
+
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+  <li>var b = rightNow.getDay();</li>
+  <li>alert(b);</li>
+
+  <li>var c = 6;</li>
+  <li>var d = 4;</li>
+ <li>alert(days[d]);</li>
+  <li>alert(days[b]);</li>
+
+ <li>alert(days[4]);</li>
+
+
+</ol>
+<input class="prompt_button prompt31-7" type="button"  value="Show Result" />
+
+</div>
+<div class=" box">
+<h4 id="getmonth">getMonth();</h4>
+<p>getMonth ( ) gives you not the spelled-out name of the month shown in the Date object,
+but a number.</p>
+
+<p>Month are designated by a number from 0 for January through 11 for
+December.</p>
+</div>
+
+
+<!-- ===== 7 alert ===== -->
+
+<div class=" box">
+<h2>Example.8</h2>
+<ol>
+<li>var monthsName =["January","Febuary","March","April","May",
+"June","July","August","September","October",
+"November","Decmber"];</li>
+
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+  <li>var b = rightNow.getMonth();</li>
+  <li>alert(b);</li>
+
+  <li>var c = 6;</li>
+  <li>var d = 4;</li>
+ <li>alert( monthsName[d]);</li>
+  <li>alert( monthsName[b]);</li>
+
+ <li>alert( monthsName[4]);</li>
+
+
+</ol>
+<input class="prompt_button prompt31-8" type="button" value="Show Result" />
+
+</div>
+
+</div>
+<!--======================================CHP 32================================================-->
+
+<div class=" box">
+<h1>chp 32 Extracting parts of the date and time </h1>
+
+
+
+<div class=" box">
+<h4 id="getMonth">getMonth ( ) </h4>
+
+<p>getMonth ( ) gives you a number of the month 0 for January through
+11 for December.</p>
+</div>
+
+<!-- ===== 1 alert ===== -->
+<div class=" box">
+
+<h2>Example.1</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+ <li>var currentMonth = rightNow.getMonth();</li>
+   <li>alert(currentMonth);</li>
+
+</ol>
+
+<input class="prompt_button prompt32-1" type="button" value="Show Result" />
+
+</div>
+
+
+
+
+
+
+
+<div class=" box">
+<h4 id="getDate">getDate ( )</h4>
+<p>getDate ( ) gives you a number for the day of the month.</p>
+</div>
+
+
+<!-- ===== 2 alert ===== -->
+<div class=" box">
+
+<h2>Example.2</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+ <li>var currentDate = rightNow.getDate();</li>
+  <li>alert(currentDate);</li>
+
+</ol>
+
+<input class="prompt_button prompt32-2" type="button" value="Show Result" />
+
+</div>
+
+
+
+
+
+
+
+<div class=" box">
+<h4 id="getFullYear">getFullYear ( )</h4>
+<p>getFullYear ( ) gives you a 4-digit number for the year.</p>
+</div>
+
+<!-- ===== 3 alert ===== -->
+<div class=" box">
+
+<h2>Example.3</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+ <li>var currentYear = rightNow.getFullYear();</li>
+  <li>alert(currentYear);</li>
+</ol>
+
+<input class="prompt_button prompt32-3" type="button" value="Show Result" />
+
+</div>
+
+
+
+<div class=" box">
+<h4 id="getHours">getHours ( )</h4>
+<p>getHours ( ) gives you a number from 0 through 23 corresponding to midnight through 11
+p.m.</p>
+</div>
+
+
+<!-- ===== 4 alert ===== -->
+<div class=" box">
+
+<h2>Example.4</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+
+
+  <li>var currentHour = rightNow.getHours();</li>
+  <li>alert(currentHour);</li>
+
+</ol>
+
+<input class="prompt_button prompt32-4" type="button" value="Show Result" />
+
+</div>
+
+<div class=" box">
+<h4 id="getMinutes">getMinutes ( )</h4>
+<p>getMinutes ( ) gives you a number from 0 through 59.</p>
+</div>
+<!-- ===== 5 alert ===== -->
+<div class=" box">
+
+<h2>Example.5</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li> alert(rightNow);</li>
+
+
+
+  <li>var currentMinute = rightNow.getMinutes();</li>
+  <li>alert(currentMinute);</li>
+
+</ol>
+
+<input class="prompt_button prompt32-5" type="button" value="Show Result" />
+
+</div>
+
+<div class=" box">
+<h4 id="getSeconds">getSeconds (  )</h4>
+<p>getSeconds ( ) gives you a number from 0 through 59.</p>
+</div>
+
+
+<!-- ===== 6 alert ===== -->
+<div class=" box">
+
+<h2>Example.6</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li> alert(rightNow);</li>
+
+
+ <li>var currentSeconds = rightNow.getSeconds();</li>
+  <li>alert(currentSeconds);</li>
+
+</ol>
+
+<input class="prompt_button prompt32-6" type="button" value="Show Result" />
+
+</div>
+
+<div class=" box">
+<h4 id="getMilliseconds">getMilliseconds (  )</h4>
+<p>getMilliseconds ( ) gives you a number from 0 through 999.</p>
+</div>
+
+<!-- ===== 7 alert ===== -->
+<div class=" box">
+
+<h2>Example.7</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+  
+
+  <li>var currentMills = rightNow.getMilliseconds();</li>
+  <li>alert(currentMills);</li>
+
+</ol>
+
+<input class="prompt_button prompt32-7" type="button" value="Show Result" />
+
+</div>
+
+
+<div class=" box">
+<h4 id="getTime">getTime ( ) </h4>
+<p>getTime( ) gives you the number of milliseconds that have elapsed since midnight, Jan. 1,
+1970.</p>
+</div>
+
+<!-- ===== 8 alert ===== -->
+<div class=" box">
+
+<h2>Example.8</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+ <li>alert(rightNow);</li>
+
+  <li>var currentTime = rightNow.getTime();</li>
+  <li>alert(currentTime);</li>
+
+</ol>
+
+<input class="prompt_button prompt32-8" type="button" value="Show Result" />
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--======================================CHP 33================================================-->
+
+<div class=" box">
+<h1>chp #33 Specifying a date and time </h1>
+
+<!-- ===== 1 alert ===== -->
+
+<div class=" box">
+
+<h2 id="changingdays">Example.1</h2>
+<ol>
+<li>var age = 2;</li>
+  <li>var ageInDays = age * 365;</li>
+  <li>alert(ageInDays);</li>
+
+  <li>var ageInHours = age * 365 * 24;</li>
+  <li>alert(ageInHours);</li>
+
+  <li>//var ageInMinutes = ageInHours * 60;</li>
+  <li>var ageInMinutes = age * 365 * 24 * 60;</li>
+  <li>alert(ageInMinutes);</li>
+
+  <li>var ageInSeconds = age * 365 * 24 * 60 * 60;</li>
+  <li>alert(ageInSeconds);</li>
+
+   <li> var ageInMills = age * 365 * 24 * 60 * 60 * 1000;</li>
+   <li> alert(ageInMills);</li>
+
+
+</ol>
+<input class="prompt_button  prompt33-1" type="button"  value="Show Result" />
+</div>
+
+<!-- ===== 2 alert ===== -->
+
+<div class=" box">
+
+<h2 id="changingmilliseconds">Example.2</h2>
+<ol>
+
+
+<li>var today = new Date();</li>
+<li>var milliSec = today.getTime();</li>
+
+<li>alert( milliSec);</li>
+
+<li>var year = milliSec / (1000 * 60 * 60 * 24*365);</li>
+<li>var year = Math.floor(year);</li>
+<li>alert(year);</li>
+
+<li>var days = milliSec / (1000 * 60 * 60 * 24);</li>
+<li>var days = Math.floor(days);</li>
+<li>alert(days)</li>
+
+
+<li>var hours = milliSec / (1000 * 60 * 60 );</li>
+<li>var hours = Math.floor(hours);</li>
+<li>alert(hours);</li>
+
+<li>var minutes = milliSec / (1000 * 60 );</li>
+<li>var minutes= Math.floor(minutes);</li>
+<li>alert(minutes);</li>
+
+
+<li>var sec = milliSec / ( 1000  );</li>
+<li>var sec = Math.floor(sec);</li>
+<li>alert(sec);</li>
+
+
+
+
+
+
+
+
+
+
+
+</ol>
+<input class="prompt_button  prompt33-2" type="button" value="Show Result" />
+</div>
+
+
+
+
+
+
+
+
+
+<div class=" box">
+<h4 id="newdate2">new Date("Name of Month Date, Fullyear").</h4>
+
+
+
+
+<p>new Date("June 30, 2035") this statement specify a estimated date.</p>
+
+<p>The date is specified. It's in quotes. The month is spelled out. There's a
+comma after the day of the month. The year is expressed in four digits.</p>
+
+</div>
+
+
+<div class=" box">
+
+<!-- ===== 3 alert ===== -->
+
+<h2>Example.3</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>    alert(rightNow);</li>
+<li>    rightNow.getTime();</li>
+
+ <li>   var otherDay = new Date("June 11, 2017");</li>
+ <li>   alert(otherDay);</li>
+
+ <li>   var msDiff = otherDay.getTime() - rightNow.getTime();</li>
+ <li>   alert(msDiff);</li>
+
+ <li>   var diffInDays = msDiff / (1000 * 60 * 60 * 24);</li>
+ <li> var diffInDays = Math.floor(diffInDays);</li>
+ 
+ <li>   alert(diffInDays);</li>
+
+
+</ol>
+<input class="prompt_button prompt33-3" type="button" value="Show Result" />
+</div>
+
+
+
+
+
+
+
+
+
+<div class=" box">
+<h4 id="newdate3">new Date("Name of Month Date, Fullyear Hours:Minutes:Seconds").
+</h4>
+<p>new Date("July 21, 1983 13:25:00");) this statement specify a estimated date and time.</p>
+
+<p>The date is specified. It's in quotes. The month is spelled out. There's a
+comma after the day of the month. The year is expressed in four digits.</p>
+<p>var d = new Date("July 21, 1983 13:25:00");</p>
+
+<p>Note the form used to specify the time: No comma after the date. 24-hour time. Colons
+separating hours, minutes, and seconds.
+
+<!-- ===== 4 alert ===== -->
+<div class=" box">
+<h2>Example.4</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow);</li>
+ <li>rightNow.getTime();</li>
+
+ <li>var birthdayCelebrationDate = new Date("June 11, 2017 19:00:00");</li>
+ <li>alert(birthdayCelebrationDate);</li>
+
+  <li>var msDiff = birthdayCelebrationDate.getTime() - rightNow.getTime();</li>
+  <li>alert(msDiff);</li>
+
+ <li>var diffInDays = msDiff / (1000 * 60 * 60 * 24);</li>
+ 
+ <li>alert(diffInDays);</li>
+</ol>
+<input class="prompt_button prompt33-4" type="button"  value="Show Result" />
+</div>
+</div>
+
+
+<!--======================================CHP 34================================================-->
+
+<div class=" box">
+<h1>chp #34 Changing elements of a date and time </h1>
+
+
+
+
+
+
+<div class=" box">
+<h4 id="setFullYear">setFullYear ( )</h4>
+<p>setFullYear sets the year of an existing Date object without changing any other element.</p>
+</div>
+
+
+<div class=" box">
+<!-- ===== 1 alert ===== -->
+<h2>Example.1</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow) ;</li>
+ 
+<li>rightNow.setFullYear(2001);</li>
+<li>alert(rightNow);</li>
+<input class="prompt_button prompt34-1" type="button"  value="Show Result" />
+</div>
+
+
+
+
+
+
+<div class=" box">
+<h4 id="setMonth">setMonth ( ) </h4>
+
+<p>setMonth sets the month of an existing Date object without changing any other element.</p>
+</div>
+
+
+
+<div class=" box">
+<!-- ===== 2 alert ===== -->
+
+
+<h2>Example.2</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow) ;</li>
+ 
+<li>rightNow.setMonth(11);</li>
+<li>alert(rightNow);</li>
+
+<input class="prompt_button prompt34-2" type="button"  value="Show Result" />
+</div>
+
+
+<div class=" box">
+<h4 id="setDate">setDate ( )</h4>
+<p>setDate sets the day of the month of an existing Date object without changing any other
+element.</p>
+</div>
+
+<!-- ===== 3 alert ===== -->
+
+<div class=" box">
+
+<h2>Example.3</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow) ;</li>
+ 
+<li>rightNow.setDate(15);</li>
+<li>alert(rightNow);</li>
+<input class="prompt_button prompt34-3" type="button"  value="Show Result" />
+</div>
+
+
+<div class=" box">
+<h4 id="setHours">setHours ( )</h4>
+<p>setHours sets the hours of an existing Date object without changing any other element.</p>
+</div>
+
+
+
+<!-- ===== 4 alert ===== -->
+<div class=" box">
+
+<h2>Example.4</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow) ;</li>
+ 
+<li>rightNow.setHours(13);</li>
+<li>alert(rightNow);</li>
+<input class="prompt_button prompt34-4" type="button"  value="Show Result" />
+</div>
+
+
+
+
+
+<div class=" box">
+<h4 id="setMinutes">setMinutes ( )</h4>
+<p>setMinutes sets the minutes of an existing Date object without changing any other
+element.</p></div>
+
+<!-- ===== 5 alert ===== -->
+
+
+<div class=" box">
+
+<h2>Example.5</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow) ;</li>
+ 
+<li>rightNow.setMinutes(05);</li>
+<li>alert(rightNow);</li>
+<input class="prompt_button prompt34-5" type="button"  value="Show Result" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class=" box">
+<h4 id="setSeconds">setSeconds (  )</h4>
+<p>setSeconds sets the seconds of an existing Date object without changing any other
+element.</p>
+</div>
+
+<!-- ===== 6 alert ===== -->
+
+
+
+<div class=" box">
+
+<h2>Example.6</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow) ;</li>
+ 
+<li>rightNow.setSeconds(55);</li>
+<li>alert(rightNow);</li>
+<input class="prompt_button prompt34-6" type="button"  value="Show Result" />
+</div>
+
+
+
+
+
+
+<div class=" box">
+<h4 id="setMilliseconds">setMilliseconds (  )</h4>
+<p>setMilliseconds sets the milliseconds of an existing Date object without changing any
+other element.</p>
+</div>
+
+
+<!-- ===== 7 alert ===== -->
+
+
+<div class=" box">
+
+<h2>Example.7</h2>
+<ol>
+<li>var rightNow = new Date();</li>
+<li>alert(rightNow) ;</li>
+ 
+<li>rightNow.setMilliseconds(867);</li>
+<li>alert(rightNow);</li>
+
+</ol>
+<input class="prompt_button prompt34-7" type="button"  value="Show Result" />
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h10 onclick="openNavb()">&#9776; CHP # 31-34
+</h10>
+
+<script>
+function openNavb() {
+    document.getElementById("myNavb").style.height = "100%";
+}
+
+function closeNavb() {
+    document.getElementById("myNavb").style.height = "0%";
+}
+</script>
+
+</div>
+</div>
+
+
+<div id="hwrapper">
+<h11>SIR SYED UNIVERSITY</h11>
+<h12>LEARNING MOBILE APP DEVELOPMENT (MODULE -A)</h12>
+<h13>JAVASCRIPT</h13>
+<h14>MADE BY : IRSA & SAMEER</h14>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="headovalshade"></div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+</body>
+
+	
+</html>

@@ -1,0 +1,106 @@
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	min-width: 400px; /* Dialog will be no smaller than this */
+	max-width: 500px; /* Dialog will wrap after this width */
+	min-height: 200px;
+	max-height:300px;
+	 background-color: #EBEBEB;
+	
+	color: #666;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+
+#popup_title {
+	font-size: 1.2em;
+	font-weight:500;
+		line-height: 1.5em;
+		padding:2% 0 0 10px;
+	
+	
+	height:30px;
+	
+	
+
+	
+	
+		margin: 0em;
+		  
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E9E9E9)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #69a62a, #7cb82f); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, #69a62a, #7cb82f); /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #69a62a, #7cb82f); /* IE10 */
+    background-image: -o-linear-gradient(top, #69a62a, #7cb82f); /* Opera 11.10+ */
+    background-image: linear-gradient(top, #69a62a, #7cb82f);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#E9E9E9'); /* IE6-IE9 */
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 1px solid #4c792d;
+	 
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    filter: dropshadow(color=#000, offx=1, offy=1);
+    
+    font-weight: 500;
+	letter-spacing:.055em;
+    font-size: 1.2em;
+    cursor: default;
+}
+
+#popup_content {
+	
+	padding: 1.5em 1.5em 0em 0em;
+	margin: 0em;
+}
+
+#popup_content.alert {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popup_content.confirm {
+	background-image: url('../images/important.gif');
+}
+
+#popup_content.prompt {
+	
+}
+
+#popup_message {
+	padding-left: 18px;
+		
+}
+
+#popup_panel {
+	text-align: center;
+	
+	margin:4% 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+	color:#3f652d;
+	
+	
+
+	
+}

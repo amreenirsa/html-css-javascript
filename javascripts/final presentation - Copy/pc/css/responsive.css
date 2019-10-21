@@ -1,0 +1,935 @@
+/* Medium Devices, Desktops */
+
+
+@media only screen and (max-width : 1024px) {    
+
+#head{
+	
+	padding:0 5% 0 5%;}
+	
+#headoval{
+	width:90%;
+	height:600px;
+	margin:5% 0 0 0 ;
+	border-radius:250%;
+	}
+  
+#headovalshade{
+	width:60%;
+	height:50px;
+	margin:15% 30% 0 16%;
+	border-radius:250%;
+	}
+	
+	
+#head h11{
+	
+	font-size: 3em;
+	position:absolute;
+    letter-spacing: 4px;
+    line-height: 60px;
+	margin:15% 0 0 33% ;
+   
+	
+	
+	
+	}
+	
+	#head h12{
+	
+	position:absolute;
+	font-weight: 400;
+	font-size: 2.8em;
+    letter-spacing: 4px;
+    color: #1a858e;
+    margin:23% 0 0 25% ;
+	
+	
+	}
+	
+	
+	
+#head h13{
+	
+	font-weight: 300;
+	position:absolute;
+	font-size: 2.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1a858e;
+    margin:36.5% 0 0 25% ;
+	
+	}	
+	
+#head h14{
+	
+	font-weight: bolder;
+	position:absolute;
+	font-size: 3.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+  
+   
+	display:inline;
+	margin:43% 0% 0 25% ;
+	background: -webkit-linear-gradient(#14717b, #00aeb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+	}		
+	
+	
+	
+	
+#circle1{
+	width:225px;
+	height:225px;
+	margin:0 0 0 50px;
+	padding:4% 1%;
+	  }	
+	  
+#circle1:hover{
+	width:230px;
+	height:230px;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	  
+	  
+	  
+#circle1:active{
+	width:230px;
+	height:230px;
+	padding:5% 1%;
+	
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle1:visited{
+	width:230px;
+	height:230px;
+	padding:5% 1%;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}		  
+	  
+	
+#circle2{
+	width:225px;
+	height:225px;
+	margin:-90px 0 0 -25px;
+	 padding:4% 1%;
+	  }	
+	  
+	  
+#circle2:hover{
+	width:230px;
+	height:230px;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	  
+	  
+	  
+#circle2:active{
+	width:230px;
+	height:230px;
+	padding:5% 1%;
+	
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle2:visited{
+	width:230px;
+	height:230px;
+	padding:5% 1%;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}		  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+#circle3{
+	width:225px;
+	height:225px;
+	margin:-90px 0 0 -40px;
+	padding:5% 1%;
+	  }	  	
+	
+	
+#circle3:hover{
+	width:230px;
+	height:230px;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	  
+	  
+	  
+#circle3:active{
+	width:230px;
+	height:230px;
+	padding:5% 1%;
+	
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle3:visited{
+	width:230px;
+	height:230px;
+	padding:5% 1%;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}		
+	
+	
+	.box h1{
+	font-size:4em;}
+	
+	
+	.overlayu .closebtn {
+   
+    top:10px;
+    right: 35px;
+    font-size: 60px;
+	font-weight:bold;
+	
+  
+	
+	
+	
+}
+	
+	
+	
+
+}
+
+ 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 980px) {
+/*************************************************** home page ****************************************/
+	#head{
+	
+	padding:0% 7% 0 7%;}
+	
+	#headoval{
+	width:90%;
+	height:500px;
+	border-radius:250%;
+	margin:5% 0 0 0 ;
+	}
+  
+	
+		
+	
+	
+#headovalshade{
+	width:60%;
+	height:50px;
+	margin:15% 30% 0 18%;
+	border-radius:250%;
+	}
+	
+	
+	
+#head h11{
+	
+	font-size:2.2em;
+	position:absolute;
+    letter-spacing: 3px;
+    line-height: 60px;
+	margin:18% 0 0 37% ;
+   
+	
+	
+	
+	}
+	
+	#head h12{
+	
+	position:absolute;
+	font-weight: 400;
+	font-size: 2em;
+   letter-spacing: 3px;
+    color: #1a858e;
+    margin:27% 0 0 29% ;
+	
+	
+	}
+	
+	
+	
+#head h13{
+	
+	
+	position:absolute;
+	font-size: 1.9em;
+	letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #1a858e;
+    margin:40% 0 0 28% ;
+	
+	}	
+	
+#head h14{
+	
+	font-weight: bolder;
+	position:absolute;
+	font-size: 2.2em;
+	
+    text-transform: uppercase;
+	margin:47% 0 0 29% ;
+	background: -webkit-linear-gradient(#14717b, #00aeb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+	}		
+	
+	
+	
+	
+#circle1{
+	width:200px;
+	height:200px;
+	margin:0 0 0 40px;
+	padding:4% 1%;
+	  }	
+	
+	#circle1 h10{
+	font-size:1.8em;
+	
+	}	
+
+#circle1:hover{
+	width:205px;
+	height:205px;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	  
+	  
+	  
+#circle1:active{
+	width:205px;
+	height:205px;
+	padding:5% 1%;
+	
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle1:visited{
+	width:205px;
+	height:205px;
+	padding:5% 1%;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}		
+	
+	
+	
+#circle2{
+	width:200px;
+	height:200px;
+	margin:-90px 0 0 -20px;
+	 padding:4% 1%;
+	  }	
+	  
+	
+	#circle2 h10{
+	font-size:1.8em;
+	
+	}  
+	  
+#circle2:hover{
+	width:205px;
+	height:205px;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	  
+	  
+	  
+#circle2:active{
+	width:205px;
+	height:205px;
+	padding:5% 1%;
+	
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle2:visited{
+	width:205px;
+	height:205px;
+	padding:5% 1%;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}		  
+#circle3{
+	width:200px;
+	height:200px;
+	margin:-80px 0 0 -30px;
+	padding:5% 1%;
+	  }	
+	
+	#circle3:hover{
+	width:205px;
+	height:205px;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	
+	#circle3 h10{
+	font-size:1.8em;
+	
+	}  
+	  
+	  
+#circle3:active{
+	width:205px;
+	height:205px;
+	padding:5% 1%;
+	
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle3:visited{
+	width:205px;
+	height:205px;
+	padding:5% 1%;
+	border:25px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	
+	
+.overlayu .closebtn {
+   
+    top:-10px;
+    right: 25px;
+    font-size: 60px;
+	font-weight:bold;}
+	
+  
+	
+		
+	
+.box1 h1{
+	font-size:4em;	}
+	
+.box1 li.accordion {
+	font-size: 1.8em;	}
+	
+	
+.box p{
+	
+	letter-spacing:5px;
+	font-size: 1.4em;
+	
+}	
+	
+	
+.box h1{
+font-size:3em;}
+	
+.box1 div.panel1 li {
+    
+	font-size:1.3em;
+}
+	
+	
+	
+	
+	
+}	
+	
+
+@media only screen and (max-width : 640px) {
+/*************************************************** home page ****************************************/
+	#head{
+	
+	padding:0 7% 0 7%;}
+	
+	#headoval{
+	width:86%;
+	height:250px;
+	margin:5% 0 0 0 ;
+	border-radius:250%;
+	}
+  
+	
+		
+	
+	
+#headovalshade{
+	width:60%;
+	height:30px;
+	margin:15% 30% 0 14%;
+	border-radius:250%;
+	}		  
+   	
+	
+	
+	
+	
+	
+	
+	
+	
+#head h11{
+	
+	font-size:1.2em;
+	position:absolute;
+	letter-spacing:.05em;
+    
+    line-height: 0px;
+	margin:22% 0 0 37% ;
+   
+	
+	
+	
+	}
+	
+	#head h12{
+
+	position:absolute;
+	font-weight: 400;
+	font-size: 1em;
+     margin:27% 0 0 30% ;
+	 letter-spacing: 1px;
+	
+	
+	}
+	
+	
+	
+#head h13{
+	
+		font-weight: 300;
+		position:absolute;
+	font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #1a858e;
+   
+	margin:40% 0 0 30% ;
+	
+	}	
+	
+#head h14{
+	
+	font-weight: bolder;
+	position:absolute;
+	font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+   
+	margin:47% 0 0 30% ;
+	background: -webkit-linear-gradient(#14717b, #00aeb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+	}		
+	
+	
+	
+	
+#circle1{
+	width:100px;
+	height:100px;
+	margin:0 0 0 20px;
+	padding:6% 1%;
+	border:10px solid #fff;
+	  }	
+	  
+	
+	#circle1 h10{
+	font-size:1em;
+	
+	
+	}  
+	  
+	  
+	  
+	  
+	#circle1:hover{
+	width:105px;
+	height:105px;
+	border:10px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	  
+	  
+	  
+#circle1:active{
+	width:105px;
+	height:105px;
+	padding:5% 1%;
+	
+	border:10px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle1:visited{
+	width:105px;
+	height:105px;
+	padding:5% 1%;
+	border:10px solid #14717b;
+	color:#14717b !important ;}
+	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	
+#circle2{
+	width:100px;
+	height:100px;
+	margin:-40px 0 0 -25px;
+	padding:6% 1%;
+	border:10px solid #fff;
+	  }	
+	 #circle2 h10{
+	font-size:1em;
+	
+	
+	}   
+	#circle2:hover{
+	width:105px;
+	height:105px;
+	border:10px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	  
+	  
+	  
+#circle2:active{
+	width:105px;
+	height:105px;
+	padding:5% 1%;
+	
+	border:10px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle2:visited{
+	width:105px;
+	height:105px;
+	padding:5% 1%;
+	border:10px solid #14717b;
+	color:#14717b !important ;}
+	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+#circle3{
+	width:100px;
+	height:100px;
+	margin:-40px 0 0 -10px;
+	padding:6% 1%;
+	border:10px solid #fff;
+	  }	
+	  	
+#circle3 h10{
+	font-size:1em;
+	
+	
+	} 
+	
+	 
+	#circle3:hover{
+	width:105px;
+	height:105px;
+	border:10px solid #14717b;
+	color:#14717b !important ;
+	padding:5% 1%;
+	
+	
+	}	  
+	  
+	  
+	  
+#circle3:active{
+	width:105px;
+	height:105px;
+	padding:5% 1%;
+	
+	border:10px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	 	  
+	  
+#circle3:visited{
+	width:105px;
+	height:105px;
+	padding:5% 1%;
+	border:10px solid #14717b;
+	color:#14717b !important ;
+	
+	
+	}	
+	
+	
+	
+	
+	
+		
+.box1 h1{
+	font-size:2em;	}
+	
+.box1 li.accordion {
+	font-size: 1em;	}
+	
+	
+.box p{
+	
+	letter-spacing:1px;
+	font-size: 1em;
+	
+}	
+	
+	
+.box h1{
+font-size:2em;}
+	
+	
+.box1 li.accordion {
+  
+    font-size: 1em;	
+
+	}
+	
+	
+	
+	.box1 li a {
+	font-size: 1em;	}	
+	
+.box1 div.panel1 li {
+    
+	font-size:1em;
+	text-align:left;
+}
+	.box ol li{
+	
+	
+	font-size:1.1em;
+	
+	}
+	
+	
+	
+	
+	
+}
+
+@media only screen and (max-width : 480px) {
+
+#head{
+	
+	padding:0 2% 0 8%;}
+	
+	#headoval{
+	width:90%;
+	height:250px;
+	border-radius:250%;
+	}
+  
+	
+		
+	
+	
+#headovalshade{
+	width:60%;
+	height:30px;
+	margin:15% 30% 0 14%;
+	border-radius:250%;
+	}		  
+   	
+	
+	
+	
+	
+	
+	
+	
+	
+#head h11{
+	
+	font-size:1em;
+	position:absolute;
+	letter-spacing:.05em;
+    
+    line-height: 0px;
+	margin:22% 0 0 40% ;
+   
+	
+	
+	
+	}
+	
+	#head h12{
+
+	position:absolute;
+	font-weight: 400;
+	font-size: 1em;
+     margin:30% 0 0 33% ;
+	 letter-spacing: 1px;
+	
+	
+	}
+	
+	
+	
+#head h13{
+	
+		font-weight: 300;
+		position:absolute;
+	font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #1a858e;
+   
+	margin:43% 0 0 33% ;
+	
+	}	
+	
+#head h14{
+	
+	font-weight: bolder;
+	position:absolute;
+	font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+   
+	margin:50% 0 0 33% ;
+	background: -webkit-linear-gradient(#14717b, #00aeb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+	}		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlayu {overflow-y: auto;}
+  .overlayu a {font-size: 20px}
+  .overlayu .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  
+ 
+
+}	
+
+
+/* Smallest Mobile Devices */
+@media only screen and (max-width : 320px) {
+/*************************************************** home page ****************************************/
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Clock</title>
+<script>
+function startTime(){
+	
+	var date = new Date();
+	var hours = date.getHours();
+	var minutes = date.getMinutes();
+	var second = date.getSeconds();
+    hours = checkTime(hours);
+	minutes = checkTime(minutes);
+    second = checkTime(second);
+	document.getElementById('time').innerHTML= hours + " : "+ minutes + " : " + second;
+	
+	var e = hours + minutes  + second ;
+	
+	var t = setTimeout(startTime, 500);
+	var year = date.getFullYear();
+	var month = date.getMonth();
+	//months =[1,2,3,4,5,6,7,8,9,10,11,12]
+	var d =date.getDate();
+	var day = date.getDay();
+	monthsName = ["January", "February", "March", "April", "May", "June", "Jully", "August", "September",     "October", "November", "December"];
+	days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	
+	document.getElementById('date').innerHTML= days[day] + " , "+ d + " " + monthsName[month] + " "  + " , " +year ;
+	
+	
+	
+	
+   
+	
+	}
+	
+	
+	function checkTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+
+
+</script>
+<style>
+@font-face {
+font-family: Digital-7;
+src: url(font/digital-7.ttf);}
+body{
+	margin:0 auto;
+	background-color:#000;
+	font-family: Digital-7;
+	
+	color:#FFF;
+	padding:0;}
+	
+#wrapper{
+	width:100%;
+	margin:0 auto;
+	
+
+
+	position:absolute;
+
+	
+	}
+	#time{
+		font-size:11em;
+		width:61%;
+		
+		
+		
+		margin: 2%  auto 0 auto ;
+		
+		
+		color:#33d5e5;
+		text-shadow: 1px 1px 8px #00CCFF;
+		text-align:center;
+		-moz-box-shadow: 0 0 10px #33d5e5;
+       -webkit-box-shadow: 0 0 10px #33d5e5;
+      box-shadow: 0 0 10px #33d5e5;}
+		
+	#date{
+		font-size:2.3em;
+		width:38%;
+		padding: 0;
+	
+        margin:25% auto 0 auto;		
+		
+		color:#33d5e5;
+		text-align:center;
+		-moz-box-shadow: 0 0 10px #33d5e5;
+       -webkit-box-shadow: 0 0 10px #33d5e5;
+      box-shadow: 0 0 10px #33d5e5;
+	 
+		}	
+		
+	
+		
+@media only screen and (max-width : 1024px) {
+	
+	#time{
+		
+		font-size:8em;
+		width:61%;
+		
+		
+		}
+		
+	#date{
+		font-size:1.5em;
+		width:33%;
+		height:30px;
+		padding:1% 0;
+		 margin:55% auto 0 auto;	
+	
+		
+		}	
+	
+	}    
+@media only screen and (max-width : 980px) {
+	#time{
+		font-size:7em;
+		width:61%;
+		
+		}
+		
+	#date{
+		font-size:1.5em;
+		width:33%;
+		 margin:55% auto 0 auto;
+	}
+@media only screen and (max-width : 640px) {
+	#time{
+		font-size:9em;
+		width:61%;
+		
+		}
+		
+	#date{
+		font-size:1.8em;
+		width:33%;
+		 margin:55% auto 0 auto;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	#time{
+		font-size:9em;
+		width:61%;
+		
+		}
+		
+	#date{
+		font-size:1.8em;
+		width:33%;
+		 margin:60% auto 0 auto;
+		}
+}
+@media only screen and (max-width : 320px) {
+	#time{
+		font-size:9em;
+		width:61%;
+		
+		}
+		
+	#date{
+		font-size:1.8em;
+		width:33%;
+		 margin:55% auto 0 auto;
+		}
+}	
+		
+</style>
+
+
+</head>
+
+<body >
+<div id="wrapper">
+  <script>window.onload = startTime</script>
+
+<div id="date"></div>
+<div id="day"></div>
+<div id="time"></div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

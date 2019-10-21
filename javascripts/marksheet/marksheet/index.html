@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Marksheet</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="description" content="This is a demonstration page." />
+		<meta name="keywords" content="alert, confirm, prompt, demo" />
+		
+		
+			
+			
+			<style>
+
+
+h1{
+	
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;}
+table
+{
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	
+	}
+th{
+	text-transform:capitalize;
+	border:1px solid #000;
+	color: #000;
+	}
+	
+	
+.data{
+	text-transform:capitalize;
+	border:1px solid #000;
+	height:30px;
+	color: #000;
+	}
+
+
+
+			
+			
+			
+			
+			
+			/* Custom dialog styles */
+			#popup_container.style_1 {
+				
+				color: #A4C6E2;
+				background: #eaecee;
+				border-color: #219aa0;
+			}
+			
+			#popup_container.style_1 #popup_title {
+				color: #FFF;
+				height:35px;
+				font-weight: normal;
+				text-align: left;
+				background: #57bfc1;
+				padding:2% 0 0;
+				border-bottom:solid 2px #219aa0;
+						
+			
+				padding-left: 1em;
+			}
+			
+			#popup_container.style_1 #popup_content {
+				background: none;
+				color:#000;
+			}
+			
+			#popup_container.style_1 #popup_message {
+				padding-left: 0em;
+				font-size:1.5em;
+				
+
+			}
+			
+			#popup_container.style_1 INPUT[type='button'] {
+				margin-top:10%;
+				width:30%;
+				height:30px;
+				border: outset 2px #219aa0;
+				color: #fff;
+				background: #57bfc1;
+			}
+
+.prompt_button{
+	width:250px !important;
+	height:30px;
+	text-align:center;
+	margin:0 auto;
+	border: outset 1px   #fff;
+				color: #fff;
+				
+			/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(, #5b912d , #69a62a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #5b912d ,#69a62a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #5b912d ,#69a62a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #5b912d ,#69a62a); /* Standard syntax */}	
+	
+	
+			
+		</style>
+		
+		<!-- Dependencies -->
+
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.ui.draggable.js" type="text/javascript"></script>
+		
+		<!-- Core files -->
+		<script src="js/jquery.alerts.js" type="text/javascript"></script>
+		<link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<!-- Example script -->
+		<script type="text/javascript">
+			
+			$(document).ready( function() {
+				
+				
+				
+				
+	<!-- =====17alert ===== -->					
+						
+						
+						
+						
+						
+$(".prompt17").click( function() {
+	
+   jPrompt("Please Enter your Roll Number(1-9 only).","","Marksheet", function(r) {
+						
+{
+  
+   
+   
+ if(r === "1"){
+	 a ="1";
+     b ="Ali";
+	c ="Ahmed";
+	d="abc@gmail.com"
+	e="X"
+	f="Ma'am Asma"
+	g=99;
+	h=98;
+	i=97;
+	j=98;
+	k=97;
+	
+	
+	
+	
+	
+	
+	}
+	
+
+	
+	
+	
+
+	  
+                     
+							
+					};
+					});
+						});
+				
+				
+				
+				
+		});
+																	
+						
+
+	
+		</script>
+
+		
+	</head>
+	
+	<body>
+		
+		
+		
+		
+  
+   
+
+
+
+<h1>Marksheet</h1>
+<h1>
+<input class="prompt_button prompt17" type="button" value="please Enter Your Roll Number"/></h1> 
+<table class="prompt_button prompt17">
+<tr>
+
+<th>Roll.no</th>
+<th>Firts Name</th>
+<th>Last Name</th>
+<th>Email Adress</th>
+<th>class</th>
+<th>Teacher name</th>
+<th>Maths</th>
+<th>Englis</th>
+<th>urdu</th>
+<th>chemistry</th>
+<th>physics</th>
+<th>total marks</th>
+<th>obtained marks</th>
+<th>result</th>
+<th>remarks</th>
+
+
+
+
+
+</tr>
+
+<tr>
+
+
+<th class="data" ><script> function myFunction(r) {document.write(a)}</script></th>
+<th><script>function myFunction(r) {document.write(b)}</script></th>
+<th><script>document.write(c)</script></th>
+<th><script>document.write(d)</script></th>
+<th><script>document.write(e)</script></th>
+<th><script>document.write(f)</script></th>
+<th><script>document.write(g)</script></th>
+<th><script>document.write(h)</script></th>
+<th><script>document.write(i)</script></th>
+<th><script>document.write(j)</script></th>
+<th><script>document.write(k)</script></th>
+
+
+
+
+
+
+
+
+</tr>
+
+
+</table>
+		
+		
+	</body>
+
+	
+</html>

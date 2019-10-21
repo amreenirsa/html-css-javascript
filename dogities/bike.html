@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Doggies Ties</title>
+
+<!-- ===========================
+    FAVICONS
+    =========================== -->
+   <link rel="icon" href="img/toplogo0.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/toplogo 01.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/toplogo02.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/toplogo03.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/toplogo04.png" />
+  
+<!-- ===========================
+    STYLESHEETS
+    =========================== -->   
+     
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    
+   <!-- ===========================
+    STYLESHEETS
+    =========================== -->   
+     <link href="css/style.css"  type="text/css" rel="stylesheet" />
+     <link href="css/responsive.css"  type="text/css" rel="stylesheet" />
+      <script src="js/js.js"></script>
+     
+
+</head>
+
+<body>
+  
+     <!-- ===========================
+    header
+    =========================== -->  
+<div class="container" id="header">
+<p>Search our store <input type="text"  placeholder="search" /></p>
+
+<p><a href="cart.html">Shopping Cart  (<span id="f1"></span>) <img src="img/shopingcart-01.png" /></a></p>
+<div id="logo"><img src="img/logo2-01.png" /></div>
+</div>
+
+<!-- ===========================
+nav
+    =========================== --> 
+  
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+   </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+              <li><a href="index.html">home</a></li>
+        <li>
+        <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Catalog</button>
+  <div id="myDropdown" class="dropdown-content">
+<a href="catalog.html">all</a>
+<a href="bee.html">bee</a>
+<a href="bike.html">bike</a>
+<a href="camo.html">camo</a>
+<a href="denium.html">denium</a>
+<a href="dogspattern.html">dogs</a>
+<a href="floral.html">floral</a>
+<a href="pattern.html">pattern</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+       </li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="aboutus.html">aboutus</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ===========================
+img bar
+    =========================== -->
+<h7>Products</h7>
+
+
+<!-- ===========================r1=========================== -->
+
+<div class="bar">
+<div class="col-lg-3 col-md-6 col-sm-12">
+<a href="productbiketie1.html">
+<img class="img-responsive" src="img/allitem/barimgbike.jpg" /></a>
+<!-- overlay-->
+<div class="overlay">
+ <div id="myBtn5" class="text">+ quick view </div>
+<!-- The Modal -->
+<div id="myModal5" class="modal" >
+<!-- Modal content -->
+<div class="modal-content container-fluid">
+<span class="close">&times;</span>
+
+
+<img class="img-responsive col-lg-5 col-md-5 col-sm-12  col-xs-12" src="img/barimg1.jpg" />
+
+<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 modal-box">
+
+
+ <h1>Bike Tie</h1>
+<p>$ 12.00</p>
+<hr  />
+<h4>quantity</h4>
+<input id="input1" type="number" placeholder="quantity">
+<input type="button" onClick="f1()" value="add to cart" />
+
+<h1>Description</h1>
+<h4>Dress up your dog with these adorable handmade dog ties! Perfect for small dogs! These ties slide easily on to your dogs collar and are made with fabrics that are...</h4>
+<hr  />
+<h3><a href="productbiketie1.html">
+view product</a></h3>
+</div>
+
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal5 = document.getElementById('myModal5');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn5");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal5.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal5.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal5) {
+        modal5.style.display = "none";
+    }
+}
+</script>
+</div>
+
+
+<div class="baradd ">
+<h4>Bike Tie </h4><p>/ $ 12.00</p></div>
+
+</div></div>
+
+
+
+
+<!-- =======c2============ -->
+
+
+
+ <div class="bar">
+ <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <a href="productblackbiketie.html">
+ <img class="img-responsive"  src="img/allitem/barimgbike2.jpg" /></a>
+<!-- overlay-->
+<div class="overlay">
+ <div id="myBtn6" class="text">+ quick view </div>
+<!-- The Modal -->
+<div id="myModal6" class="modal">
+<!-- Modal content -->
+<div class="modal-content container-fluid">
+<span class="close">&times;</span>
+
+<img class="img-responsive col-lg-5 col-md-5 col-sm-12  col-xs-12" src="img/allitem/barimgbike2.jpg"   />
+
+<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 modal-box">
+
+
+ <h1>Bike Tie</h1>
+<p>$ 12.00</p>
+<hr  />
+<h4>quantity</h4>
+<input id="input1" type="number" placeholder="quantity">
+<input type="button" onClick="f1()" value="add to cart" />
+
+<h1>Description</h1>
+<h4>Dress up your dog with these adorable handmade dog ties! Perfect for small dogs! These ties slide easily on to your dogs collar and are made with fabrics that are...</h4>
+<hr  />
+<h3> <a href="productblackbiketie.html">view product</a></h3>
+</div>
+
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal6 = document.getElementById('myModal6');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn6");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[1];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal6.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal6.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal6) {
+        modal6.style.display = "none";
+    }
+}
+</script>
+</div> 
+ 
+ 
+ 
+ <div class="baradd"><h4>Bike Tie </h4><p>/ $ 12.00</p></div>
+ </div></div>
+
+
+
+<!-- ===========================
+footer
+    =========================== -->
+   <div id="footer">
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <p>This is where you should include a short description of your website.</p>
+  
+  
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <h4>More Information</h4>
+  <ul>
+  <li><a href="">Search</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  
+  </ul>
+
+</div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <h4>Newsletter</h4>
+  <input type="email" placeholder="youremailadress@xyx.com" />
+  <input type="submit" value="subscribe" />
+  
+  
+  
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <h4>Get Connected</h4>
+  <img src="img/fb-01.png" />
+  <img src="img/tw-01.png" />
+  <img src="img/ins-01.png" />
+ 
+  </div>
+  </div>
+  <div id="footer2">
+  <div class="col-lg-6 col-md-12 col-sm-12 ">
+  <p> © 2017 made by Irsa </p>
+  </div>  
+  <div class="col-lg-6 col-md-12 col-sm-12 ">
+  <h6>View prices in : </h6>
+  <ul>
+  <li><a href="">USD</a></li>
+  <li><a href="">CAD</a></li>
+  <li><a href="">AUD</a></li>
+  <li><a href="">GBP</a></li>
+  </ul>
+  <img src="img/cards.png" />
+  </div>  
+
+  
+  
+  </div>  
+
+</body>
+</html>

@@ -1,0 +1,1117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Lab Assignment</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="description" content="This is a demonstration page." />
+		<meta name="keywords" content="alert, confirm, prompt, demo" />
+		
+		<style type="text/css">
+			
+						
+		
+			
+			
+			
+			
+			
+			input [type=button]{
+				margin-top:50px !important;
+				width:400px;
+				height:500px;}
+			
+			
+			
+			/* Custom dialog styles */
+			#popup_container.style_1 {
+				
+				color: #A4C6E2;
+				background: #000;
+				border-color: #219aa0;
+			}
+			
+		
+			
+			#popup_container.style_1 #popup_content {
+				background: none;
+				color:#000;
+			}
+			
+			#popup_container.style_1 #popup_message {
+				padding-left: 0em;
+				font-size:1.5em;
+				
+
+			}
+			
+		
+
+	
+		#popup_container.style_1 INPUT[type='button'] {
+				margin-top:10%;
+				width:40%;
+				height:30px;
+				border: outset 2px #0077b5;
+				color: #fff;
+				background: #00a0dc;}
+	
+	
+			
+		</style>
+		
+		<!-- Dependencies -->
+
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.ui.draggable.js" type="text/javascript"></script>
+		
+		<!-- Core files -->
+		<script src="js/jquery.alerts.js" type="text/javascript"></script>
+		<link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<!-- Example script -->
+		<script type="text/javascript">
+			
+			$(document).ready( function() {
+				
+				
+			
+<!-- =====1st alert ===== -->	
+				
+$(".prompt1").click( function() {
+	
+   jPrompt("Check the number is devisible by 3 or not.","","Number is devisible by 3 or not", function(r) {
+						if( r ) 
+{
+   r = parseInt(r);
+   
+   
+ if(r%3 == 0){
+	x ="is divisible by 3";
+	}
+	
+else 	
+{
+	
+	x ="is not divisible by 3";}
+	
+	
+	
+	
+	  
+                        jAlert(r + " " +x ,"Number is devisible by 3 or not"); 
+							
+					};
+					});
+						});	
+	
+<!-- =====2nd alert ===== -->
+
+$(".prompt2").click( function() {
+	
+   jPrompt("Please enter a numer to check the number is an even number or an odd number.","","Even or Odd", function(x){
+						if( x ) {
+   
+   
+   x = parseInt(x);
+   
+   
+ 
+if(x%2 == 0){
+	z =x + " is Even";
+	}
+	
+else 	
+{
+	
+	z =x + " is Odd";}
+	
+
+	
+	
+	
+	  
+                        jAlert(z ,"Even or Odd"); 
+							
+						};
+						
+				 });
+						});							
+	<!-- =====3rd alert ===== -->
+
+$(".prompt3").click( function() {
+	
+   jPrompt("Please enter your age.","","your age", function(x){
+						if( x ) {
+   
+   
+   x = parseInt(x);
+   
+   
+ 
+if(x > 18){
+	z =" Old enough";
+	}
+	
+else 	
+{
+	
+	z = " Too young";}
+	
+
+	
+	
+	
+	  
+                        jAlert(z ,"your age"); 
+							
+						};
+						
+				 });
+						});													
+													
+<!-- =====4th alert ===== -->
+
+$(".prompt4").click( function() {
+	
+   jPrompt("Please guess the name.","","Name", function(x){
+						if( x ) {
+   
+   
+   
+   
+   
+ 
+if(x ==="irsa"){
+	z ="Congrats you guess right Name";
+	}
+	
+
+	
+
+	
+	
+	
+	  
+                        jAlert(z ,"Name"); 
+							
+						};
+						
+				 });
+						});		
+						
+						
+						
+	<!-- =====5 alert ===== -->	
+				
+$(".prompt5").click( function() {
+	
+   jPrompt("Check the number is devisible by 3 or not.","","Number is devisible by 3 or not", function(r) {
+						if( r ) 
+{
+   r = parseInt(r);
+   
+   
+ if(r%3 == 0){
+	x ="is divisible by 3";
+	}
+	
+else 	
+{
+	
+	x ="is not divisible by 3";}
+	
+	
+	
+	
+	  
+                        jAlert(r + " " +x ,"Number is devisible by 3 or not"); 
+							
+					};
+					});
+						});						
+						
+						
+						
+						
+						
+						
+						
+						
+	<!-- =====6 alert ===== -->	
+				
+$(".prompt6").click( function() {
+	
+   jPrompt("Please enter a number, uppercase letter or lower case letter.","","Number, uppercase letter or Lower case letter", function(r) {
+						if( r ) 
+{
+   
+  
+   
+ if(r == r.toUpperCase()){
+	z = r + " is UpperCase.";
+	}
+	
+else if(r == r.toLowerCase()) {
+            z= r + " is LowerCase.";
+        }
+    
+    else {
+        z=r + " is a Number";
+    }
+
+	
+	
+	
+	  
+                        jAlert(z,"Number, uppercase letter or Lower case letter"); 
+							
+					};
+					});
+						});											
+						
+	<!-- =====7 alert ===== -->						
+$(".prompt7").click( function() {
+	
+   jPrompt("Please enter 1st Number.","","Calculation", function(x){
+   jPrompt("Please enter 2nd Number.","","Calculation", function(y){
+	jPrompt("Please enter  Operator (+, -, *, /, %)","","Program", function(z){
+   
+   if( x ) {
+   x = parseInt(x);
+   y = parseInt(y);
+  
+   
+   
+ 
+if(z==="+"){
+	z =x + y;
+	}
+	
+else if(z==="-") {
+	
+	z =x - y;
+	
+	}
+	
+else if(z==="*") {
+	
+	z =x * y;
+	
+	}	
+	
+else if(z==="/") {
+	
+	z =x / y;}	
+	
+else if(z==="%") {
+	
+	z =x % y;}		
+	
+	
+	
+	  
+                        jAlert( z   ,"Calculation"); 
+							
+							};
+						
+				 });
+						});
+						
+						});
+						});		
+						
+						
+						
+						
+						
+		<!-- =====8 alert ===== -->	
+				
+$(".prompt8").click( function() {
+	
+   jPrompt("Please enter a time.","","Greeting", function(r) {
+						if( r ) 
+{
+   
+  
+   
+ if( r >= 0 && r <= 12.00){
+	z ="Good Morning !";
+	}
+	
+else if(r >= 12.00 && r <= 17.00) {
+            z="Good Afternoon !";
+        }
+    
+   
+else if(r >= 17.00 && r <= 21.00) {
+            z="Good Evening !";
+        }
+		
+		else if(r >= 21.00 && r <= 23.59) {
+            z="Good Night !";
+        }
+		
+	else{ z="Invalid time"}	
+	
+	
+	
+	  
+                        jAlert(z,"Greeting"); 
+							
+					};
+					});
+						});															
+						
+						
+						
+						
+						
+						
+						
+						
+						
+		<!-- =====9 alert ===== -->	
+				
+$(".prompt9").click( function() {
+	
+   jPrompt("Please enter a year(YYYY) to check weather its Leap year or Not .","","Leap year or Not", function(r) {
+						if( r ) 
+{
+   
+  parseInt(r)
+   
+ if( r %4 == 0){
+	z = r + " is a leap year";
+	}
+	
+else if(r %100 == 0) {
+            z = r + " is not a leap year";
+        }
+    
+   
+else if(r %400 == 0) {
+            z = r + " is a leap year";
+        }
+		
+		
+else{   z = r + " is not a leap year";   }	
+	
+	
+	  
+                        jAlert(z,"Leap year or Not"); 
+							
+					};
+					});
+						});					
+						
+						
+<!-- =====10 alert ===== -->	
+				
+$(".prompt10").click( function() {
+	
+    jPrompt("Please enter a Password.","please enter a password","Password", function(r){
+	 jPrompt("Please re-enter a Password .","","Password", function(s){
+						if( r ) {
+
+   
+ if( r  === s){
+	z = "Correct password";
+	}
+	
+	
+else if(r  !== s) {
+            z ="Incorrect password";
+        }	
+		
+		
+	
+	
+			
+	 
+                        jAlert(z,"Password"); 
+							
+						
+						};
+						
+				 });
+						});
+						
+						});
+						
+											
+						
+	<!-- =====11 alert ===== -->	
+				
+$(".prompt11").click( function() {
+	
+   jPrompt("Please enter a name Fahad.","","Name", function(r) {
+						if( r ) 
+{
+   
+  
+   
+
+
+
+if (r === "Fahad") {
+z="Hello Fahad!";
+}
+	
+else{
+	
+z= "You are not Fahad";
+}	
+	
+	  
+                        jAlert(z,"Name"); 
+							
+					};
+					});
+						});	
+						
+	<!-- =====12 alert ===== -->	
+				
+$(".prompt12").click( function() {
+	
+   jPrompt("Please enter a time ","","Greetting", function(r) {
+						if( r ) 
+{
+   
+  
+   
+
+
+if (r < 18) {
+greeting = "Good day";}
+else{
+	
+greeting = "Good evening";
+}
+	
+	
+	
+	  
+                        jAlert(greeting,"Greetting"); 
+							
+					};
+					});
+						});	
+						
+						
+			<!-- =====13 alert ===== -->	
+				
+$(".prompt13").click( function() {
+	
+    jPrompt("Please enter a 1st Number.","","Grater/Eqaul Number", function(r){
+	 jPrompt("Please enter a 2nd Number.","","Grater/Eqaul Number", function(s){
+						if( r ) {
+							
+						
+							
+   
+   
+   r = parseInt(r);
+    s = parseInt(s);
+   
+ 
+if(r > s ){
+	z =r + " Is Grater Number ";
+	}
+	
+	
+else if(r < s)	
+{
+	
+	z =s + " Is Grater Number";}
+	
+else if(r == s)	
+{
+	
+	z =r  + " Is equal to " + s;}	
+	
+	
+	  
+                        jAlert(z ,"Grater/Eqaul Number"); 
+							
+						
+						};
+						
+				 });
+						});
+						
+						});		
+						
+						
+	<!-- =====14 alert ===== -->	
+				
+$(".prompt14").click( function() {
+	
+   jPrompt("Please enter a number","","positive, negative or zero", function(r) {
+						if( r ) 
+{
+   
+  
+     parseInt(r)
+
+
+
+if (r > 0) {
+z = "Positive integer";}
+
+else if (r < 0) {
+z = "Negative integer";}
+
+
+
+ else if (r === 0){
+	
+z = "Equal to zero";
+}
+	
+	
+	
+	  
+                        jAlert(z,"positive, negative or zero"); 
+							
+					};
+					});
+						});	
+											
+						
+						
+						
+						
+						
+						
+		
+													
+						
+						
+						
+						
+						
+						
+		<!-- =====15 alert ===== -->	
+				
+$(".prompt15").click( function() {
+	
+   jPrompt("Please enter an hour","","Time For", function(r) {
+						if( r ) 
+{
+	
+	 parseInt(r)
+   
+   
+ if(r >= 6 && r <= 9){
+	z = "Breakfast is served.";
+	}
+	
+	
+	else if (r >= 11 && r <= 12 || r >=1 ) {
+     z = "Time for lunch";}
+
+
+
+ else if (r >= 5 && r <= 8){
+          z = "It's dinner time.";
+}
+	else {
+          z = "Sorry, you'll have to wait, or go get a snack.";
+}
+
+	  
+                        jAlert(z,"Time For"); 
+							
+					};
+					});
+						});	
+	
+	
+<!-- =====16 alert ===== -->	
+				
+$(".prompt16").click( function() {
+	
+   jPrompt("Please enter number, string or boolean","","Number/String/Boolean", function(x) {
+						if( x) 
+{
+	
+	
+ 
+	  
+	   
+	if(x > 0 && x < 1000000000000000){
+		
+	y="Its a number";	
+		
+		
+}
+
+else if (x==="true"){
+		
+	y="Its a Boolean" ;	
+		
+		
+		}  
+		
+else if (x==="false"){
+		
+	y="Its a Boolean" ;	
+		
+		
+		}  		
+		
+else if (x!==""){
+		
+	y="Its a string" ;	
+		
+		
+		}  
+                        jAlert(y,"Number/String/Boolean"); 
+							
+					};
+						
+				 });
+						});	
+						
+						
+		<!-- =====17 alert ===== -->	
+				
+$(".prompt17").click( function() {
+	
+   jPrompt("Please enter an Alphabet","","True/False", function(r) {
+						if( r ) 
+{
+	
+	 if (r === "a" && "e" && "i" && "o" && "u" && "A" && "E" && "I" && "O" && "U"  )
+	 
+	 
+	 {
+       z = "True"}
+	   
+	   
+    else{
+        z = "False"}
+
+	  
+                        jAlert(z,"True/False"); 
+							
+					};
+					});
+						});						
+										
+						
+						
+						
+						
+						
+	<!-- =====18 alert ===== -->	
+				
+$(".prompt18").click( function() {
+	
+    jPrompt("Please enter a 1st Number","","Statement", function(r){
+	 jPrompt("Please enter a 2nd Number","","Statement", function(s){
+						if( r ) {
+							
+						
+							
+   
+   
+   r = parseInt(r);
+    s = parseInt(s);
+   
+ 
+if(r > s || r < s){
+	z =" True";
+	}
+	
+	
+
+	
+else if(r == s)	
+{
+	
+	z ="True";}
+	
+	
+	
+	  
+                        jAlert(z ,"Statement"); 
+							
+						
+						};
+						
+				 });
+						});
+						
+						});		
+						
+						
+		
+						
+						
+						
+						
+						
+						
+	<!-- =====19 alert ===== -->	
+				
+$(".prompt19").click( function() {
+	
+   jPrompt("Please enter a number of month","","Month", function(x) {
+						if( x ) 
+{
+     x = parseInt(x);
+  
+   
+ if(x===1){
+	z = "January";
+	}
+	
+else if(x===2){
+	z = "Febuary";
+	}	
+	
+
+else if(x===3){
+	z = "March";
+	}	
+
+else if(x===4){
+	z = "April";
+	}	
+
+else if(x===5){
+	z = "May";
+	}	
+
+else if(x===6){
+	z = "June";
+	}	
+
+else if(x===7){
+	z = "July";
+	}	
+
+else if(x===8){
+	z = "August";
+	}	
+
+else if(x===9){
+	z = "September";
+	}
+	else if(x===10){
+	z = "October";
+	}	
+	else if(x===12){
+	z = "November";
+	}
+
+else if(x===12){
+	z = "December";
+	}	
+
+	
+else {
+	z = "Invalid Month";
+	}  
+                        jAlert(z,"Month"); 
+							
+					};
+					});
+						});						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+										});
+	
+		</script>
+
+		
+	</head>
+	
+	<body>
+		
+		<div id="wrapper">
+		
+		
+            <h1>IF…ELSE
+&
+ELSE
+IF
+STATEMENTS,
+TESTING
+SET
+OF
+CONDITIONS
+&
+SWITCH
+STATEMENTS</h1>
+
+
+			<ol>
+            
+  <!-- =====1st alert ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to check whether the given input number is
+divisible by 3 or else show a message “Number is not divisible
+by 3”.</li>
+
+<input class="prompt_button prompt1" type="button" value="Show Prompt" />
+</div>
+
+<!-- =====2nd ===== -->	
+
+<div class="box">
+   
+  <li>Write a program that checks whether the given input is an even
+number or an odd number.</li>
+
+<input class="prompt_button prompt2" type="button" value="Show Prompt" />
+</div>
+
+
+<!-- =====3rd ===== -->	
+
+<div class="box">
+   
+  <li>Write an if/else statement with the following condition:
+If the variable age is greater than 18, output "Old enough",
+otherwise output "Too young".</li>
+
+<input class="prompt_button prompt3" type="button" value="Show Prompt" />
+</div>
+
+
+<!-- =====4th ===== -->	
+
+<div class="box">
+   
+  <li>Write a program that prompts the user for their name, and then
+displays a special greeting to that person if their name is the
+same as yours. If the name entered by the user is anything
+other than your name, your code should not produce any
+output..</li>
+
+<input class="prompt_button prompt4" type="button" value="Show Prompt" />
+</div>
+
+
+<!-- =====5th ===== -->	
+   <div class="box">
+   
+  <li>Write a program to check whether the given input number is
+divisible by 3 or else show a message “Number is not divisible
+by 3”.</li>
+
+<input class="prompt_button prompt5" type="button" value="Show Prompt" />
+</div>
+
+<!-- =====6th ===== -->	
+   <div class="box">
+   
+  <li>Write a program that takes a character(number or string) in a
+variable & checks whether the given input is a number,
+uppercase letter or lower case letter. (Hint: ASCII codes:-
+A=65, Z=90, a=97, z=122).</li>
+
+<input class="prompt_button prompt6" type="button" value="Show Prompt" />
+</div>
+
+<!-- =====7th ===== -->	
+   <div class="box">
+   
+  <li>Write a program to create a calculator for +, -, *, /, % using
+switch case statements. (number1, number2 and operator will
+be input)</li>
+
+<input class="prompt_button prompt7" type="button" value="Show Prompt" />
+</div>
+<!-- =====8th ===== -->	
+   <div class="box">
+   
+  <li>Write a program that takes time as input from user in 24 hours
+clock format like: 1900 = 7pm. Implement the following case
+using if, else & else if statements</li>
+
+<input class="prompt_button prompt8" type="button" value="Show Prompt" />
+</div>   
+
+
+<!-- =====9th ===== -->	
+   <div class="box">
+   
+  <li>Write a program that takes a calendar year in YYYY format in
+a variable. Check & notify the user whether it is a leap year or
+not.</li>
+
+<input class="prompt_button prompt9" type="button" value="Show Prompt" />
+</div>   
+
+
+<!-- =====10th ===== -->	
+   <div class="box">
+   
+<li>Write a program that.
+<ol type="a">
+
+<li>Store correct password in a JS variable.</li>
+<li>Asks user to enter his/her password</li>
+<li>Validate the two passwords:</li>
+<ol type="i">
+<li>Check if user has entered password. If not, then give
+message “ Please enter your password”</li>
+<li>Check if both passwords are same. If they are same,
+show message “Correct! The password you entered
+matches the original password”. Show “Incorrect
+password” otherwise.</li>
+
+
+</ol>
+
+
+</ol></li>
+
+<input class="prompt_button prompt10" type="button" value="Show Prompt" />
+</div> 
+
+
+<!-- =====11th ===== -->	
+   <div class="box">
+   
+  <li>Write a program that adds an else statement to the following
+script to display “You are not Fahad”<br /><br />
+var firstName = "Ali";<br /><br />
+if (firstName === "Fahad") {<br /><br />
+document.write("Hello Fahad!");
+}</li>
+
+<input class="prompt_button prompt11" type="button" value="Show Prompt" />
+</div>
+
+
+<!-- =====12th ===== -->	
+   <div class="box">
+   
+  <li>This if/else statement does not work. Try to fix it:
+var greeting;
+var hour = 13;<br /><br />
+if (hour < 18) {<br /><br />
+greeting = "Good day";<br /><br />
+else<br /><br />
+greeting = "Good evening";
+}
+</li>
+
+<input class="prompt_button prompt12" type="button" value="Show Prompt" />
+</div>
+
+   <!-- =====13th ===== -->	
+   <div class="box">
+   
+  <li>Write a JavaScript program that accept two integers and
+display the larger. Also show if the two integers are equal.
+</li>
+
+<input class="prompt_button prompt13" type="button" value="Show Prompt" />
+</div>   
+
+
+ <!-- =====14th ===== -->	
+   <div class="box">
+   
+  <li>Write a program that takes input a number from user & state
+whether the number is positive, negative or zero.
+</li>
+
+<input class="prompt_button prompt14" type="button" value="Show Prompt" />
+</div>   
+
+
+ <!-- =====15th ===== -->	
+   <div class="box">
+   
+  <li>Ask the user what the current hour is. If the hour is between
+6 and 9 a.m., tell the user, "Breakfast is served." If the hour is
+between 11 a.m. and 1 p.m., tell the user, "Time for lunch." If
+the hour is between 5 and 8 p.m., tell the user, "It's dinner
+time." For any other hours, tell the user, "Sorry, you'll have to
+wait, or go get a snack." (Hint: Store the hour in 24 hours clock
+format i.e. 14 for 2pm , 15 for 3pm)
+</li>
+
+<input class="prompt_button prompt15" type="button" value="Show Prompt" />
+</div> 
+
+
+<!-- =====16th ===== -->	
+   <div class="box">
+   
+  <li>Write a program that stores value in a variable & tell whether
+the type of that variable is a "number", "string", "boolean" or
+“undefined”
+</li>
+
+<input class="prompt_button prompt16" type="button" value="Show Prompt" />
+</div>
+
+
+<!-- =====17th ===== -->	
+   <div class="box">
+   
+  <li>Write a program that takes a character (i.e. string of length 1)
+and returns true if it is a vowel, false otherwise.
+</li>
+
+<input class="prompt_button prompt17" type="button" value="Show Prompt" />
+</div>
+
+<!-- =====18th ===== -->	
+   <div class="box">
+   
+  <li>Choose the correct comparison operator to display "true",
+when:
+10 is NOT equal to 8.
+</li>
+
+<input class="prompt_button prompt18" type="button" value="Show Prompt" />
+</div>
+
+
+<!-- =====19th ===== -->	
+   <div class="box">
+   
+  <li>Use a switch statement to rewrite the following JavaScript
+code. Prompt the user for the number of a month rather than
+setting it to 8:
+</li>
+
+<input class="prompt_button prompt19" type="button" value="Show Prompt" />
+</div>
+
+<!-- =====20th ===== -->	
+   <div class="box">
+   
+  <li>Use a conditional (ternary) operator for this exercise:
+If the variable age is a value below 18, the value of the variable voteable should be "Too young",
+otherwise the value of voteable should be "Old enough".</li>
+
+<input class="prompt_button prompt3" type="button" value="Show Prompt" />
+</div>
+  </ol>
+			</div>	
+		
+		
+	</body>
+
+	
+</html>

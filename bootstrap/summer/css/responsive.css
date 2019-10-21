@@ -1,0 +1,84 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {    
+    /*bg */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+    
+/* Small Devices, Tablets */
+@media only screen and (max-width : 980px) {
+    
+
+
+/* Mobile Devices */
+
+
+
+
+.traveloffer{
+	
+	height:auto;
+	overflow:hidden;}
+
+
+.traveltext{height:auto;}
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 640px) {
+	
+	 #formbg{margin-top:21% ;  
+}
+.traveltext{height:auto;}
+}
+
+/* Smaller Mobile Devices */
+@media only screen and (max-width : 480px) {
+	
+	#formbg h2{ padding-left:2%;
+font-weight:300;}	
+input[type=text]{
+	height:30px;}	
+#formbg button[type=submit]{
+	height:30px !important ;
+	font-size:1em;
+	}  
+.traveloffer{
+	
+	height:auto;
+	overflow:hidden;} 
+   .traveltext{height:auto;}
+}
+
+/* Smallest Mobile Devices */
+@media only screen and (max-width : 320px) {
+   
+
+}
+
+.traveloffer{
+	
+	height:auto;
+	overflow:hidden;
+	
+	
+	
+}

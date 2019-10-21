@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+ var math=  prompt("Obtained marks for subject 'Maths'  (numbers only)  " , "", "Marksheet");
+   var english =  prompt("Obtained marks for subject 'English'  (numbers only)" ,"" , "Marksheet");
+   var urdu =  prompt("Obtained marks for subject 'Urdu'  (numbers only)  " , "", "Marksheet");
+    var total = 300 ;
+  var  sum = math + english + urdu ;
+	
+     var per = (sum / total) * 100 ;
+	 
+if (per>= 80)
+       {
+	grade = "A-one";
+	} 
+	
+else if(per>=70)
+		{
+			grade="A"
+		}
+	 
+else if(per>=60)
+		{
+			grade="B"
+		}
+   
+   
+else 
+		{
+			grade="Fail"
+		}
+   
+   
+   if (grade>=A-one)
+       {
+	var result = "Excellent"
+	} 
+	
+else if(grade>=A)
+		{
+		var result = "Good"
+		}
+	 
+else if(grade>=B)
+		{
+			var result = "You need to improve"
+		}
+   
+   
+else 
+		{
+			var result = "Sorry"
+		}
+   
+   
+   
+   
+    
+	
+  var z ="\n"
+  
+  
+  
+jAlert("Mark Sheet" + z +
+                        "Total Marks :" + total + z +
+                       "Marks Obtained :" +  sum + z +
+					    "Percentage :" + per + z +
+						 "Grade " + grade + z +
+				          "Result " + result + z ,
+						 
+					    "Mark Sheet");
+						</script> </body>
+</html>

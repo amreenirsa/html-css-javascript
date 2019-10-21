@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>			 table {
+            text-align: center;
+			width:70%;
+			margin-top:30px;
+			border:#FFF;
+            background-color: #379BFF;
+            color: fff;
+        }
+		th{
+			height:30px;
+			color:#FFF;}
+        td{ 
+	height:25px;
+	color:#FFF;}</style>
+<script>
+ var math, english, urdu, total, percentage, grade;
+    math =  prompt("  Please enter Obtained marks for subject 'Maths'  (numbers only)   ");
+    english =  prompt("  Please enter Obtained marks for subject 'English' (numbers only)    ");
+    urdu =  prompt("  Please enter Obtained marks for subject 'Urdu' (numbers only)  ");
+    math = parseInt(math);
+    english = parseInt(english);
+    urdu = parseInt(urdu);
+    total = math + english + urdu;
+     percentage = (total / 300) * 100;
+     var p = percentage.toFixed(2)
+     totalM= 100;
+     if(percentage>=80 && percentage<=99)
+		{
+			grade="A+";
+		}
+	else if(percentage>=70 && percentage<=79)
+		{
+			grade="A"
+		}
+	else if(percentage>=60 && percentage<=69)
+		{
+			grade="B"
+		}
+	else if(percentage>=50 && percentage<=59)
+		{
+			grade="C"
+		}
+	else if(percentage>=40 && percentage<=49)
+		{
+			grade="D"
+		}
+	else if(percentage>=33 && percentage<=39)
+		{
+			grade="E"
+		}
+	else if(percentage>=33 && percentage<=39)
+		{
+			grade="E"
+		}
+	else
+		{
+			grade="Failed"
+		}
+    
+
+
+
+
+
+
+</script>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+<table border="1px" cellspacing="0">
+            <tr>
+                <th>Percentage %</th>
+                <th>Grade</th>
+                <th>Remarks</th>
+                
+            </tr>
+
+            <tr>
+                <td>Greater than or equal to 80</td>
+                <td> <script>document.write(total)</script> </td>
+                <td><script>document.write(math)</script></td>
+               
+            </tr>
+
+
+            <tr>
+                <td>Greater than or equal to 70</td>
+                <td> <script>document.write(totalM)</script> </td>
+                <td><script>document.write(english)</script></td>
+                
+            </tr>
+
+            <tr>
+                <td>Greater than or equal to 60</td>
+                <td> <script>document.write(totalM)</script> </td>
+                <td><script>document.write(urdu)</script></td>
+               
+            </tr>
+
+            <tr>
+                <th>Less than 60</th>
+                <th><script>document.write((totalM*3))</script></th>
+                <th><script>document.write(total)</script></th>
+               
+            </tr>
+
+           
+        </table>
+</body>
+</html>

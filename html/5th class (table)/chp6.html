@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>5th Lab Assignment</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1>TABLE</h1>
+				<p> </p>
+			</div>
+			
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+					<div class="post">
+						<h2 class="title">Basic Table Structure</h2>
+						
+						<div class="entry">
+							
+<table width="100%" align="center">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+						</div>
+						<p class="links">
+							</p>
+					</div>
+					<div class="post">
+						<h2 class="title">Spanning Columns</h2>
+						
+						<div class="entry">
+							<table align="center" width="100%">
+<tr>
+<th></th>
+<th>9am</th>
+<th>10am</th>
+<th>11am</th>
+<th>12am</th>
+</tr>
+<tr>
+<th>Monday</th>
+<td colspan="2">Geography</td>
+<td>Math</td>
+<td>Art</td>
+</tr>
+<tr>
+<th>Tuesday</th>
+<td colspan="3">Gym</td>
+<td>Home Ec</td>
+</tr>
+</table>
+						</div>
+						<p class="links">   </p>
+					</div>
+					<div class="post">
+						<h2 class="title">Spanning Rows</h2>
+						
+						<div class="entry">
+							<table align="center" width="100%">
+<tr>
+<th></th>
+<th>ABC</th>
+<th>BBC</th>
+<th>CNN</th>
+</tr>
+<tr>
+<th>6pm - 7pm</th>
+<td rowspan="2">Movie</td>
+<td>Comedy</td>
+<td>News</td>
+</tr>
+<tr>
+<th>7pm - 8pm</th>
+<td>Sport</td>
+<td>Current Affairs</td>
+</tr>
+</table>
+						</div>
+						
+					</div><p class="links">   </p>
+                    
+                    
+                      <div class="post">
+						<h2 class="title">Long Tables</h2>
+						
+						<div class="entry">
+<table align="center" width="100%">
+<thead>
+<tr>
+<th>Date</th>
+<th>Income</th>
+<th>Expenditure</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<th>1st January</th>
+<td>250</td>
+<td>36</td>
+</tr>
+<tr>
+<th>2nd January</th>
+<td>285</td>
+<td>48</td>
+</tr>
+<!-- additional rows as above -->
+<tr>
+<th>31st January</th>
+<td>129</td>
+<td>64</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td></td>
+<td>7824</td>
+<td>1241</td>
+</tr>
+</tfoot>
+</table>
+						</div>
+						
+					</div>
+                    <p class="links">   </p>
+                    
+                    
+                    
+<div class="post">
+						<h2 class="title">Old Code:
+Width & Spacing</h2>
+						
+						<div class="entry">
+
+<table width="100%" cellpadding="10" cellspacing="15" >
+<tr>
+<th width="150" bgcolor="#000000"></th>
+<th bgcolor="#000000">Withdrawn</th>
+<th bgcolor="#000000">Credit</th>
+<th bgcolor="#000000" width="150">Balance</th>
+</tr>
+<tr>
+<th bgcolor="#000000">January</th>
+<td bgcolor="#000000">250.00</td>
+<td bgcolor="#000000">660.50</td>
+<td bgcolor="#000000">410.50</td>
+</tr>
+<tr>
+<th bgcolor="#000000">February</th>
+<td bgcolor="#000000">135.55</td>
+<td bgcolor="#000000">895.20</td>
+<td bgcolor="#000000">1170.15</td>
+</tr>
+</table>
+						</div>
+						
+					</div>
+                    <p class="links">   </p>                    
+                    
+                    
+      <div class="post">
+						<h2 class="title">Old Code:
+Border & Background</h2>
+						
+						<div class="entry">
+<table border="2" bgcolor="#990066"align="center" width="100%" bordercolor="black">
+<tr>
+<th width="150">Months</th>
+<th>Withdrawn</th>
+<th>Credit</th>
+<th width="150" bgcolor="#000000">Balance</th>
+</tr>
+<tr>
+<th>January</th>
+<td>250.00</td>
+<td>660.50</td>
+<td bgcolor="#000000">410.50</td>
+</tr>
+<tr>
+<th>February</th>
+<td>135.55</td>
+<td>895.20</td>
+<td bgcolor="#000000">1170.15</td>
+</tr>
+</table>
+						</div>
+						
+					</div>
+                    <p class="links">   </p>
+                    
+ <div class="post">
+<h2 class="title">Adding a Caption</h2>
+						
+						<div class="entry">
+<table border="2" align="center" width="100%" bordercolor="black">
+
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+
+
+</table>
+						</div>
+						
+					</div>
+                    <p class="links">   </p>                   
+                                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+                
+                
+                    
+                    
+                    
+                    
+                    
+                  
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+				<!-- end #content -->
+				
+                <div id="sidebar">
+	<h2>Tables</h2>
+							<ul>
+								<li>An HTML table is defined with the<b> &lt;table &gt; </b>tag.</li>
+								<li>Each table row is defined with the<b> &lt;tr &gt; </b> tag.</li>
+								<li>A table header is defined with the<b> &lt;th &gt; </b> tag.</li>
+								<li> By default, table headings are <b>bold and centered</b>.</li>
+								<li>A table data/cell is defined with the<b> &lt;td &gt; </b> tag.</li>
+								<li>Some browsers automatically draw lines around the table and/or the individual cells.</li>
+<li>The <b> &lt;td &gt;</b> elements are the data containers of the table.
+They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</li>
+<li>Use the <b>colspan</b> attribute to make a cell span many columns.</li>
+<li>Use the <b>rowspan</b> attribute to make a cell span many rows.</li>
+<li>For long tables you can split the table into a <b> &lt;thead&gt; </b>,
+<b> &lt;tbody&gt; </b>, and <b> &lt;tfoot&gt; </b>.</li>
+								<li>The headings of the table should
+sit inside the <b> &lt;thead&gt; </b>element.</li>
+
+								<li>The body should sit inside the <b> &lt;tbody&gt; </b>element.</li>
+								<li>The footer belongs inside the
+<b> &lt;tfoot&gt; </b> element.</li>
+<li>The border attribute was used on both the <b> &lt;table&gt; </b> and <b> &lt;td&gt; </b> elements to indicate the width of the border in pixels.</li>
+<li>The bgcolor attribute was used to indicate background colors of either the entire table or individual table cells.</li>
+<li> The  <b> &lt;caption&gt; </b> tag must be inserted immediately after the  <b> &lt;table&gt; </b> tag.</li>
+<li>Use the HTML  <b> &lt;caption&gt; </b> element to define a table caption.</li>
+
+
+							</ul>
+						
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Made By Amreen.</p>
+</div>
+<!-- end #footer -->
+<div align=center></div></body>
+</html>

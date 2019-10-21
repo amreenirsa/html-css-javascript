@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.jumbotron{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	color:#fff;
+	 background: -webkit-linear-gradient(left top, #0077b5,#00a0dc); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #0077b5, #00a0dc); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #0077b5, #00a0dc); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #0077b5, #00a0dc); /* Standard syntax */
+
+	}
+	 
+h1{
+    text-align: center;
+    	color:#fff;
+	padding:0 0 2% 0;
+	
+	font-size:3em !important;
+    
+
+}
+input{
+    
+    width:60%;
+    margin: 10px 20%;
+    height: 40px;
+	display:inline;
+    padding: 0 0 0 5px;
+	color:#00a0dc;
+	text-transform:capitalize;
+	border-left:7px ridge #00a0dc;
+	outline:none;
+	border-right:thin ridge #0b4971;
+	border-bottom:thin ridge #0b4971;
+	border-top:thin ridge #0b4971;
+	
+    
+}
+p{
+    padding-left: 20%;
+    display: inline;
+    font-size: 1.2em !important;
+		color:#fff;
+}
+button{
+    display: block;
+    width:175px;
+    margin: 10px 20% 20px;
+    height: 40px;
+	color:#FFF;
+    padding: 0 0 0 5px;
+  background: -webkit-linear-gradient(left top, #0077b5,#00a0dc); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #0077b5, #00a0dc); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #0077b5, #00a0dc); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #0077b5, #00a0dc); /* Standard syntax */
+  border: thin ridge #FFF;
+  box-shadow:5px 5px 8px #0b4971;
+  outline:none;
+    
+}
+
+button:hover{
+	
+	background:#34b3e4;}
+table{
+	
+  
+   background: -webkit-linear-gradient(#cfedfb, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#cfedfb, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient#cfedfb, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#cfedfb, #fff);
+	text-transform:capitalize; }
+	
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	
+	border-top:thin ridge #00a0dc;
+	color:#008cc9;
+	font-size:1em;
+	text-transform:capitalize;
+	font-family:Geneva, sans-serif;
+	}
+	
+	
+	

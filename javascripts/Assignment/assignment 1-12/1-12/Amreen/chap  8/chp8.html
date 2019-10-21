@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Lab Assignment</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="description" content="This is a demonstration page." />
+		<meta name="keywords" content="alert, confirm, prompt, demo" />
+		
+		<style type="text/css">
+			BODY,
+			HTML {
+				padding: 0px;
+				margin: 0px;
+			}
+			 table {
+            text-align: center;
+			width:70%;
+			margin-top:30px;
+			border:#FFF;
+            background-color: #379BFF;
+            color: fff;
+        }
+		th{
+			height:30px;
+			color:#FFF;}
+        td{ 
+	height:25px;
+	color:#FFF;}
+      			BODY {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				background: #FFF;
+				padding: 15px;
+			}
+			
+			H1 {
+				font-size: 20px;
+				color:#98041b;
+				font-weight: normal;
+			}
+			
+			
+			
+			FIELDSET {
+				border: solid 1px  #98041b;
+				-moz-border-radius: 16px;
+				-webkit-border-radius: 16px;
+				border-radius: 16px;
+				padding: 1em 2em;
+				margin: 1em 0em;
+			}
+			
+			
+			input [type=button]{
+				margin-top:50px !important;
+				height:500px;}
+			
+			LEGEND {
+				color: #98041b;
+				font-size: 1.5em;
+				font-weight:bold;
+				padding: 0em .5em;
+			}
+			
+			
+			
+			PRE {
+				font-family: "Courier New", monospace;
+				font-size: 17px;
+				color: #666;
+				background: #F8F8F8;
+				padding: 1em;
+				-moz-border-radius: 8px;
+				-webkit-border-radius: 8px;
+				border-radius: 8px;
+			}
+			
+			/* Custom dialog styles */
+			#popup_container.style_1 {
+				
+				color: #A4C6E2;
+				background: #eaecee;
+				border-color: #219aa0;
+			}
+			
+			#popup_container.style_1 #popup_title {
+				color: #FFF;
+				height:35px;
+				font-weight: normal;
+				text-align: left;
+				background: #57bfc1;
+				padding:2% 0 0;
+				border-bottom:solid 2px #219aa0;
+						
+			
+				padding-left: 1em;
+			}
+			
+			#popup_container.style_1 #popup_content {
+				background: none;
+				color:#000;
+			}
+			
+			#popup_container.style_1 #popup_message {
+				padding-left: 0em;
+				font-size:1.5em;
+				
+
+			}
+			
+			#popup_container.style_1 INPUT[type='button'] {
+				margin-top:10%;
+				width:30%;
+				height:30px;
+				border: outset 2px #219aa0;
+				color: #fff;
+				background: #57bfc1;
+			}
+li{
+	color: #000;
+	margin:10px 0;
+	font-size:1.5em;}	
+	
+li li{
+	color: #000;
+	
+	font-size:1em;}
+	
+p{font-size:3em;}	
+	
+.prompt_button{
+	width:150px !important;
+	height:30px;
+	border: outset 1px   #ccc;
+				color: #fff;
+				
+			/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(, #c9342f , #98041b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #c9342f ,#98041b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #c9342f ,#98041b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #c9342f ,#98041b); /* Standard syntax */}	
+	
+	
+			
+		</style>
+		
+		<!-- Dependencies -->
+
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.ui.draggable.js" type="text/javascript"></script>
+		
+		<!-- Core files -->
+		<script src="js/jquery.alerts.js" type="text/javascript"></script>
+		<link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<!-- Example script -->
+		<script type="text/javascript">
+			
+			$(document).ready( function() {
+				
+				
+		 <!-- =========================== 1st chapter =========================== -->		
+<!-- =====alert ===== -->	
+				
+$(".prompt").click( function() {
+					jPrompt("please entered your name", "jhone doe", "input", function(r) {
+						if( r ) jAlert("Hi ,Jhone Doe ","input");
+					});
+						});
+	
+<!-- =====2alert ===== -->	
+				
+				
+				
+				
+
+				
+$(".prompt2").click( function() {
+	
+	
+	jPrompt("please entered your name", "", "input", function(r) {
+						if( r ) 
+{
+var table1= r * 1;
+var table2= r * 2;
+var table3= r * 3;
+var table4= r * 4;
+var table5= r * 5;
+var table6= r * 6;
+var table7= r * 7;
+var table8= r * 8;
+var table9= r * 9;
+var table0= r * 10;
+z="\n"
+
+						
+						 jAlert(r + " x 1 =" + table1 + z +
+        r + " x 2 =" + table2 + z +
+		r+ " x 3 ="  + table3 + z +
+		r+ " x 4 ="  + table4 + z +
+		r+ " x 5 =" + table5 + z +
+		r+ " x 6 =" + table6 + z +
+		r+ " x 7 ="  + table7 + z +
+		r+ " x 8 ="  + table8 + z +
+		r+ " x 9 =" + table9+ z +
+		r+ " x 10 =" + table0 + z,"input");
+};
+					});
+						});
+
+					
+<!-- =====3alert ===== -->	
+				
+$(".prompt3").click( function() {
+	
+	
+	var x =prompt("Please enter your City name...", "");
+
+
+if (x === "karachi") {
+ jAlert("Welcome to city of lights"  ,"input");
+ }
+						
+											
+						});				
+				
+					
+<!-- =====4alert ===== -->	
+				
+$(".prompt4").click( function() {
+	
+
+
+
+
+ 
+	
+	var x = prompt("Your Gender" , "");
+
+
+if (x === "male") {
+ jAlert("Good Morning Sir."  ,"input");
+ }
+	if (x === "female") {
+ jAlert("Good Morning Ma’am."  ,"input");
+ }					
+	
+									
+						});	
+			
+<!-- =====5alert ===== -->	
+				
+$(".prompt5").click( function() {
+	
+
+
+
+
+ 
+	
+	var x = prompt("color of road traffic signal" , "");
+
+
+a ="\n"
+
+ if (x === "red") {
+ jAlert("Signal Colour" + "                  Message" + a + "red     " + "                vehicles must stop" );
+ }
+
+
+if (x === "yellow") {
+ jAlert("Signal Colour    " + "Message" + a + "yellow     " + "            vehicles should get ready to move" );
+ }
+
+if (x === "green") {
+ jAlert("Signal Colour    " + "Message" + a + "green     " + "             vehicles can move now" );
+ }				
+	
+
+						});	
+<!-- =====6alert ===== -->	
+				
+$(".prompt6").click( function() {
+	
+
+
+
+
+ 
+	
+	var x = prompt("Your Age  ?" , "");
+
+
+if (x <= 25) {
+ jAlert("You are welcome" );
+ }
+				
+	
+
+						});	
+<!-- =====7alert ===== -->	
+				
+$(".prompt7").click( function() {
+	
+	var x = prompt("remaining fuel in car (in litres) ?" , "");
+
+
+if (x <= 0.25) {
+ jAlert("Please refill the fuel in your car" );
+ }
+				
+	
+
+						});	
+<!-- =====8alert ===== -->	
+				
+$(".prompt8").click( function() {
+	
+	var a = 4;
+if (++a === 5){
+jAlert("given condition for variable a is true");
+}
+				
+	
+
+						});	
+<!-- =====9alert ===== -->	
+				
+$(".prompt9").click( function() {
+	
+	var b = 82;
+if (b++ === 83){
+jAlert("given condition for variable b is true");
+}				
+	
+
+						});							
+<!-- =====10alert ===== -->	
+				
+$(".prompt10").click( function() {
+	
+var c = 12;
+if (c++ === 13){
+jAlert("condition 1 is true");
+}
+if (c === 13){
+jAlert("condition 2 is true");
+}
+if (++c < 14){
+jAlert("condition 3 is true");
+}
+if(c === 14){
+jAlert("condition 4 is true");
+}
+				
+	
+
+						});	
+						
+						<!-- =====12alert ===== -->	
+			$(".prompt11").click( function() {	
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+jAlert("The cost equals");
+}				
+	
+
+						});	<!-- =====13alert ===== -->	
+			$(".prompt12").click( function() {	
+if (true){
+jAlert("True");
+}
+
+
+if (false){
+jAlert("False");
+}
+
+				
+	
+
+						});	
+				
+	
+
+							<!-- =====14alert ===== -->	
+				
+$(".prompt13").click( function() {
+	
+if("car" < "cat"){
+jAlert("car is smaller than cat");
+}			
+	
+
+						});							
+						
+		<!-- =====14alert ===== -->	
+		
+$(".prompt14").click( function() {
+	
+  var maths =  prompt("Obtained marks for subject 'Maths'  (numbers only)  " , " " , "Marksheet");
+ var   english =  prompt("Obtained marks for subject 'English'  (numbers only)" , " " , "Marksheet");
+   var urdu =  prompt("Obtained marks for subject 'Urdu'  (numbers only)  ", " " , "Marksheet");
+    var sum =  300;
+	var totalSum = maths + english + urdu ;
+	var percrntage = totalsum / sum *100 ;
+	
+  var z ="/n"
+  
+  
+  
+  
+  
+  
+                        jAlert("<h1>Mark Sheet</h1>" + z +
+                        "Total Marks :" + sum + z +
+                       "Marks Obtained :" +  totalSum + z +
+					    "Percentage :" +  pertentage + z ,
+						 
+					    "Mark Sheet");
+ 	
+						});							
+						
+						
+				});
+	
+		</script>
+
+		
+	</head>
+	
+	<body>
+		
+		
+		
+		<fieldset>
+			<legend>VARIABLES FOR STRINGS</legend>
+            <h1>|
+CONCATENATING
+TEXT
+STRINGS
+|
+PROMPTS
+|
+IF
+STATEMENTS
+|
+COMPARISON
+OPERATORS
+|</h1>
+			<ol>
+            
+  <!-- =====1st alert ===== -->	
+           
+  <li>Write a program that takes input a name from user & greet the
+user like this:</li>
+
+<input class="prompt_button prompt" type="button" value="Show Prompt" />
+
+
+<!-- =====2nd ===== -->	
+<li>Write a program to take input a number from user & display
+it’s multiplication table on your browser. If user does not enter
+a new number, multiplication table of 5 should be displayed by
+default.</li>
+		
+<input class="prompt_button prompt2" type="button" value="Show Prompt"/>
+ 
+        
+       
+       
+       <!-- =====3===== -->	
+<li>Write a program to take “city” name as input from user. If user
+enters “Karachi”, welcome the user like this: “Welcome to city
+of lights</li>
+		
+<input class="prompt_button prompt3" type="button" value="Show Prompt"/>
+       
+       
+       
+       
+       <!-- =====4===== -->	
+<li>Write a program to take “gender” as input from user. If the
+user is male, give the message: Good Morning Sir. If the user is
+female, give the message: Good Morning Ma’am.</li>
+		
+<input class="prompt_button prompt4" type="button" value="Show Prompt"/>       
+       
+       
+       <!-- =====5===== -->	
+<li>Write a program to take input color of road traffic signal from
+the user & show the message according to this table.</li>
+ 
+
+<input class="prompt_button prompt5" type="button" value="Show Prompt"/>       
+       
+       
+        <!-- =====6===== -->	
+<li>Write a program to take input max age & current age from
+user. If the current age is less than or equal to max age, show
+USER
+INPUT
+&
+CONDITIONAL
+STATEMENTS
+|
+JAVASCRIPT
+Page
+4
+of
+12
+the message “You are welcome”.</li>
+ 
+
+<input class="prompt_button prompt6" type="button" value="Show Prompt"/> 
+             
+   <!-- =====7===== -->	
+<li>Write a program to take input remaining fuel in car (in litres)
+from user. If the current fuel is less than 0.25litres, show the
+message “Please refill the fuel in your car”.</li>
+ 
+
+<input class="prompt_button prompt7" type="button" value="Show Prompt"/>          
+             
+   <!-- =====8===== -->	
+<li>Run this script, & check whether alert message would be
+displayed or not. Record the outputs.</li>
+ <ol type="a">
+<li>
+var a = 4;
+if (++a === 5){
+alert("given condition for variable a is true");
+}
+    </li>
+
+<input class="prompt_button prompt8" type="button" value="Show Prompt"/>                       
+    
+ <li>
+var b = 82;
+if (b++ === 83){
+alert("given condition for variable b is true");
+}    </li>
+
+<input class="prompt_button prompt9" type="button" value="Show Prompt"/>                       
+   
+    
+    
+    <li>
+var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");
+}
+if (c === 13){
+alert("condition 2 is true");
+}
+if (++c < 14){
+alert("condition 3 is true");
+}
+if(c === 14){
+alert("condition 4 is true");
+}
+
+    </li>
+
+<input class="prompt_button prompt10" type="button" value="Show Prompt"/>                       
+   
+    
+    
+    <li>
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");
+}    </li>
+
+<input class="prompt_button prompt11" type="button" value="Show Prompt"/>                       
+    
+    
+    
+    <li>
+if (true){
+alert("True");
+}
+if (false){
+alert("False");
+}    </li>
+
+<input class="prompt_button prompt12" type="button" value="Show Prompt"/>                       
+  
+    
+    
+    <li>
+if("car" < "cat"){
+alert("car is smaller than cat");
+}    </li>
+
+<input class="prompt_button prompt13" type="button" value="Show Prompt"/>                       
+    
+    
+    
+   </ol>
+   <li>
+Write a program to take input the marks obtained in three
+subjects & total marks. Compute & show the resulting
+percentage on your page. Take percentage & compute grade as
+per following table:    </li>
+
+<input class="prompt_button prompt14" type="button" value="Show Prompt"/> 
+
+            </ol>
+				
+		
+		
+	</body>
+
+	
+</html>

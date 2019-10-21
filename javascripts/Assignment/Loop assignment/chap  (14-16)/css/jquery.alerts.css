@@ -1,0 +1,222 @@
+
+BODY{
+				
+				color:#fff;
+				background-color:#000;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+
+	
+
+	
+	
+
+			
+			#wrapper{
+				width:90%;
+				margin:10px auto;
+				
+				
+				
+				height:auto;
+				border:thick  groove #000;
+			
+				-moz-box-shadow: 0 0 40px #404040;
+-webkit-box-shadow: 0 0 40px #404040;
+box-shadow: 0 0 40px #404040;
+				
+				
+		}
+
+
+	h1 {
+				font-size: 1.6em;
+				text-transform:capitalize;
+				text-align:center;
+				padding:1% 1% 0% 1%;
+				line-height:2em;
+				color:#ac2258;
+				font-weight: normal;
+			}
+
+
+.box{border-left: thick solid #c73774;
+width: auto;
+
+margin:4%  5% 0 2%;
+
+padding:0 3%;
+height:auto;
+-moz-box-shadow: 0 0 20px #2d2d2d;
+-webkit-box-shadow: 0 0 20px #2d2d2d;
+box-shadow: 0 0 20px #2d2d2d;
+}			
+	
+
+	
+						
+li{
+	color: #fff;
+	list-style-position: inside;
+	padding:10px 0;
+	line-height:1.4em;
+	
+	margin:25px 0px 15px 0;
+	font-size:1.2em;}
+
+.prompt_button{
+	width:130px !important;
+	height:33px;
+	margin-bottom:2%;
+	border: outset 1px   #fff;
+				color: #fff;
+				
+			/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(, #dc4b89 , #ee62a2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #dc4b89 ,#ee62a2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #dc4b89 ,#ee62a2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #dc4b89 ,#ee62a2); /* Standard syntax */
+}
+
+
+
+
+
+
+
+
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 17px;
+	font-weight:550;
+	min-width: 500px; /* Dialog will be no smaller than this */
+	max-width: 700px; /* Dialog will wrap after this width */
+	min-height: 200px;
+	max-height:300px;
+	border:solid 4px #ac2258;
+	
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(, #e0e2e4 , #caccce); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #e0e2e4 ,#caccce); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #e0e2e4 ,#caccce); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #e0e2e4 ,#caccce); /* Standard syntax */
+}
+
+#popup_title {
+	font-size: 1.2em;
+	font-weight:500;
+		line-height: 1.5em;
+		padding:1% 0 0 10px;
+	color: #fff;
+	
+	height:35px;
+	text-align:left;
+	
+	
+
+	border-bottom: solid 3px #ac2258;
+	cursor: default;
+		margin: 0em;
+		
+		 background: -webkit-linear-gradient(, #dc4b89 , #ee62a2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #dc4b89 ,#ee62a2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #dc4b89 ,#ee62a2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #dc4b89 ,#ee62a2); /* Standard syntax */
+	
+}
+
+#popup_content {
+	
+	padding: 1em 2em;
+	margin: 0em;
+	
+	
+}
+
+#popup_content.alert {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popup_content.prompt {
+	
+}
+
+#popup_message {
+	padding-left: 12px;
+	
+	
+		
+}
+
+#popup_panel {
+	text-align: center;
+	
+
+	margin: 2.5em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+	height:25px;
+	color: #666;
+	font-weight:bold;
+	
+	border: 2px solid  #ac2258 !important;
+		-moz-box-shadow: 0 0 2px #ac2258 ;
+-webkit-box-shadow: 0 0 2px #ac2258 ;
+box-shadow: 0 0 2px #ac2258 ;
+	
+	
+	
+}
+
+
+
+#popup_content.prompt INPUT[type='button'] {
+	width:100px;
+	height:30px;
+	margin:0 2%;
+	border: outset 2px #ac2258;
+	
+	color: #fff;
+		 background: -webkit-linear-gradient(, #dc4b89 , #ee62a2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #dc4b89 ,#ee62a2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #dc4b89 ,#ee62a2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #dc4b89 ,#ee62a2); /* Standard syntax */}
+				
+	#popup_panel INPUT[type='button'] {
+	width:100px;
+	height:30px;
+	margin:0 2%;
+	border: outset 2px #ac2258;
+	
+	color: #fff;
+		 background: -webkit-linear-gradient(, #dc4b89 , #ee62a2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #dc4b89 ,#ee62a2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #dc4b89 ,#ee62a2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #dc4b89 ,#ee62a2); /* Standard syntax */
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+body{
+	background: #000;
+height:700px;
+}
+#wrapper{
+	background: #000;
+
+	width:540px;
+	height:550px;
+	border-radius:10px;
+	margin:5% auto;
+	border:3px double #333333;
+	}
+
+#smallbox{
+	width:100px;
+	height:20px;
+	background: #4c4c4c; /* Old browsers */
+    background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6-15 */
+
+   background: -webkit-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+
+border-radius:5px 0px 0px 0px;}
+
+
+
+#smallboxd{
+	width:100px;
+	height:20px;
+	background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+border-radius:0px 0px 5px 5px;}
+
+
+
+
+
+
+
+#iconbar{
+	width:100px;
+	height:550px;
+	float:left;
+	border-radius:5px;
+	}
+	
+	
+	
+
+.icon{
+	width:98px;
+	height:95px;
+	background-color:#000;
+	border: thin solid #333333;
+	padding-top:5px;
+	
+	
+	
+}
+
+.icon:hover{
+	
+	background-color:rgba(255,255,255,.4);
+	border-left:none;
+	cursor:pointer;
+
+	
+}
+.icon:visited{
+	
+	background-color:rgba(255,255,255,.3);
+	border-left:none;
+	cursor:pointer;
+
+	
+}
+
+.tooltip{
+    position:absolute;
+    margin:5px;
+    width:200px;
+    height:50px;
+    border:1px solid black;
+    display:none;
+	color: white;
+}
+
+.tooltipbar{
+	width:420px;
+	height:530px;
+	float:left;
+	padding:10px;
+	background-color:rgba(255,255,255,.3);
+	border-radius:0 5px 5px 0;
+	}
+.icon1{
+   
+    width: 420px;
+    height: auto;
+	
+    color: #fff;	
+	
+
+    
+	
+}
+table{
+	width:95%;	}
+	
+td{
+	width:100%;
+	height:60px;
+	padding-left:10px;
+	border:thin solid #fff;}	
+	
+	h1 + img{
+		padding:10px 0 0 50px;}
+		
+.hidden {display:none;} 		
+		
+		
+</style>
+
+
+
+</head>
+
+<body>
+<div id="bc">
+<div id="wrapper">
+
+
+
+
+<div id="iconbar">
+
+    <div id="smallbox">
+    </div>
+    
+    
+<!--------------------icon 1---------------------------->    
+    
+    <div class="icon" onClick="show1()" >
+    <img src="img/icon3-01.png" /> 
+    </div>
+<!--------------------icon 2---------------------------->    
+    
+     <div class="icon" onClick="show2()"  >
+     <img src="img/icon5-01.png" />
+     </div>
+     
+    
+     
+         
+ <!--------------------icon 3---------------------------->   
+     <div class="icon" onClick="show3()">
+     <img src="img/icon1-01.png" />  
+    </div>
+    
+    
+    
+    
+<!--------------------icon 4---------------------------->    
+     <div class="icon" onClick="show4()" >
+    <img src="img/icon4-01.png" />
+    </div>
+    
+    
+    
+ <!--------------------icon 5---------------------------->   
+     <div class="icon" onClick="show5()" >
+    <img src="img/icon2-01.png" />
+   </div>
+    
+     <div id="smallboxd"></div>
+     </div> <!-----icon bar end-->
+     
+     
+     
+     
+     
+     
+     
+     
+<div class="tooltipbar">     
+<div class="icon1" id="xx">
+</div>
+	
+	
+
+
+
+<script>
+
+function show1(){
+  document.getElementById('xx').innerHTML = '<h1>Lorem Ipsum</h1><table><tr><td>Jen</td></tr><tr><td>Dezi </td></tr><tr><td>Eli  </td></tr><tr><td>Mojo</td></tr></table>';
+}
+function show2(){
+  document.getElementById('xx').innerHTML = "<h1>Where does it come from?</h1><p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>";
+}
+function show3(){
+  document.getElementById('xx').innerHTML = ' <h1>Lorem Ipsum</h1><ol><li>Where does it come from?</li><li>Where can I get some?</li><li>Where does it come from?</li><li>Where does it come from?</li><li>Where can I get some?</li><li>Where does it come from?</li></ol>';
+}
+function show4(){
+  document.getElementById('xx').innerHTML = ' <h1>Lorem Ipsum</h1><img src="img/anroid-01.png" />';
+}
+function show5(){
+  document.getElementById('xx').innerHTML = '<h1>Ipsum Lorem </h1><table><tr><td>Jen</td></tr><tr><td>Dezi </td></tr><tr><td>Eli  </td></tr><tr><td>Mojo</td></tr></table>';
+}
+</script>
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

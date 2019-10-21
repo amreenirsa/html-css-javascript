@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{font-family: Helvetica, sans-serif;}
+body{
+	
+	margin:0;
+	padding:0;
+	background-image:url(../img/PaintSquares_1920x1234.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	}
+
+	
+	
+	.box{
+		border: thin dashed #000;
+width: auto;
+
+margin:4%  5% 0 2%;
+
+padding:3% 3%;
+height:auto;
+
+-moz-box-shadow: 0 0 20px #2d2d2d;
+-webkit-box-shadow: 0 0 20px #2d2d2d;
+box-shadow: 0 0 20px #2d2d2d;
+}	
+
+
+h1{
+	color:#fff;
+	font-weight:700;
+	margin:7% auto;
+	letter-spacing:.10em;
+	text-transform: uppercase;
+	
+	
+	font-size:2.5em;
+	text-align:center;}
+	
+h4{
+	text-transform:capitalize;}	
+	
+#panel, #flip {
+    padding: 1% 1%;
+	width:40%;
+	margin-top:3%;
+	color:#0e5c68;
+	
+    text-align: center;
+    background-color: #d2eceb;
+    border:2px  groove #00aeb3;
+	-moz-box-shadow: 0 0 10px #2d2d2d;
+-webkit-box-shadow: 0 0 10px #2d2d2d;
+box-shadow: 0 0 10px #2d2d2d;
+}
+
+#panel {
+    padding:2% 2% 5% 1%;
+	text-transform:capitalize;
+	width:39%;
+	 text-align: left;
+    display: none;
+}
+
+#panel,#flip:hover {
+   
+    background-color: #0e5c68;
+	color:#FFF;
+	cursor:pointer;    
+}
+
+#panel,#flip:focus {
+   
+    background-color: #0e5c68;
+	color:#FFF;
+	cursor:pointer;    
+}
+ul {
+list-style-image: url(../img/task.png);
+
+}
+ol{
+	list-style-type: upper-alpha !important;
+
+}
+
+
+
+li{
+	color:#000;
+	font-size:1.2em;
+	
+	list-style-position:inside; 
+	
+	margin:10px 0% 0% 0% !important;}
+	
+ol {
+	list-style:upper-roman;
+	font-size:14px;
+
+}
+	
+input[type=text],input[type=number]{
+	width:250px;
+	margin:5% 0;
+	padding-left:5px;
+	color:#0e5c68;
+	display:block;
+	font-size:.7em;
+	text-transform:capitalize;
+	border-radius:5px;
+	border:2px  solid #0e5c68;
+	height:35px;
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}	
+	
+	input[type=text],input[type=number]:focus {
+    border: 1px solid #a9dddd;
+	border-radius:5px;
+}
+button{
+	
+	width:200px;
+	height:40px;
+	text-transform:capitalize;
+	margin:5% 0 20px 0;
+	color:#FFF;
+	display:block;
+	font-size:.9em;
+	border:1px   inset #57bfc1;
+	border-radius:5px;
+	
+		background-color: #1a858e;
+	  	
+	 background: -webkit-linear-gradient( #1a858e, #00aeb3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #1a858e, #00aeb3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #1a858e, #00aeb3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #1a858e, #00aeb3); /* Standard syntax */
+	
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	
+	
+	}	
+	
+button:hover {
+   
+    	color:#0e5c68;
+		cursor:pointer;
+	
+}
+
+	button:focus {
+    border: 1px solid #a9dddd;
+	border-radius:5px;
+}
+	select{width:200px;
+	height:40px;
+	text-transform:capitalize;
+	margin:5% 0 20px 0;
+	color:#FFF;
+	display:block;
+	font-size:.9em;
+	border-radius:5px;
+	border:2px  inset #0e5c68;
+	background-color: #1a858e;
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	padding-left:2%;
+	}
+	
+	
+		select:hover {
+   
+    	color:#fff;
+		background-color:#00aeb3;
+		cursor:pointer;
+	
+}
+
+select:focus {
+    border: 1px solid #a9dddd;
+	border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+table{
+	width:100px;
+	border:thin solid #FFF;}
+
+
+
+td,th{
+	width:80px;
+	color:#FFF;
+	border:thin solid #FFF;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

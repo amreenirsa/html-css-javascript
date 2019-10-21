@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My 6nd Lab Assigment</title>
+<style type="text/css">
+
+.mainwrapper
+{
+width:100%;
+height:auto;
+
+
+float:left;
+
+}
+.header {
+	
+	height: 100px;
+	color: white;
+	float: left;
+	background-color:#81C0C0;
+	border-color: #A6D2D2;
+	text-align: center;
+	background: #408080/* For browsers that do not support gradients */
+ 
+  background: -moz-linear-gradient(bottom right, #295454, #7BB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right,#295454, #7BB); /* Standard syntax */
+}
+
+
+h3{color:#4D9999}
+.body {
+	
+	width:100%;
+	height:5000px;
+	
+    float:left;
+   
+}
+
+
+.nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:5000px;
+    width:30%;
+    float:left;
+	
+   
+}
+
+.section {
+	
+	width:65%;
+	height:5000px;
+	
+    float:left;
+    padding:5px;
+}
+h4{color:
+#000;}
+
+
+.footer {
+    width:100%;
+	height:75px;
+    background: #408080/* For browsers that do not support gradients */
+ 
+  background: -moz-linear-gradient(bottom right, #295454, #7BB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right,#295454, #7BB); /* Standard syntax */
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}
+    
+
+</style>
+</head>
+<body>
+<div class="mainwrapper">
+<div style="width:100%;border:15px groove #52A3A3;padding:15px;" class="header">
+<h1>6<SUP>th</SUP> Lab Assignment</h1>
+</div>
+<div class="body">
+<div class="nav">
+<ul>
+<li>The term <strong>'form'</strong> has referred
+to a printed document that contains
+spaces for you to fill in information.</li>
+
+<li>HTML borrows the concept of a form to refer to different
+elements that allow you to collect information from visitors to
+your site.</li>
+
+<li>The best known form on the web is probably
+the search box that sits right in the middle of
+Google's homepage.</li>
+<li><strong>Forms </strong>also allow users
+to perform other functions
+online.</li>
+
+<li><strong>HTML forms </strong>give you a set of elements to collect data from
+your users.</li>
+
+<li>There are several types of form controls that
+you can use to collect information from visitors
+to your site
+.<ol>
+<li>ADDING TEXT</li>
+<ul type="disc">
+<li>Text input (single-line).</li>
+<li>Password input.</li>
+<li>Text area (multi-line).</li>
+</ul>
+<li>Making Choices</li>
+<ul type="disc">
+<li>Radio buttons.</li>
+<li>Checkboxes.</li>
+<li>Drop-down boxes.</li>
+<li>Multiple Select Box.</li>
+
+</ul> 
+<li>Submitting Forms</li>
+<ul type="disc">
+<li>Submit buttons.</li>
+<li>Image buttons.</li>
+
+</ul> 
+<li>Uploading Files.</li>
+<ul type="disc">
+<li>File upload.</li>
+</ul> 
+
+</ol>
+<li><strong>Text input (single-line)</strong>
+Used for a single line of text such
+as email addresses and names.</li>
+
+<li><strong>Password input</strong>
+Like a single line text box but it
+masks the characters entered.</li>
+
+<li><strong>Text area (multi-line)</strong>
+For longer areas of text, such as
+messages and comments.</li>
+
+<li><strong>Radio buttons</strong>
+For use when a user must select
+one of a number of options..</li>
+
+<li><strong>Checkboxes</strong>
+When a user can select and
+unselect one or more options</li>
+<li><strong>Drop-down boxes</strong>
+When a user must pick one of a
+number of options from a list.</li>
+<li><strong>Multiple Select Box</strong>
+When a user pick one and more
+number of options from a list.</li>
+<li><strong>Submit buttons</strong>
+To submit data from your form
+to another web page.</li>
+
+<li><strong>Image buttons</strong>
+Similar to submit buttons but
+they allow you to use an image..</li>
+<li><strong>File upload</strong>
+Allows users to upload files
+(e.g. images) to a website.</li>
+
+
+
+<li><strong>How Forms Work</strong>.</li>
+<ol>
+<li> A user fills in a form and then presses a button
+to submit the information to the server.</li>
+<li> The name of each form
+control is sent to the
+server along with the
+value the user enters or
+selects.</li>
+<li>The server processes
+the information using a
+programming language
+such as PHP, C#, VB.net,
+or Java. It may also store
+the information in a
+database.</li>
+<li>The server creates a new
+page to send back to the
+browser based on the
+information received.</li>
+</ol>
+
+
+
+
+<li>The<strong>&lt;form&gt;</strong> element defines an HTML form:.</li>
+
+<li><strong>&lt;form&gt;</strong>This element
+should always carry the action
+attribute and will usually have a
+method and id attribute too.</li>
+
+<li><strong>action</strong> Specifies an address (url) where to submit the form (default: the submitting page).</li>
+<li><strong>method</strong> Specifies the HTTP method used when submitting the form (default: GET).</li>
+<li><strong>The get
+method</strong> the values
+from the form are added to
+the end of the URL specified in
+the action attribute.
+</li>
+
+<li><strong>The get
+method</strong> is ideal for:
+<ol><li>short forms (such as search
+boxes)</li>
+<li>when you are just retrieving
+data from the web server
+(not sending information that
+should be added to or deleted
+from a database).</li>
+</ol>
+
+
+<li><strong>The post
+method</strong>values are sent in what are
+known as HTTP headers. As a
+rule of thumb you should use the
+post method if your form.</li>
+
+<ol>
+<li>allows users to upload a file.</li>
+<li>it is very long.</li>
+<li>contains sensitive data
+(e.g. passwords).</li>
+<li>adds information to, or
+deletes information from, a
+database.</li>
+
+
+</ol>
+<li>If the method attribute is not
+used, the form data will be sent
+using the get method</li>
+
+
+<li><strong>id</strong> the value is used to
+identify the form distinctly from
+other elements on the page (and
+is often used by scripts — such
+as those that check you have
+entered information into fields
+that require values).</li>
+
+
+
+
+
+
+<li>The<strong>&lt;input&gt;</strong>element is the most important form element.</li>
+<li>The<strong>&lt;input&gt;</strong>element has many variations, depending on the type attribute.</li>
+<li><strong>&lt;input type="text"&gt;</strong> defines a one-line input field for text input.</li>
+<li>each form
+control requires a <b>name attribute</b>.
+Specifies a name used to identify the form (for DOM usage: document.forms.name).</li>
+<li>
+The <strong>size attribute</strong> should not
+be used on new forms. It was
+used in older forms to indicate
+the width of the text input
+(measured by the number of
+characters that would be seen).</li>
+
+
+<li>
+The <strong>maxlength</strong>
+attribute to limit the number
+of characters a user may enter
+into the text field. Its value is the
+number of characters they may
+enter.</li>
+
+<li>
+<b>type="password"</b>
+it creates
+a text box that acts just like a
+single-line text input, except
+the characters are blocked out.</li>
+
+<li>
+The<b> &lt;textarea&gt; </b>element
+is used to create a mutli-line
+text input.</li>
+<li>&lt;textarea&gt this is not an empty
+element.</li>
+<li> <b>type="radio"</b>
+Radio buttons allow users to pick
+just one of a number of options.type="radio"
+Radio buttons allow users to pick
+just one of a number of options.</li>
+<li><b>value</b>
+The value attribute indicates
+the value that is sent to the
+server for the selected option.</li>
+<li><b>checked</b>
+The checked attribute can be
+used to indicate which value (if
+any) should be selected when
+the page loads.</li>
+<li>
+Once a radio button
+has been selected it cannot be
+deselected. The user can only
+select a different option. If you
+are only allowing the user one
+option and want them to be
+able to deselect it.</li>
+<li>type="checkbox"
+Checkboxes allow users to select
+(and unselect) one or more
+options in answer to a question.</li>
+
+
+<li>The<strong>&lt;select&gt;</strong> element is used
+to create a drop down list box</li>
+<li>It
+contains two or more <strong>&lt;option&gt;</strong>
+elements.</li>
+
+
+<li>The<strong>&lt;option&gt;</strong>element is used
+to specify the options that the
+user can select from.</li>
+<li><b>selected</b>
+The selected attribute can be
+used to indicate the option that
+should be selected when the
+page loads.</li>
+<li>The function of the drop down
+<ol>
+<li>If users need to see all options
+at a glance, radio buttons are
+better suited.</li>
+<li>If there is a very long list
+of options (such as a list of
+countries), drop down list boxes
+work better.</li>
+</ol></li>
+<li><b>multiple</b>
+You can allow users to select
+multiple options from this list by
+adding the multiple attribute
+with a value of multiple.</li>
+
+<li><b>type="file"</b>
+creates a
+box that looks like a text input
+followed by a browse button.</li>
+
+
+
+
+<li><b>type="submit"</b>
+The submit button is used to
+send a form to the server.</li>
+
+<li><b>type="image"</b>attribute
+use an image for
+the submit button.</li>
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+</div>
+
+<div class="section"><center><ins>
+<h2>FORMS</h2></ins> </center>
+<h2>ADDING TEXT:</h2>
+<h3>Text input (single-line)</h3>
+<h4>&lt;input type="text"&gt;</h4>
+
+<input type="text" />
+<hr width="100%" color="#CCCCCC" />
+<h3>Password input</h3>
+<h4>&lt;input type="password"&gt;</h4>
+<input type="password" /><hr width="100%" color="#CCCCCC" />
+<h3>Text area (multi-line)</h3>
+<h4>&lt;textarea&gt; &lt;/textarea&gt;</h4>
+<textarea></textarea><hr width="100%" color="#408080" />
+
+<h2>Making Choices:</h2>
+<h3>Radio buttons)</h3>
+<h4>&lt;input type="radio" name="" value="" checked="checked" /&gt;</h4>
+
+<input type="radio" name="gender" value="male" checked="checked" /> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+  
+<hr width="100%" color="#CCCCCC" />
+
+<h3>Checkboxes</h3>
+<h4>&lt;input type="checkbox"name="" value="" checked="checked"&gt;</h4>
+<input type="checkbox" name="service"
+value="itunes" checked="checked" /> iTunes
+<input type="checkbox" name="service"
+value="lastfm" /> Last.fm
+<input type="checkbox" name="service"
+value="spotify" /> Spotify
+<hr width="100%" color="#CCCCCC" />
+<h3>Drop-down boxes</h3>
+<h4>&lt;select name="" &gt;  &lt;option value="" &gt; &lt;/option&gt; &lt;/select&gt;</h4>
+
+<select name="Country">
+<option value="Amrica">Amrica</option>
+<option value="india">India</option>
+<option value="pakistan">Pakistan</option>
+</select>
+<hr width="100%" color="#CCCCCC" />
+
+
+
+<h3>Multiple Select Box</h3>
+<h4>&lt;select name="" size="3"
+multiple="multiple" &gt;  &lt;option value=""  &gt; &lt;/option&gt; &lt;/select&gt;</h4>
+
+<select name="Country" size=""
+multiple="multiple"  />
+<option value="Amrica" >Amrica</option>
+<option value="india">India</option>
+<option value="pakistan">Pakistan</option>
+<option value="Amrica" >Amrica</option>
+<option value="india">India</option>
+<option value="pakistan">Pakistan</option>
+</select>
+<hr width="100%" color="#408080" />
+
+
+<h2>Submitting Forms:</h2>
+<h3>Submit buttons</h3>
+<h4>&lt;input type="submit" name="submit"
+value="Submit" /&gt;</h4>
+
+<input type="submit" name="submit"
+value="Submit" />
+<hr width="100%" color="#CCCCCC" />
+
+
+
+
+
+
+<h3>Image buttons</h3>
+<h4>&lt;input type="submit" name="submit"
+value="Submit" /&gt;</h4>
+
+<input type="image" src="loginbutton.jpg" alt="Login Button"
+width="150" height="50" />
+
+
+
+
+<hr width="100%" color="#408080" />
+
+
+<h2>Uploadi ng Files:</h2>
+<h3>File upload</h3>
+<h4>&lt;input type="file" name="" /&gt; &lt;input type="submit" value="Upload"/&gt;</h4>
+<input type="file" name="user-song" /><br /><br />
+<input type="submit" value="Upload" />
+<hr width="100%" color="#408080" />
+<center><ins>
+<h2>FORM</h2></ins> </center>
+
+<b>Your Name </b> :<br><input type="text" placeholder ="Your Name!"style="width:340px; height:32px; padding-right:0;"><br><br>
+<b>Your Adress</b> :<br><input type="text" placeholder ="Your Adress!"style="width:340px; height:32px; padding-right:0;"><br><br>
+<b>Password</b> :<br><input type="Password" placeholder ="Password!"style="width:340px; height:32px; padding-right:0;"><br><br>
+<b>Please up load your recent picture?</b> :<br>
+<input type="file" placeholder = "up load your recent picture" /><br><br>
+<b>Enter your comments</b> :<br><br>
+
+<b>Your Sex</b> :<br>
+<input type="radio" name="gender" value="male" checked="checked" /> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br><br>
+  <b>Please select your Subject:</b><br /><br />
+  <input type="checkbox" name="subject"
+value="English" checked="checked" /> English
+<input type="checkbox" name="Subjectt"
+value="urdu" /> Urdu
+<input type="checkbox" name="service"
+value="Maths" /> Maths
+  <br /><br />
+  <b>Please select your Country:</b><br /><br />
+<select name="country" class="cus_input1" style="width:340px; height:32px; padding-right:0;">
+<option value="" class="form_input maroon_border">Select Country</option>
+        <option value="Afghanistan" >Afghanistan</option>
+        <option value="Albania" >Albania</option>
+        <option value="Algeria" >Algeria</option>
+        <option value="American Samoa" >American Samoa</option>
+        <option value="Andorra" >Andorra</option>
+        <option value="Angola" >Angola</option>
+        <option value="Anguilla" >Anguilla</option>
+        <option value="Antarctica" >Antarctica</option>
+        <option value="Antigua and Barbuda" >Antigua and Barbuda</option>
+        <option value="Argentina" >Argentina</option>
+        <option value="Armenia" >Armenia</option>
+        <option value="Aruba" >Aruba</option>
+        <option value="Australia" >Australia</option>
+        <option value="Austria" >Austria</option>
+        <option value="Azerbaijan" >Azerbaijan</option>
+        <option value="Bahamas" >Bahamas</option>
+        <option value="Bahrain" >Bahrain</option>
+        <option value="Bangladesh" >Bangladesh</option>
+        <option value="Barbados" >Barbados</option>
+        <option value="Belarus" >Belarus</option>
+        <option value="Belgium" >Belgium</option>
+        <option value="Belize" >Belize</option>
+        <option value="Benin" >Benin</option>
+        <option value="Bermuda" >Bermuda</option>
+        <option value="Bhutan" >Bhutan</option>
+        <option value="Bolivia" >Bolivia</option>
+        <option value="Bosnia and Herzegovina" >Bosnia and Herzegovina</option>
+        <option value="Botswana" >Botswana</option>
+        <option value="Bouvet Island" >Bouvet Island</option>
+        <option value="Brazil" >Brazil</option>
+        <option value="British Indian Ocean Territory" >British Indian Ocean Territory</option>
+        <option value="Brunei Darussalam" >Brunei Darussalam</option>
+        <option value="Bulgaria" >Bulgaria</option>
+        <option value="Burkina Faso" >Burkina Faso</option>
+        <option value="Burundi" >Burundi</option>
+        <option value="Cambodia" >Cambodia</option>
+        <option value="Cameroon" >Cameroon</option>
+        <option value="Canada" >Canada</option>
+        <option value="Cape Verde" >Cape Verde</option>
+        <option value="Cayman Islands" >Cayman Islands</option>
+        <option value="Central African Republic" >Central African Republic</option>
+        <option value="Chad" >Chad</option>
+        <option value="Chile" >Chile</option>
+        <option value="China" >China</option>
+        <option value="Christmas Island" >Christmas Island</option>
+        <option value="Cocos (Keeling) Islands" >Cocos (Keeling) Islands</option>
+        <option value="Colombia" >Colombia</option>
+        <option value="Comoros" >Comoros</option>
+        <option value="Congo" >Congo</option>
+        <option value="Congo, the Democratic Republic of the" >Congo, the Democratic Republic of the</option>
+        <option value="Cook Islands" >Cook Islands</option>
+        <option value="Costa Rica" >Costa Rica</option>
+        <option value="Croatia" >Croatia</option>
+        <option value="Cuba" >Cuba</option>
+        <option value="Cyprus" >Cyprus</option>
+        <option value="Czech Republic" >Czech Republic</option>
+        <option value="Denmark" >Denmark</option>
+        <option value="Djibouti" >Djibouti</option>
+        <option value="Dominica" >Dominica</option>
+        <option value="Dominican Republic" >Dominican Republic</option>
+        <option value="Ecuador" >Ecuador</option>
+        <option value="Egypt" >Egypt</option>
+        <option value="El Salvador" >El Salvador</option>
+        <option value="Equatorial Guinea" >Equatorial Guinea</option>
+        <option value="Eritrea" >Eritrea</option>
+        <option value="Estonia" >Estonia</option>
+        <option value="Ethiopia" >Ethiopia</option>
+        <option value="Falkland Islands (Malvinas)" >Falkland Islands (Malvinas)</option>
+        <option value="Faroe Islands" >Faroe Islands</option>
+        <option value="Fiji" >Fiji</option>
+
+        <option value="Finland" >Finland</option>
+        <option value="France" >France</option>
+        <option value="French Guiana" >French Guiana</option>
+        <option value="French Polynesia" >French Polynesia</option>
+        <option value="French Southern Territories" >French Southern Territories</option>
+        <option value="Gabon" >Gabon</option>
+        <option value="Gambia" >Gambia</option>
+        <option value="Georgia" >Georgia</option>
+        <option value="Germany" >Germany</option>
+        <option value="Ghana" >Ghana</option>
+        <option value="Gibraltar" >Gibraltar</option>
+        <option value="Greece" >Greece</option>
+        <option value="Greenland" >Greenland</option>
+        <option value="Grenada" >Grenada</option>
+        <option value="Guadeloupe" >Guadeloupe</option>
+        <option value="Guam" >Guam</option>
+        <option value="Guatemala" >Guatemala</option>
+        <option value="Guernsey" >Guernsey</option>
+        <option value="Guinea" >Guinea</option>
+        <option value="Guinea-Bissau" >Guinea-Bissau</option>
+        <option value="Guyana" >Guyana</option>
+        <option value="Haiti" >Haiti</option>
+        <option value="Heard Island and Mcdonald Islands" >Heard Island and Mcdonald Islands</option>
+        <option value="Holy See (Vatican City State)" >Holy See (Vatican City State)</option>
+        <option value="Honduras" >Honduras</option>
+        <option value="Hong Kong" >Hong Kong</option>
+        <option value="Hungary" >Hungary</option>
+        <option value="Iceland" >Iceland</option>
+        <option value="India" >India</option>
+        <option value="Indonesia" >Indonesia</option>
+        <option value="Iran, Islamic Republic of" >Iran, Islamic Republic of</option>
+        <option value="Iraq" >Iraq</option>
+        <option value="Ireland" >Ireland</option>
+        <option value="Isle of Man" >Isle of Man</option>
+        <option value="Israel" >Israel</option>
+        <option value="Italy" >Italy</option>
+        <option value="Jamaica" >Jamaica</option>
+        <option value="Japan" >Japan</option>
+        <option value="Jersey" >Jersey</option>
+        <option value="Jordan" >Jordan</option>
+        <option value="Kazakhstan" >Kazakhstan</option>
+        <option value="Kenya" >Kenya</option>
+        <option value="Kiribati" >Kiribati</option>
+        <option value="Korea, Republic of" >Korea, Republic of</option>
+        <option value="Kuwait" >Kuwait</option>
+        <option value="Kyrgyzstan" >Kyrgyzstan</option>
+        <option value="Latvia" >Latvia</option>
+        <option value="Lebanon" >Lebanon</option>
+        <option value="Lesotho" >Lesotho</option>
+        <option value="Liberia" >Liberia</option>
+        <option value="Libyan Arab Jamahiriya" >Libyan Arab Jamahiriya</option>
+        <option value="Liechtenstein" >Liechtenstein</option>
+        <option value="Lithuania" >Lithuania</option>
+        <option value="Luxembourg" >Luxembourg</option>
+        <option value="Macao" >Macao</option>
+        <option value="Macedonia, the Former Yugoslav Republic of" >Macedonia, the Former Yugoslav Republic of</option>
+        <option value="Madagascar" >Madagascar</option>
+        <option value="Malawi" >Malawi</option>
+        <option value="Malaysia" >Malaysia</option>
+        <option value="Maldives" >Maldives</option>
+        <option value="Mali" >Mali</option>
+        <option value="Malta" >Malta</option>
+        <option value="Marshall Islands" >Marshall Islands</option>
+        <option value="Martinique" >Martinique</option>
+        <option value="Mauritania" >Mauritania</option>
+        <option value="Mauritius" >Mauritius</option>
+        <option value="Mayotte" >Mayotte</option>
+        <option value="Mexico" >Mexico</option>
+        <option value="Micronesia, Federated States of" >Micronesia, Federated States of</option>
+        <option value="Moldova, Republic of" >Moldova, Republic of</option>
+        <option value="Monaco" >Monaco</option>
+        <option value="Mongolia">Mongolia</option>
+        <option value="Montserrat" >Montserrat</option>
+        <option value="Morocco" >Morocco</option>
+        <option value="Mozambique" >Mozambique</option>
+        <option value="Myanmar" >Myanmar</option>
+        <option value="Namibia" >Namibia</option>
+        <option value="Nauru" >Nauru</option>
+        <option value="Nepal" >Nepal</option>
+        <option value="Netherlands" >Netherlands</option>
+        <option value="Netherlands Antilles" >Netherlands Antilles</option>
+        <option value="New Caledonia" >New Caledonia</option>
+        <option value="New Zealand" >New Zealand</option>
+        <option value="Nicaragua" >Nicaragua</option>
+        <option value="Niger" >Niger</option>
+        <option value="Nigeria" >Nigeria</option>
+        <option value="Niue" >Niue</option>
+        <option value="Norfolk Island" >Norfolk Island</option>
+        <option value="Northern Mariana Islands" >Northern Mariana Islands</option>
+        <option value="Norway" >Norway</option>
+        <option value="Oman" >Oman</option>
+        <option value="Pakistan" >Pakistan</option>
+        <option value="Palau" >Palau</option>
+        <option value="Palestinian Territory, Occupied" >Palestinian Territory, Occupied</option>
+        <option value="Panama" >Panama</option>
+        <option value="Papua New Guinea" >Papua New Guinea</option>
+        <option value="Paraguay" >Paraguay</option>
+        <option value="Peru" >Peru</option>
+        <option value="Philippines" >Philippines</option>
+        <option value="Pitcairn" >Pitcairn</option>
+        <option value="Poland" >Poland</option>
+        <option value="Portugal" >Portugal</option>
+        <option value="Puerto Rico" >Puerto Rico</option>
+        <option value="Qatar" >Qatar</option>
+        <option value="Reunion" >Reunion</option>
+        <option value="Romania" >Romania</option>
+        <option value="Russian Federation" >Russian Federation</option>
+        <option value="Rwanda" >Rwanda</option>
+        <option value="Saint Helena" >Saint Helena</option>
+        <option value="Saint Kitts and Nevis" >Saint Kitts and Nevis</option>
+        <option value="Saint Lucia" >Saint Lucia</option>
+        <option value="Saint Pierre and Miquelon" >Saint Pierre and Miquelon</option>
+        <option value="Saint Vincent and the Grenadines" >Saint Vincent and the Grenadines</option>
+        <option value="Samoa" >Samoa</option>
+        <option value="San Marino" >San Marino</option>
+        <option value="Sao Tome and Principe" >Sao Tome and Principe</option>
+        <option value="Saudi Arabia" >Saudi Arabia</option>
+        <option value="Senegal" >Senegal</option>
+        <option value="Serbia and Montenegro" >Serbia and Montenegro</option>
+        <option value="Seychelles" >Seychelles</option>
+        <option value="Sierra Leone" >Sierra Leone</option>
+        <option value="Singapore" >Singapore</option>
+        <option value="Slovakia" >Slovakia</option>
+        <option value="Slovenia" >Slovenia</option>
+        <option value="Solomon Islands" >Solomon Islands</option>
+        <option value="Somalia" >Somalia</option>
+        <option value="South Africa" >South Africa</option>
+        <option value="South Georgia and the South Sandwich Islands" >South Georgia and the South Sandwich Islands</option>
+        <option value="Spain" >Spain</option>
+        <option value="Sri Lanka" >Sri Lanka</option>
+        <option value="Sudan" >Sudan</option>
+        <option value="Suriname" >Suriname</option>
+        <option value="Svalbard and Jan Mayen" >Svalbard and Jan Mayen</option>
+        <option value="Swaziland" >Swaziland</option>
+        <option value="Sweden" >Sweden</option>
+        <option value="Switzerland" >Switzerland</option>
+        <option value="Syrian Arab Republic" >Syrian Arab Republic</option>
+        <option value="Taiwan, Province of China" >Taiwan, Province of China</option>
+        <option value="Tajikistan" >Tajikistan</option>
+        <option value="Tanzania, United Republic of" >Tanzania, United Republic of</option>
+        <option value="Thailand" >Thailand</option>
+        <option value="Timor-Leste" >Timor-Leste</option>
+        <option value="Togo" >Togo</option>
+        <option value="Tokelau" >Tokelau</option>
+        <option value="Tonga" >Tonga</option>
+        <option value="Trinidad and Tobago" >Trinidad and Tobago</option>
+        <option value="Tunisia" >Tunisia</option>
+        <option value="Turkey" >Turkey</option>
+        <option value="Turkmenistan" >Turkmenistan</option>
+        <option value="Turks and Caicos Islands" >Turks and Caicos Islands</option>
+        <option value="Tuvalu" >Tuvalu</option>
+        <option value="Uganda" >Uganda</option>
+        <option value="Ukraine" >Ukraine</option>
+        <option value="United Arab Emirates" >United Arab Emirates</option>
+        <option value="United Kingdom" >United Kingdom</option>
+        <option value="United States" >United States</option>
+        <option value="United States Minor Outlying Islands" >United States Minor Outlying Islands</option>
+        <option value="Uruguay" >Uruguay</option>
+        <option value="Uzbekistan" >Uzbekistan</option>
+        <option value="Vanuatu" >Vanuatu</option>
+        <option value="Venezuela" >Venezuela</option>
+        <option value="Viet Nam" >Viet Nam</option>
+        <option value="Virgin Islands, British" >Virgin Islands, British</option>
+        <option value="Virgin Islands, U.s." >Virgin Islands, U.s.</option>
+        <option value="Wallis and Futuna" >Wallis and Futuna</option>
+        <option value="Western Sahara" >Western Sahara</option>
+        <option value="Yemen" >Yemen</option>
+        <option value="Zambia" >Zambia</option>
+        <option value="Zimbabwe" >Zimbabwe</option>
+      </select><br><br>
+ 
+ 
+<b>How can we help?</b> :<br>
+
+<select name="How can we help"  size="3" multiple="multiple" style="width:340px; padding-right:0;">
+<option value="your are intresred in">your are intresred in</option>
+        <option value="Web Designing" >Web Designing</option>
+        <option value="Logo Designing" >Logo Designing</option> 
+        <option value="Business Advertising" >Business Advertising</option>
+        <option value="Clothing & Merchandise" >Clothing & Merchandise</option>
+        <option value="Packaging & Label" >Packaging & Label</option>  
+        <option value="Art & Illustration" >Art & Illustration</option>
+         <option value="Book & Magazin" >Book & Magazin</option>
+         <option value="Other" >Other</option>     </select><br><br>   
+      
+
+
+<textarea name="comments" cols="45" rows="8">Enter your comments...</textarea>  <br><br>
+<input type="submit" value="Submit"  style="width:100px; height:32px; padding-right:0; "  />
+
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="footer"><h2>
+Made By Amreen</h2>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1071 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Lab Assignment</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="description" content="This is a demonstration page." />
+		<meta name="keywords" content="alert, confirm, prompt, demo" />
+		
+		<style type="text/css">
+			BODY,
+			HTML {
+				padding: 0px;
+				margin: 0px;
+			}
+			BODY {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				background: #FFF;
+				padding: 15px;
+			}
+			
+			H1 {
+				font-size: 20px;
+				color:#00a0de;
+				font-weight: normal;
+			}
+			
+			H2 {
+				font-size: 16px;
+				font-weight: normal;
+			}
+			
+			FIELDSET {
+				border: solid 1px #00a0de;
+				
+				-moz-border-radius: 16px;
+				-webkit-border-radius: 16px;
+				border-radius: 16px;
+				padding: 1em 2em;
+				margin: 1em 0em;
+			}
+			
+			
+			input [type=button]{
+				margin-top:50px !important;
+				height:500px;}
+			
+			LEGEND {
+				color: #00a0de;
+				font-size: 1.7em;
+				font-weight:bold;
+				padding: 0em .5em;
+			}
+			
+			
+			
+			PRE {
+				font-family: "Courier New", monospace;
+				font-size: 17px;
+				color: #666;
+				background: #F8F8F8;
+				padding: 1em;
+				-moz-border-radius: 8px;
+				-webkit-border-radius: 8px;
+				border-radius: 8px;
+			}
+			
+			/* Custom dialog styles */
+			#popup_container.style_1 {
+				
+				color: #000;
+				background: #EFEFEF;
+				border-color: #0c058f;
+			}
+			
+			#popup_container.style_1 #popup_title {
+				color: #FFF;
+				height:35px;
+				font-weight: normal;
+				text-align: left;
+				background: #00aeef;
+				padding:2% 0 0;
+				border-bottom:solid 1px #262262;
+						
+			
+				padding-left: 1em;
+			}
+			
+			#popup_container.style_1 #popup_content {
+				background: none;
+			}
+			
+			#popup_container.style_1 #popup_message {
+				padding-left: 0em;
+				font-size:1.5em;
+				
+
+			}
+			
+			#popup_container.style_1 INPUT[type='button'] {
+				margin-top:5%;
+				width:30%;
+				height:30px;
+				border: outset 2px #76A5CC;
+				color: #fff;
+				background: #00a0de;
+			}
+li{
+	color: #000;
+	margin:10px 0;
+	font-size:1.5em;}	
+	
+li li{
+	color: #000;
+	
+	font-size:1em;}
+	
+p{font-size:3em;}	
+	
+#style_1{
+	width:150px !important;
+	height:30px;
+	border: outset 1px   #CCC;
+				color: #fff;
+				
+			/*	 background:  #262262; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#00aeef, #262262); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00aeef, #262262); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00aeef, #262262); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00aeef, #262262); /* Standard syntax */}	
+	
+	
+			
+		</style>
+		
+		<!-- Dependencies -->
+
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.ui.draggable.js" type="text/javascript"></script>
+		
+		<!-- Core files -->
+		<script src="js/jquery.alerts.js" type="text/javascript"></script>
+		<link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<!-- Example script -->
+		<script type="text/javascript">
+			
+			$(document).ready( function() {
+				
+				
+		 <!-- =========================== 5 chapter =========================== -->		
+<!-- =====alert ===== -->	
+				$(".alert_style_example").click( function() {
+					
+				
+        
+		
+		
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class
+					  var a =5;
+         var b =4;
+         var c =a + b;
+        
+					jAlert("Sum Of 5 and 4 is " + c, "Addition");
+				});
+				
+				
+				
+<!-- =====1st alert  ===== -->					
+				
+				
+				
+	$(".alert_style_example1").click( function() {
+					
+				
+        
+		
+		
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class
+					  var a =13;
+         var b =9;
+         var c =a - b;
+        
+					jAlert("Result Of Subtracting 9 and 13 is " + c, "Subtracting");
+				});
+			
+<!-- =====2nd alert ===== -->				
+	
+		$(".alert_style_example2").click( function() {
+					
+				
+        
+		
+		
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class
+					  var a =13;
+         var b =9;
+         var c =a * b;
+        
+					jAlert("Result Of Multiplication 9 and 13 is " + c, "Subtracting");
+				});
+					
+				
+<!-- =====3rd alert ===== -->				
+	
+$(".alert_style_example3").click( function() {
+					
+				
+        
+		
+		
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class
+					  var a =13;
+         var b =9;
+         var c =a/b;
+        
+					jAlert("Result Of Division  9 and 13 is " + c, "Division ");
+				});
+				
+<!-- =====4th alert ===== -->	
+$(".alert_style_example4").click( function() {
+					
+				
+        
+		
+		
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class
+					  var a =13;
+         var b =9;
+         var c =a%b;
+        
+					jAlert("Result Of Modulus 9 and 13 is " + c, "Modulus");
+				});
+				
+<!-- =====4th alert ===== -->					
+				
+	$(".alert_style_example5").click( function() {
+
+				     x = 2;
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(x, "Variable");
+					
+					
+				});	
+							
+<!-- =====5th alert ===== -->					
+				
+	$(".alert_style_example6").click( function() {
+
+				     x = 3;
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(x, "Variable");
+					
+					
+				});				
+				
+<!-- =====6th alert ===== -->					
+				
+	$(".alert_style_example7").click( function() {
+
+				     x = 3;
+					 y=x++;
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(x, "Increment");
+					
+					
+				});					
+<!-- =====7th alert ===== -->					
+				
+$(".alert_style_example8").click( function() {
+
+				     x = 3;
+					 y = x++;
+					 z = x + 7 ; 
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(z, "Addition");
+					
+					
+				});	
+				
+<!-- =====9th alert ===== -->					
+				
+$(".alert_style_example9").click( function() {
+
+				     x = 3;
+					 y = x++;
+					 z = x + 7 ; 
+					 a = --z;
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(a, "Decrement");
+					
+					
+				});	
+<!-- =====10th alert ===== -->					
+ $(".alert_style_example10").click( function() {
+
+				     x = 3;
+					 y = x++;
+					 z = x + 7 ; 
+					 a = --z;
+					 b= a%3;
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(b, "Modulus");
+					
+					
+				});					
+<!-- =====11th alert ===== -->		
+
+
+ $(".alert_style_example11").click( function() {
+
+				     x = 600;
+					 y = 5;
+					 z = x * y ; 
+					
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert("Total cost to buy " + y +  " ticket to a movie " + z + " PKR .", "Output:");
+					
+					
+				});					
+
+
+
+<!-- =====12th alert ===== -->		
+
+
+ $(".alert_style_example12").click( function() {
+
+				     x = 4  ;
+					 a=" \n";
+					 y =  x *2;
+					 b = x * 3 ; 
+					  c = x * 4 ;
+					   d = x * 5 ;
+					    e = x * 6 ;
+						 f = x * 7 ;
+						  g = x * 8 ;
+						  h = x * 9 ;
+						    i = x * 10 ;
+					
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(x +"x 1 = " + x + a
+		                 +x +"x 2 = " + y + a
+						 + x +"x 3 = " + b + a
+						 + x +"x 4 = " + c + a
+						 + x +"x 5 = " + d + a
+						 + x +"x 6 = " + e + a
+						 + x +"x 7 = " + f + a
+						 + x +"x 7 = " + g + a
+						 + x +"x 9 = " + h + a
+						  + x +"x 10 = " + i + a, "Table Of 4");
+					
+					
+				});				
+
+
+
+
+<!-- =====13th alert ===== -->		
+
+
+ $(".alert_style_example13").click( function() {
+
+				     f = 68;
+					 c = (f-32) * 5/9;
+					  
+					
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(c + " <sup>o</sup>C", "The Temperature Converter");
+					
+					
+				});	
+
+
+<!-- =====13th alert ===== -->		
+
+
+ $(".alert_style_example14").click( function() {
+
+				     c = 12;
+					 f = (c * 9/5 ) +32;
+					  
+					
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert(f + " <sup>o</sup>F", "The Temperature Converter");
+					
+					
+				});	
+
+<!-- =====14th alert ===== -->		
+
+
+  $(".alert_style_example15").click( function() {
+
+				     var priceOfItem1 = 560;
+					 
+					  var priceOfItem2 = 200;
+					  
+					   var quantityOfItem1 = 2;
+					   
+					 var quantityOfItem2 = 5;
+					 
+					var charges = 150;
+					
+					var sum =	priceOfItem1 * quantityOfItem1 + priceOfItem2 * quantityOfItem2 + charges ;				 				 
+					 
+					 a=" \n";
+					 
+					
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert("Price of Item1 is "+ priceOfItem1 + a +
+					"Quantity of Item1 is "+ quantityOfItem1 + a +
+					"Price of Item2 is "+ priceOfItem2 + a +
+					"Quantity of Item12 is "+ quantityOfItem2 + a +
+					"Shipping Charges "+ charges + a +
+					"Total cost of your oder is "+ sum , "Shoping Cart");
+					
+					
+				});	
+
+
+<!-- =====14th alert ===== -->		
+
+
+  $(".alert_style_example16").click( function() {
+
+				     var totalMarks = 1200;
+					 
+					  var marksObtained = 900;
+					  
+					   var percentage = marksObtained  / totalMarks * 100;
+					   
+					 			 				 
+					 
+					 a=" \n";
+					 
+					
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert("Mark Sheet"+  a +
+					"Total Marks "+ totalMarks + a +
+					"Marks Obtained "+ marksObtained + a +
+					" Percentage "+ percentage + "%" + a 
+					 , "Mark Sheet");
+					
+					
+				});	
+
+<!-- =====15th alert ===== -->		
+
+
+  $(".alert_style_example17").click( function() {
+
+				     var usDollar = 104 * 10;
+					 
+					  var saudiRiyal = 28 * 25;
+					  
+					   var totalCurrency = usDollar + saudiRiyal;
+					   
+					 			 				 
+					 
+					 a=" \n";
+					 
+					
+     
+					
+
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert("Currency In PKR"+  a +
+					"Total Currency In PKR : "+ totalCurrency
+					 
+					 , "Currency In PKR");
+					
+					
+				});	
+<!-- =====16th alert ===== -->		
+
+
+  $(".alert_style_example18").click( function() {
+
+				     var a = -13.4 + 5 * 10 /2;
+			$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( a
+					 
+					 , "calculations in a single expression");
+					
+					
+				});	
+				
+	
+<!-- =====17th alert ===== -->		
+
+
+  $(".alert_style_example19").click( function() {
+
+				     var currentYear = 2015;
+					  var birthYear  = 1992;
+					  
+					  
+					 var currentYear2 = 2015;
+					
+					 var birthYear2  =1991 ;
+					 
+					  
+					   var totalAge = currentYear - birthYear    ;
+					     var totalAge2 = currentYear2 - birthYear2    ;
+					 
+					 a = "\n"
+					 
+					 
+					 
+					 
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "Current Year " + currentYear + a +
+					
+					
+					" Birth Year " +  birthYear + a +  a +
+					
+					"They are either " + totalAge + " or " + totalAge2 + " years old"
+					 
+					 , "The Age Calculator :");
+					
+					
+				});									
+<!-- =====17th alert ===== -->		
+
+
+  $(".alert_style_example20").click( function() {
+
+				     var radius = 12;
+					  var circumference  = 2 * Math.PI * radius ;
+					   var areaOfCircle  =  Math.PI * radius * radius ;
+					  
+					  
+					 
+					 a = "\n"
+					 
+					 
+					 
+					 
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "Radius of a circle is" + radius + a + a +
+					
+					
+					" The Circumference " + circumference + a +  a +
+					
+					" Area of a Circle " + areaOfCircle + a
+					
+					 
+					 , "The Geometrizer :");
+					
+					
+				});	
+				
+				
+<!-- =====17th alert ===== -->		
+
+
+  $(".alert_style_example21").click( function() {
+
+				     var a = 10;
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of a is " + a
+					 
+					 , "Program ");
+					
+					
+				});	
+				
+				
+				
+	 $(".alert_style_example22").click( function() {
+
+				     var a = 10;
+					 a = ++a;
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of ++a is " + a 
+					 
+					 , "Program ");
+					
+					
+				});				
+				
+				
+		$(".alert_style_example23").click( function() {
+
+				     var a = 10;
+					 a = ++a ; 
+					 b = a++ ;
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of a++ is " + a 
+					 
+					 , "Program ");
+					
+					
+				});			
+				
+	$(".alert_style_example24").click( function() {
+
+				     var a = 10;
+					 a = ++a ; 
+					 b = a++ ;
+					 c =--a;
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of a++ is " + a 
+					 
+					 , "Program ");
+					
+					
+				});					
+	$(".alert_style_example25").click( function() {
+
+				     var a = 10;
+					 a = ++a ; 
+					 b = a++ ;
+					 c =--a;
+					 d =--a;
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of a++ is " + a 
+					 
+					 , "Program ");
+					
+					
+				});	
+<!-- =====17th alert ===== -->		
+
+
+  $(".alert_style_example26").click( function() {
+
+				     var favoriteSnack ="oreo Biscuits";
+					 
+					  var currentAge  = 15 ;
+					   var maximumAge  = 85 ;
+					   var  estimatedAmount  = 2 ;
+					   var sum = maximumAge - currentAge;
+					   var totalSum = sum * estimatedAmount;
+					   
+					  
+					  
+					  
+					 
+					 a = "\n"
+					 
+					 
+					 
+					 
+					$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( 
+					
+					
+					" Favorite Snack : " + favoriteSnack + a + 
+					
+					" Current Age :" + currentAge  + a +
+					
+					
+					" Maximum Age :" + maximumAge + a + 
+					
+					" Estimated Amount : " + estimatedAmount   + a +
+					
+					" You will need" + totalSum  + " to last you until the ripe old age of  " + maximumAge  , "The Lifetime Supply Calculator:");
+					
+					
+				});		
+				
+				
+$(".alert_style_example27").click( function() {
+
+				     var a = 2,
+					 b = 1;
+                     var result = --a ;
+
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of --a is " + result 
+					 
+					 , "Program ");
+					
+			});	
+
+				
+		$(".alert_style_example28").click( function() {
+
+				     var a = 2,
+					 b = 1;
+                     var result = --a - --b ;
+
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of --a - --b is " + result 
+					 
+					 , "Program ");
+					
+			});			
+				
+				
+			$(".alert_style_example29").click( function() {
+
+				     var a = 2,
+					 b = 1;
+                     var result = --a - --b + ++b ;
+
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of --a - --b + ++b is " + result  
+					 
+					 , "Program ");
+					
+			});		
+			
+			$(".alert_style_example30").click( function() {
+
+				     var a = 2,
+					 b = 1;
+                     var result = --a - --b + ++b + b--;
+
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "The value of --a - --b + ++b + b-- is " + result 					 
+					 , "Program ");
+					
+			});					
+												
+$(".alert_style_example31").click( function() {
+
+				     var a = 2,
+					 b = 1;
+                     var result = --a - --b + ++b + b--;
+					 c="\n"
+
+					 
+				$.alerts.dialogClass = $(this).attr('id'); // set custom style class		
+					jAlert( "a is " + a + c +
+					"b is " + b + c +
+					"result is " + result  
+					
+					
+					
+					
+										 
+					 , "Program ");
+					
+			});									
+							
+			});			
+		</script>
+
+		
+	</head>
+	
+	<body>
+		
+		
+		
+		<fieldset>
+			<legend>MATH EXPRESSIONS</legend>
+            <h1>
+FAMILIAR
+OPERATORS
+|
+UNFAMILIAR
+OPERATORS
+|
+ELIMINATING
+AMBIGUITY
+|</h1>
+			<ol>
+            
+  <!-- =====1st alert ===== -->	
+           
+  <li>Write a program that take two numbers & add them in a new
+variable.</li>
+<input id="style_1" class="alert_style_example" type="button" value="Addition" />
+
+
+<!-- =====2nd ===== -->	
+<li>Repeat task1 for subtraction, multiplication, division &
+modulus.</li>
+		
+<input id="style_1" class="alert_style_example1" type="button" value="Subtraction" />
+<input id="style_1" class="alert_style_example2" type="button" value="Multiplication" />
+<input id="style_1" class="alert_style_example3" type="button" value="Division" />
+<input id="style_1" class="alert_style_example4" type="button" value="Modulus" />
+ 
+ <!-- =====3rd ===== -->	
+ <li>Do the following using JS Mathematic Expressions
+             <ol type="a">
+             <li>Declare a variable.</li>
+             <li>Show the value of variable in your browser like “Value
+after variable declaration is: ??”.</li>
+
+<input id="style_1" class="alert_style_example5" type="button" value="Variable" />
+
+
+             <li>Initialize the variable with some number.</li>
+             <li>Show the value of variable in your browser like “Initial
+value: 3”.</li>
+<input id="style_1" class="alert_style_example6" type="button" value="Initial Value" />
+
+  <li>Increment the variable.</li>
+  <li>Show the value of variable in your browser like “Value
+after increment is: 4”.</li>
+
+
+<input id="style_1" class="alert_style_example7" type="button" value="increment Value" />
+
+  <li>Add 7 to the variable.</li>  
+  
+
+   <li>Show the value of variable in your browser like “Value
+after addition is: 11”.</li>
+
+<input id="style_1" class="alert_style_example8" type="button" value="Add 7" />
+           
+  <li>Decrement the variable.</li>   
+  <li>Show the value of variable in your browser like “Value
+after decrement is: 10”.</li>
+<input id="style_1" class="alert_style_example9" type="button" value="Decrement" />
+  <li>Show the remainder after dividing the variable’s value by
+3. Output : “The remainder is : 1”</li>  
+<input id="style_1" class="alert_style_example10" type="button" value="Remainder" />           
+             
+             </ol></li>		            
+ <!-- =====4th ===== -->
+
+            <li>Cost of one movie ticket is 600 PKR. Write a script to store
+ticket price in a variable & calculate the cost of buying 5 tickets
+to a movie.</li>
+
+
+<input id="style_1" class="alert_style_example11 " type="button" value="Output" />
+
+
+ <!-- =====5th ===== -->	
+
+ <li>Write a script to display multiplication table of any number in
+your browser.</li>
+ <input id="style_1" class="alert_style_example12 " type="button" value="Table" />           
+            
+   <!-- =====5th ===== -->	
+
+ <li>          The Temperature Converter: It’s hot out! Let’s make a
+converter based on the steps here.</li>
+<ol type="a">
+<li> Store a Celsius temperature into a variable.</li>
+<li> Convert it to Fahrenheit & output “NNoC is NNoF”.  </li>
+
+
+    <input id="style_1" class="alert_style_example13 " type="button" value="Output" />  
+ 
+  <li>Now store a Fahrenheit temperature into a variable.</li>
+  <li> Convert it to Celsius & output “NNoF is NNoC”.</li>
+  
+    
+       
+   <input id="style_1" class="alert_style_example14 " type="button" value="Output" />      
+       
+    </ol>      
+    <!-- =====6th ===== -->	
+
+ <li>Write a program to implement checkout process of a shopping
+cart system for an e-commerce website. Store the following in
+variables  </li>
+<ol >
+<li>Price of item 1</li>
+<li>Price of item 2</li>
+<li>Ordered quantity of item 1</li>
+<li>Ordered Quantity of item 2</li>
+<li>Shipping charges</li>
+</ol>
+       <input id="style_1" class="alert_style_example15 " type="button" value="Shoping Cart" />        
+       
+    <!-- =====7th ===== -->	
+
+ <li>         
+           Write a script to take total marks & marks obtained by a
+student. Compute the percentage & show the result in your
+browser.
+            
+        </li>
+       <input id="style_1" class="alert_style_example16 " type="button" value="Marksheet" />    
+       
+       
+       
+       
+  <!-- =====8th ===== -->	
+
+ <li>         
+                  Assume we have 10 US dollars & 25 Saudi Riyals. Write a script
+to convert the total currency to Pakistani Rupees. Perform all
+calculations in a single expression.
+            
+           </li>
+       <input id="style_1" class="alert_style_example17 " type="button" value="Exchange Rates" /> 
+       
+       
+   <!-- =====9th ===== -->	
+
+ <li>         
+            Write a program to initialize a variable with some number
+and do arithmetic in following sequence:
+a. Add 5
+b. Multiply by 10
+c. Divide the result by 2
+Perform all calculations in a single expression.  </li>
+    <input id="style_1" class="alert_style_example18 " type="button" value="Output" />  
+       
+       
+    <!-- =====10th ===== -->	
+
+ <li> The Age Calculator: Forgot how old someone is? Calculate
+it! 
+<ol start="a">
+<li>Store the current year in a variable.</li>
+<li>Store their birth year in a variable.</li>
+<li>Calculate their 2 possible ages based on the stored values.</li>
+</ol>
+Output them to the screen like so: “They are either NN or NN
+years old”.</li>
+    <input id="style_1" class="alert_style_example19 " type="button" value="The Age Calculator" />  <!-- =====11th ===== -->	
+
+ <li>         
+            The Geometrizer: Calculate properties of a circle.
+ <ol start="a">           
+<li> Store a radius into a variable.</li>
+<li>Calculate the circumference based on the radius, and
+output “The circumference is NN”.</li></ol>
+(Hint : Circumference of a circle = 2 π r , π = 3.142)
+Calculate the area based on the radius, and output “The area is
+NN”. (Hint : Area of a circle = π r2, π = 3.142)  </li>
+    <input id="style_1" class="alert_style_example20 " type="button" value="The Geometrizer" />  
+    <!-- =====12th ===== -->	
+
+ <li>         
+        Write a program to take a number in a variable, do the
+required arithmetic to display the following result in your
+browser:  </li>
+    <input id="style_1" class="alert_style_example21 " type="button" value="outPut" />
+    
+    
+     <input id="style_1" class="alert_style_example22 " type="button" value="outPut" />
+      <input id="style_1" class="alert_style_example23 " type="button" value="outPut" />
+       <input id="style_1" class="alert_style_example24 " type="button" value="outPut" />
+        <input id="style_1" class="alert_style_example25 " type="button" value="outPut" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+             
+ 
+
+
+      <!-- =====13th ===== -->	
+
+ <li>    The Lifetime Supply Calculator: Ever wonder how
+much a “lifetime supply” of your favorite snack is? Wonder no
+more.
+<ol type="a">
+
+
+<br />
+<li>Store your favorite snack into a variable</li>
+<li>Store your current age into a variable.</li>
+<li>Store a maximum age into a variable.</li>
+<li>Store an estimated amount per day (as a number).</li>
+<li>Calculate how many would you eat total for the rest of
+your life.</li>
+
+
+
+
+
+
+
+
+</ol>
+Output the result to the screen like so: “You will need NNNN to
+last you until the ripe old age of NN”.
+
+ </li>
+
+
+    <input id="style_1" class="alert_style_example26 " type="button" value="Calculator" />    
+       
+       
+       
+       
+   <!-- =====13th ===== -->	
+
+ <li>    What will be the output in variables a, b & result after
+execution of the following script:
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+Explain the output at each stage:
+<ul type="none">
+<li>
+--a;</li>
+ <input id="style_1" class="alert_style_example27 " type="button" value="outPut" /> 
+<li>--a - --b;</li>
+ <input id="style_1" class="alert_style_example28 " type="button" value="outPut" /> 
+<li>
+--a - --b + ++b;</li>
+ <input id="style_1" class="alert_style_example29 " type="button" value="outPut" /> 
+<li>--a - --b + ++b + b--;  </li>
+
+
+    <input id="style_1" class="alert_style_example30 " type="button" value="outPut" />       
+<li>Result</li>       
+       <input id="style_1" class="alert_style_example31 " type="button" value="outPut" /> 
+       
+       
+       
+       
+       
+       
+             
+            </ol>
+				
+		
+		
+	</body>
+
+	
+</html>

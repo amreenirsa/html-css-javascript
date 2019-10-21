@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+.wrapper{
+	background-color:#F1F2F2;
+	height:1670px;
+	
+	width:1100px;
+	padding-left:10px;
+	padding-right:10px;
+
+margin-left:auto;
+margin-right:auto;
+
+
+
+}
+body{
+
+font-size:22px;
+	color: #590059;}
+.header
+{
+	width:100%;
+	height:100px;
+	color: #A400A4;
+	padding-top:20px;
+	font-size:32px;
+	font-weight:bold;
+	
+	margin-top:30px;	}
+	
+.font-size{	
+	font-size:22px;
+	color:#590059;
+	font-style:normal;
+}
+	
+	h1,h2{color: #A400A4;
+	padding-top:20px;
+	}
+	.Testimonials{
+		
+		 background:#FFF3FB ; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #FFF3FB, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #FFF3FB, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #FFF3FB, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #FFF3FB, white); /* Standard syntax */
+  border-radius:5px;
+padding-left:10px;
+		width:auto;
+		
+		
+		height:275px;
+		}
+
+.glassware{
+		background:#FFF3FB ; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #FFF3FB, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #FFF3FB, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #FFF3FB, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #FFF3FB, white); /* Standard syntax */
+		width:100%;
+		float:left;
+		 border-radius:5px;
+
+		height:auto;
+		margin-top:20px;
+		}
+		
+figcaption{
+			color:#F90;
+			font-style: oblique;
+			
+			}
+			
+.product{
+	width:auto;
+	height:auto;
+	float:left;}
+	input{
+		width:auto;
+		border-color:#800080;
+		background-color:transparent;
+		 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius:10px;
+		border-style: outset;
+		
+		height:30px;
+	
+	}
+	.footer{
+	width:auto;
+	color: #A400A4;
+	height:auto;
+	float:left;}
+	

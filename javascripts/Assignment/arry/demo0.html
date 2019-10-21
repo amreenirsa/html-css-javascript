@@ -1,0 +1,778 @@
+<html>
+<head>
+<title>Arrays Assignment</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+<script> 
+
+<!-- =====1st alert ===== -->
+$(document).ready(function(){
+    $(".flip1").click(function(){
+        $(".panel1").slideToggle("slow");
+    });
+});
+
+ var a = ["Karachi","Lahore","Islamabad","Peshwar"];
+
+<!-- =====2nd alert ===== -->
+
+
+   
+   
+$(document).ready(function(){
+    $(".flip2").click(function(){
+        $(".panel2").slideToggle("slow");
+    });
+});
+  
+ var num = [1,2,3,4];
+
+
+<!-- =====3 alert ===== -->
+
+
+    
+   
+$(document).ready(function(){
+    $(".flip3").click(function(){
+        $(".panel3").slideToggle("slow");
+    });
+});
+  
+ var boolean = ["true "," false"];
+
+   
+
+
+<!-- =====4 alert ===== -->
+
+
+    
+   
+$(document).ready(function(){
+    $(".flip4").click(function(){
+        $(".panel4").slideToggle("slow");
+    });
+});
+  
+ var cities = [1,"Karachi ", 2,"Lahore ",3,"Islamabad ",4,"Peshwar "];
+
+   
+   
+ <!-- =====5 alert ===== -->
+
+
+    
+   
+$(document).ready(function(){
+    $(".flip5").click(function(){
+        $(".panel5").slideToggle("slow");
+    });
+});
+  
+var edu = ["1.SSC", "2.HSC", "3.BCS", "4.BS", "5.BCOM", "6.MS", "7.M.Phil", "8.PhD"];
+ o ="<br>";
+ 
+ 
+ 
+ 
+ 
+ 
+  <!-- =====6 alert ===== -->
+
+
+    
+   
+$(document).ready(function(){
+    $(".flip6").click(function(){
+        $(".panel6").slideToggle("slow");
+    });
+});
+  
+var studentName =[ "ali " , "ahmed " ,"raza "] ;
+  var studentScore =[ 350 , 450 , 499] ;
+  
+  var studentper =  [studentScore[0]/500 * 100 , studentScore[1]/500 * 100 , studentScore[2]/500 * 100 ] ;
+  
+  p= " Percentage ";
+  s ="Score of " ;  
+  
+  
+    <!-- =====7alert ===== -->
+
+
+		 
+		 
+    
+   
+$(document).ready(function(){
+    $(".flip7").click(function(){
+        $(".panel7").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f1() {
+
+
+ var a =["red","yellow","green"]
+    var b = document.getElementById("input1").value;
+      a.unshift(b)
+        document.getElementById('f1').innerHTML = a;
+    
+}
+  
+   
+
+  
+  
+  
+ 
+
+		   <!-- =====8alert ===== -->
+
+$(document).ready(function(){
+    $(".flip8").click(function(){
+        $(".panel8").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f2() {
+
+
+ var a =["red","yellow","green"]
+    var b = document.getElementById("input2").value;
+      a.push(b)
+        document.getElementById('f2').innerHTML = a;
+    
+}
+  
+
+		
+  <!-- =====9alert ===== -->
+
+$(document).ready(function(){
+    $(".flip9").click(function(){
+        $(".panel9").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f3() {
+
+
+		 
+		
+		
+	
+		 
+ var a =["red","yellow","green"]
+    var b = document.getElementById("input3").value;
+	var c = document.getElementById("input4").value;
+	var d = document.getElementById("input5").value;
+	
+	 a.unshift(b)
+	 a.unshift(c)
+	  a.unshift(d)
+        document.getElementById('f3').innerHTML = a;
+    
+}
+	
+   
+   
+    <!-- =====10alert ===== -->
+
+$(document).ready(function(){
+    $(".flip10").click(function(){
+        $(".panel10").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f4() {
+
+ 
+		 
+		
+		
+	
+		 
+ var a =["red","yellow","green"]
+    var b = document.getElementById("input6").value;
+	
+	
+	 a.shift(b)
+	
+        document.getElementById('f4').innerHTML = a;
+    
+}
+
+
+
+
+
+  <!-- =====11alert ===== -->
+
+$(document).ready(function(){
+    $(".flip11").click(function(){
+        $(".panel11").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f5() {
+
+
+		 
+		
+		
+	
+		 
+ var a =["red","yellow","green"]
+    var b = document.getElementById("input6").value;
+	
+	
+	 a.pop(b)
+	
+        document.getElementById('f5').innerHTML = a;
+    
+}
+
+
+
+
+
+<!-- =====12alert ===== -->
+
+$(document).ready(function(){
+    $(".flip12").click(function(){
+        $(".panel12").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f6() {
+		 
+		
+		
+	
+		 
+ var a =["red","yellow","green"]
+    var r = document.getElementById("input8").value;
+	 var t = document.getElementById("input9").value;
+	
+		 
+		 a.splice(r, 0, t);
+	
+
+	
+        document.getElementById('f6').innerHTML = a;
+    
+}
+	
+	
+	<!-- =====13alert ===== -->
+
+$(document).ready(function(){
+    $(".flip13").click(function(){
+        $(".panel13").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f7() {
+
+
+		 
+		
+		
+	
+		 
+ var a =["red","yellow","green"]
+    var r = document.getElementById("input10").value;
+	 
+	
+		 
+		 a.splice(0, r);
+	
+
+	
+        document.getElementById('f7').innerHTML = a;
+    
+}		 
+	
+	
+		<!-- =====14alert ===== -->
+
+$(document).ready(function(){
+    $(".flip14").click(function(){
+        $(".panel14").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f8() {
+
+  var a =[ 120,3320,111,100,99,2,69,125,1,150]
+
+		 a.sort();
+	
+
+	
+        document.getElementById('f8').innerHTML = a;
+    
+}		 
+	
+	<!-- =====13alert ===== -->
+
+$(document).ready(function(){
+    $(".flip15").click(function(){
+        $(".panel15").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f9() {
+
+ 
+		
+		
+	
+		 
+ var a =["Karachi","Lahore","Islamabad","Peshwar"]
+    var r = document.getElementById("input11").value;
+	 
+	
+		 
+	
+	
+
+	
+        document.getElementById('f9').innerHTML =a.splice(0, r);
+    
+}		 
+	
+	
+	<!-- =====14alert ===== -->
+
+$(document).ready(function(){
+    $(".flip16").click(function(){
+        $(".panel16").slideToggle("slow");
+    });
+});
+
+
+	
+	
+  
+
+
+	
+	function f10() {
+
+ 
+		
+		
+	var b = ["this", "is", "my", "cat"];
+         b.join("  ");
+        document.getElementById('f10').innerHTML =b.join("  ");
+    
+}		 
+	
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+
+<script>
+/*
+
+    var cities = ["Karachi","Lahore","Islamabad","Peshwar"];
+
+    alert(cities);
+	
+	
+	
+	
+	
+	
+   var cities = ["Karachi","Lahore","Islamabad","Peshwar"];
+
+    alert(cities);
+
+
+
+
+
+
+
+
+
+
+
+
+
+var cities = [1,"Karachi ", 2,"Lahore ",3,"Islamabad ",4,"Peshwar "];
+
+    alert(cities);
+
+
+var edu = ["1.SSC", "2.HSC", "3.BCS", "4.BS", "5.BCOM", "6.MS", "7.M.Phil", "8.PhD"];
+ o ="\n";
+    alert( edu[0] + o + edu[2] + o + edu[3] + o + edu[4] + o + edu[5] + o + edu[6] + o + edu[7] + o + edu[8] );
+
+ var studentName =[ "ali " , "ahmed " ,"raza "] ;
+  var studentScore =[ 350 , 450 , 499] ;
+  
+  var studentper =  [studentScore[0]/500 * 100 , studentScore[1]/500 * 100 , studentScore[2]/500 * 100 ] ;
+  
+  p= " Percentage ";
+  s ="Score of " ;  
+  o ="\n";
+  
+  
+  alert( s + studentName[0] + "is " +  studentScore[0] + p + studentper[0] + "%" + o +
+         s + studentName[1] + "is " + studentScore[1]  +  p + studentper[1] + "%" + o +
+		 s + studentName[2] + "is " + studentScore[2] +  p + studentper[2] + "%" )
+		 
+		
+		 
+		 var a =["red","yellow","green"]
+		 
+		 a.unshift( prompt("please enter a colour you want to add",""));
+		 alert(a);
+
+ 
+ 
+  var a =["red","yellow","green"]
+		 
+		a.push( prompt("please enter a colour you want to add",""));
+		 alert(a);
+		 
+		 
+		 
+		 
+		 
+		  
+		  
+		  var a =["red","yellow","green"]
+		 
+		a.unshift( prompt("please enter a colour you want to add",""));
+		a.unshift( prompt("please enter a colour you want to add",""));
+		 alert(a);
+		 
+		  var a =["red","yellow","green"]
+		 
+		  a.shift( prompt("please enter a colour you want to add",""));
+		
+		  alert(a);
+		 
+		  
+		    var a =["red","yellow","green"]
+		 
+		a.pop( prompt("please enter a colour you want to add",""));
+		
+		 alert(a);
+		 
+		 
+		  var a =["red","yellow","green"]
+		 
+		var r =( prompt("please enter a index which you want to add a color",""));
+		
+		var t =( prompt("please enter a colour you want to add",""));
+		
+	 r = parseInt(r);
+		 
+		 a.splice(r, 0, t);
+		 
+		 
+		 	 alert(a);
+			 
+			 
+			 
+			   var a =["red","yellow","green"]
+		 
+		var r =( prompt("please enter a index which you want to remove a color",""));
+		
+		
+		
+	 r = parseInt(r);
+		 
+		 a.splice(0, r);
+		 
+		 
+		 	 alert(a);
+		
+		 
+		 var a =[ 120,3320,111,100,99,2,69,125,1,150]
+
+		 a.sort();
+		 	 alert(a);
+			 
+		 
+		var b = ["Banana", "Orange", "Apple", "Mango"];
+         b.join("  ");
+          alert(b);	 */	 
+		  
+		 //   var a =["keyboard","mouse","monitor","printer"]
+		  
+		  
+		  /*a.unshift( prompt("please enter a colour you want to add",""));
+		   a.unshift( prompt("please enter a colour you want to add",""));
+		    a.unshift( prompt("please enter a colour you want to add",""));
+			 a.unshift( prompt("please enter a colour you want to add","")); 
+			*/ 
+			 
+		/*  alert(a);
+		  
+		var c = a.pop();
+		var d = a.pop();
+		var e = a.pop();
+		var f = a.pop();
+		
+		
+		  alert(c)
+		   alert(d)
+		    alert(e)
+			 alert(f)*/
+		  
+		  
+		//  var a =["keyboard","mouse","monitor","printer"]
+		  
+		  
+		  /*a.unshift( prompt("please enter a colour you want to add",""));
+		   a.unshift( prompt("please enter a colour you want to add",""));
+		    a.unshift( prompt("please enter a colour you want to add",""));
+			 a.unshift( prompt("please enter a colour you want to add","")); 
+			*/ 
+			/* 
+		  alert(a);
+		  
+		var c = a.shift();
+		var d = a.shift();
+		var e = a.shift();
+		var f = a.shift();
+		
+		
+		  alert(c)
+		   alert(d)
+		    alert(e)
+			 alert(f) */
+		 
+</script>
+
+</head>
+<body>
+<div id="flip" class ="flip1">Click to slide down panel</div>
+<div id="panel" class ="panel1"><script>document.write(a)</script></div><br><br>
+
+<div id="flip" class ="flip2">Click to slide down panel</div>
+<div id="panel" class ="panel2"><script>document.write(num)</script></div><br><br>
+
+<div id="flip" class ="flip3">Click to slide down panel</div>
+<div id="panel" class ="panel3"><script>document.write(boolean)</script></div>
+
+<div id="flip" class ="flip4">Click to slide down panel</div>
+<div id="panel" class ="panel4"><script>document.write(cities)</script></div>
+
+
+<div id="flip" class ="flip5">Click to slide down panel</div>
+<div id="panel" class ="panel5"><script>document.write(edu[0] + o + edu[2] + o + edu[3] + o + edu[4] + o + edu[5] + o + edu[6] + o + edu[7] )</script></div>
+
+
+<div id="flip" class ="flip6">Click to slide down panel</div>
+<div id="panel" class ="panel6"><script>document.write( s + studentName[0] + "is " +  studentScore[0] + p + studentper[0] + "%" + o +
+         s + studentName[1] + "is " + studentScore[1]  +  p + studentper[1] + "%" + o +
+		 s + studentName[2] + "is " + studentScore[2] +  p + studentper[2] + "%" )</script></div><br><br>
+         
+         
+         
+
+<div id="flip" class ="flip7">Click to slide down panel</div>
+<div id="panel" class ="panel7"><input id="input1" placeholder="Enter number">
+    <button onclick="f1()">Press this</button>
+    <h3 id="f1" class="answer"></h3>
+</div><br><br>
+
+
+
+    <div id="flip" class ="flip8">Click to slide down panel</div>
+<div id="panel" class ="panel8"><input id="input2" placeholder="Enter number">
+    <button onclick="f2()">Press this</button>
+    <h3 id="f2" class="answer"></h3>
+</div><br><br>
+   
+<div id="flip" class ="flip9">Click to slide down panel</div>
+<div id="panel" class ="panel9"><input id="input3" placeholder="Enter number">
+<input id="input4" placeholder="Enter number">
+<input id="input5" placeholder="Enter number">
+    <button onclick="f3()">Press this</button>
+    <h3 id="f3" class="answer"></h3>
+</div><br><br>
+
+
+
+
+
+
+
+
+<div id="flip" class ="flip10">Click to slide down panel</div>
+<div id="panel" class ="panel10"><input id="input6" placeholder="Enter number">
+
+    <button onclick="f4()">Press this</button>
+    <h3 id="f4" class="answer"></h3>
+</div><br><br>
+
+
+
+
+
+
+
+
+
+<div id="flip" class ="flip11">Click to slide down panel</div>
+<div id="panel" class ="panel11"><input id="input7" placeholder="Enter number">
+
+    <button onclick="f5()">Press this</button>
+    <h3 id="f5" class="answer"></h3>
+</div><br><br>
+
+
+
+
+<div id="flip" class ="flip12">Click to slide down panel</div>
+<div id="panel" class ="panel12">
+<input id="input8" placeholder="Enter number">
+<input id="input9" placeholder="Enter number">
+
+    <button onclick="f6()">Press this</button>
+    <h3 id="f6" class="answer"></h3>
+</div><br><br>
+ 
+ 
+ 
+ <div id="flip" class ="flip13">Click to slide down panel</div>
+<div id="panel" class ="panel13">
+<input id="input10" placeholder="Enter number">
+
+
+    <button onclick="f7()">Press this</button>
+    <h3 id="f7" class="answer"></h3>
+</div><br><br>
+ 
+ 
+  <div id="flip" class ="flip14">Click to slide down panel</div>
+<div id="panel" class ="panel14">
+
+
+
+    <button onclick="f8()">Press this</button>
+    <h3 id="f8" class="answer"></h3>
+</div><br><br>
+
+<div id="flip" class ="flip15">Click to slide down panel</div>
+<div id="panel" class ="panel15">
+<input id="input11" placeholder="Enter number">
+
+
+    <button onclick="f9()">Press this</button>
+    <h3 id="f9" class="answer"></h3>
+</div><br><br>
+
+
+
+<div id="flip" class ="flip16">Click to slide down panel</div>
+<div id="panel" class ="panel16">
+
+
+
+    <button onclick="f10()">Press this</button>
+    <h3 id="f10" class="answer"></h3>
+</div><br><br>
+ 
+</div>
+</body>
+<html>

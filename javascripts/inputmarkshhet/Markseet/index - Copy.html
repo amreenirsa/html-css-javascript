@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marksheet</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script>
+
+function m1() {
+    var name = document.getElementById("input1").value;
+	var lastName = document.getElementById("input2").value;
+	var instituteName= document.getElementById("input3").value;
+	var batch = document.getElementById("input4").value;
+	var maths = document.getElementById("input5").value;
+	var phy = document.getElementById("input6").value;
+	var isl= document.getElementById("input7").value;
+	var urdu = document.getElementById("input8").value;
+	var english = document.getElementById("input9").value;
+
+    var sum = parseInt(maths) + parseInt(phy) + parseInt(isl) + parseInt(urdu) + parseInt(english) ;
+	
+		 var totalMarks=500;
+
+	var per=sum/totalMarks *100;
+	
+if (per>= 80)
+       {
+	grade = "A-one";
+	remarks= "Excellent" ;
+	} 
+	
+else if(per>=70)
+		{
+			grade="A" ;
+			remarks= "Good" ;
+		}
+   
+   else if(per>=60)
+		{
+			grade="B" ;
+			remarks= "You need to improve" ;
+		}
+   else 
+		{
+			grade="<ins>Fail</ins>" ;
+			remarks= "Sorry" ;
+		}
+	
+	
+	
+	
+	
+	
+     
+        document.getElementById('m1').innerHTML = name;
+		document.getElementById('m2').innerHTML =lastName;
+        document.getElementById('m3').innerHTML = instituteName;
+		document.getElementById('m4').innerHTML = batch;
+        document.getElementById('m5').innerHTML = maths;
+		document.getElementById('m6').innerHTML =  phy;
+        document.getElementById('m7').innerHTML = isl;
+		document.getElementById('m8').innerHTML = urdu;
+		document.getElementById('m9').innerHTML = english;
+	   document.getElementById('m10').innerHTML = sum;
+	   document.getElementById('m11').innerHTML = per + "%";
+
+	   document.getElementById('m12').innerHTML = grade;
+	   document.getElementById('m13').innerHTML = remarks;		
+		
+		
+		
+			
+        }
+
+   
+
+
+ 
+
+
+</script>
+
+
+
+
+
+
+</head>
+
+<body>
+<div class="wrapper">
+<h1>X Y Z School</h1>
+<h2>Marksheet</h2>
+<fieldset>
+<legend>STUDENT INFORMATION</legend>
+ <p>First Name</p><input type="text" id="input1" placeholder="Enter First Name" required="required">
+  <p>Last Name</p><input  type="text"id="input2" placeholder="Enter Last Name" required="required">
+  <p>Class</p><input  type="text" id="input3" placeholder="Enter Class" required="required">
+  <p>Scetion</p><input  type="text"id="input4" placeholder="Enter sec" required="required">
+ 
+ </fieldset>
+<fieldset>
+<legend>SUBJECTS MARKS</legend>
+ <p>Mathamatic</p><input type="number" id="input5" placeholder="Enter number" maxlength="2" required="required"/>
+ <p>Physics</p><input type="number" id="input6" placeholder="Enter number" maxlength="2" required="required">
+ <p>Islamiat</p><input type="number" id="input7" placeholder="Enter number" maxlength="2" required="required">
+ <p>Urdu</p><input type="number" id="input8" placeholder="Enter number"  maxlength="2" required="required">
+ <p>English</p><input type="number" id="input9" placeholder="Enter number" maxlength="2" required="required">
+  <p></p><button onclick="m1()">SUBMIT</button>
+  </fieldset>
+  <div class="kid">
+  <img src="img/kid1-01-01.png" />
+  </div>
+ <table>
+<tr><td colspan="2"><b>Student Information</b></td></tr>
+        <tr> 
+        <td>first name</td>
+        <td id="m1" ></td></tr>
+         
+<tr> 
+<td>last name</td>
+<td id="m2" ></td>
+</tr>
+<tr> 
+<td>class</td>
+<td id="m3" ></td></tr>
+          
+          
+<tr><td>section</td>
+<td id="m4" ></td></tr>
+ 
+<tr><td colspan="2"><b>Result</b></td></tr>
+<tr> 
+<td>mathamatics</td>
+<td id="m5"></td>
+</tr>
+ <tr> 
+<td>physic</td>
+<td id="m6" ></td>
+<tr> 
+        <td>islamiat</td>
+        <td id="m7"> </td>
+        </tr>
+<tr> <td>urdu</td>
+<td id="m8" ></p></td></tr>
+<tr> 
+<td>english</td>
+<td  id="m9" ></p></td></tr>
+<tr> 
+          <td>total</td>
+          <td id="m10" ></td> </tr>
+<tr> 
+        <td>percentage</td>
+        <td id="m11" > </td></tr>
+<tr> 
+          <td>grade</td>
+          <td id="m12" > </td></tr>
+<tr> 
+         <td>remarks</td>
+         <td id="m13" ></td> </tr>
+
+
+</table>
+
+        
+        
+         <div class="kid">
+  <img src="img/kid3-01.png" />
+  </div> 
+        
+        
+                
+                
+</div>
+
+</body>
+</html>

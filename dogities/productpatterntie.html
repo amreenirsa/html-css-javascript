@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Doggies Ties</title>
+
+<!-- ===========================
+    FAVICONS
+    =========================== -->
+   <link rel="icon" href="img/toplogo0.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/toplogo 01.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/toplogo02.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/toplogo03.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/toplogo04.png" />
+  
+<!-- ===========================
+    STYLESHEETS
+    =========================== -->   
+     
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    
+   <!-- ===========================
+    STYLESHEETS
+    =========================== -->   
+     <link href="css/style.css"  type="text/css" rel="stylesheet" />
+     <link href="css/responsive.css"  type="text/css" rel="stylesheet" />
+      <script src="js/js.js"></script>
+     
+     
+      <!-- ===========================
+    lightbox
+    =========================== -->   
+   <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/jquery.simple.thumbchanger.js"></script>
+
+</head>
+
+<body>
+  
+      <!-- ===========================
+    header
+    =========================== -->  
+<div class="container" id="header">
+<p>Search our store <input type="text"  placeholder="search" /></p>
+
+<p><a href="cart.html">Shopping Cart (<span id="f1"></span>)<img src="img/shopingcart-01.png" /></a></p>
+<div id="logo"><img src="img/logo2-01.png" /></div>
+</div>
+
+<!-- ===========================
+nav
+    =========================== --> 
+  
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+   </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+              <li><a href="index.html">home</a></li>
+        <li>
+        <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Catalog</button>
+  <div id="myDropdown" class="dropdown-content">
+<a href="catalog.html">all</a>
+<a href="bee.html">bee</a>
+<a href="bike.html">bike</a>
+<a href="camo.html">camo</a>
+<a href="denium.html">denium</a>
+<a href="dogspattern.html">dogs</a>
+<a href="floral.html">floral</a>
+<a href="pattern.html">pattern</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+       </li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="aboutus.html">aboutus</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===========================
+about us
+    =========================== -->
+<div id="cartpage" >
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="image-area clearfix">
+  <div class="main-image">
+    <div><img src="img/lightbox/pattern-tie_1.jpg" /></div>
+    <div><img src="img/lightbox/pattern-tie_2.jpg" /></div>
+   
+    
+  </div>
+  <div class="sub-image">
+    <div><img src="img/lightbox/pattern-tie_1.jpg" /></div>
+    <div><img src="img/lightbox/pattern-tie_2.jpg" /></div>
+   
+    
+  
+  </div>
+</div>
+<!-- /.image-area --> 
+
+<script>
+			$('.image-area').thumbchanger({
+				mainImageArea: '.main-image',
+				subImageArea:  '.sub-image',
+				animateTime:   100,
+				easing:        'easeOutCubic',
+				trigger:       'click',
+			});
+		</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+<div id="cartpage2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+<h1>Bike Tie</h1>
+<p>$ 11.00</p>
+<hr />
+<h4>quantity</h4>
+<input id="input1" type="number" placeholder="quantity">
+<input type="button" onClick="f1()" value="add to cart" />
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Description')">Description</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')">About</a></li>
+ 
+</ul>
+
+<div id="Description" class="tabcontent">
+  <h3>Description</h3>
+  <p>This tie is the perfect gift to dress up your furry pet. This tie attaches to your pets collar and is adjustable with it velcro backing. It fits collars 1" or smaller.</p>
+
+<hr />
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About Us</h3>
+<p>The About Us page of your shop is vital because it’s where users go when first trying to determine a level of trust. Since trust is such an important part of selling online, it’s a good idea to give people a fair amount information about yourself and your shop. Here are a few things you should touch on:</p>
+<ul>
+<li>Who you are</li>
+<li>Why you sell the items you sell</li>
+<li>Where you are located</li>
+<li>How long you have been in business</li>
+<li>How long you have been running your online shop</li>
+<li>Who are the people on your team</li></ul>
+
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .</p>
+<hr />
+  
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- ===========================
+footer
+    =========================== -->
+   <div id="footer">
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <p>This is where you should include a short description of your website.</p>
+  
+  
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <h4>More Information</h4>
+  <ul>
+  <li><a href="">Search</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  
+  </ul>
+
+</div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <h4>Newsletter</h4>
+  <input type="email" placeholder="youremailadress@xyx.com" />
+  <input type="submit" value="subscribe" />
+  
+  
+  
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+  <h4>Get Connected</h4>
+  <img src="img/fb-01.png" />
+  <img src="img/tw-01.png" />
+  <img src="img/ins-01.png" />
+ 
+  </div>
+  </div>
+  <div id="footer2">
+  <div class="col-lg-6 col-md-12 col-sm-12 ">
+  <p> © 2017 made by Irsa </p>
+  </div>  
+  <div class="col-lg-6 col-md-12 col-sm-12 ">
+  <h6>View prices in : </h6>
+  <ul>
+  <li><a href="">USD</a></li>
+  <li><a href="">CAD</a></li>
+  <li><a href="">AUD</a></li>
+  <li><a href="">GBP</a></li>
+  </ul>
+  <img src="img/cards.png" />
+  </div>  
+
+  
+  
+  </div>  
+
+</body>
+</html>

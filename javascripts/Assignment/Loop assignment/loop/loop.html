@@ -1,0 +1,1147 @@
+<html>
+<head>
+<title>Loops Assignment</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+
+			
+						
+		
+			
+			
+			
+			
+			
+		<script type="text/javascript">
+
+
+
+<!-- =====1st alert ===== -->
+$(document).ready(function(){
+    $(".flip1").click(function(){
+        $(".panel1").slideToggle("slow");
+		
+		 
+ 
+
+
+    });
+});
+
+
+
+var hello = "";
+var i;
+for (i = 0; i < 5; i++) {
+    hello += "Hello World " + i + "<br>";
+}
+
+
+
+<!-- =====2nd alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip2").click(function(){
+        $(".panel2").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+
+var counting = "";
+var count;
+for(var count = 0; count < 11 ; count++){
+	
+	
+    counting += count + "<br>";
+}
+
+
+
+<!-- =====3rd alert ===== -->
+$(document).ready(function(){
+    $(".flip3").click(function(){
+        $(".panel3").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+
+
+function f1() {
+
+var table = "";
+var tab;
+	 
+      var a = document.getElementById("input1").value;
+      var tab = document.getElementById("input2").value;
+	  
+	   a = parseInt(a);
+     tab = parseInt(tab);
+     for(var i= 1; i <= tab; i++  ){
+	
+
+    table += a + " * " + i + " = " + (a*i) +"<br />" ;
+        document.getElementById('f1').innerHTML =  table;
+		
+		
+		
+		
+}}
+
+
+    <!-- =====4th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip4").click(function(){
+        $(".panel4").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+var mobiled = ["Nokia", "Samsung", "Apple", "Sony", "Huawei"] ;
+
+
+var  mobd= "";
+var mobn;
+       for(var mobn= 0; mobn < 5; mobn++  ){
+	
+	
+    mobd += mobiled[mobn] + "<br>" ;
+}
+ <!-- =====5th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip5").click(function(){
+        $(".panel5").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+ var fruitsA = ["apple", "banana", "mango", "orange", "strawberry"] ;
+
+
+var  fruV= "";
+var  fruE= "";
+var fruiL;
+       for(var fruiL= 0; fruiL < 5; fruiL++  ){
+	
+	
+    fruV += fruitsA[fruiL] + "<br>" ;
+	 fruE += "element at index " + fruiL + " is " + fruitsA[fruiL]  +"</br>" ;
+}
+
+       
+<!-- =====6th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip6").click(function(){
+        $(".panel6").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+ function f2() {
+
+var arr=[];
+var itemL = document.getElementById("input3").value;
+
+var itemN="";
+var itemI;
+
+
+
+for(var itemI=1; itemI <= itemL; itemI++){
+
+		
+arr[itemI]= prompt("Enter the name of device");
+
+}
+for( itemI=1; itemI<= itemL; itemI++){
+	
+	
+
+ itemN += arr[itemI] +"<br>"  ;
+document.getElementById('f2').innerHTML ="Number of item "+ itemL + "<br>"+ itemN;
+
+}
+
+} 
+ 
+ <!-- =====7th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip7").click(function(){
+        $(".panel7").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+
+var counting7 = "";
+var count7;
+for(var count7 = 0; count7 <= 15 ; count7++){
+	
+	
+    counting7 += count7 + " ,";
+}
+
+<!-- =====7thb alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip8").click(function(){
+        $(".panel8").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+
+var rcounting7 = "";
+var rcount7;
+for(var rcount7 = 10; rcount7 >= 0 ; rcount7--){
+	
+	
+    rcounting7 += rcount7 + " ,";
+}
+
+<!-- =====7thc alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip9").click(function(){
+        $(".panel9").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+
+var ecounting7 = "";
+var ecount7;
+for(var ecount7 = 2; ecount7 <= 20 ; ecount7+=2){
+	
+	
+    ecounting7 += ecount7 + " ,";
+}
+
+
+<!-- =====7thd alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip10").click(function(){
+        $(".panel10").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+
+var ocounting7 = "";
+var ocount7;
+for(var ocount7 = 1; ocount7 <= 19 ; ocount7+=2){
+	
+	
+    ocounting7 += ocount7 + " ,";
+}
+
+
+<!-- =====7thd alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip11").click(function(){
+        $(".panel11").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+
+var kcounting7 = "";
+var kcount7;
+for(var kcount7 = 2; kcount7 <= 20 ; kcount7+=2){
+	
+	
+    kcounting7 += kcount7 + "k" + " ,";
+}
+
+
+<!-- =====8 alert ===== -->
+$(document).ready(function(){
+    $(".flip12").click(function(){
+        $(".panel12").slideToggle("slow");
+		
+		 
+ 
+
+
+    
+});});
+
+
+
+
+function f3() {
+	var bak = ["cake", "apple pie", "cookie", "chips", "patties"];
+    var flag = false; 
+    var bakV = "";
+    var bi;
+	 
+     var bakI = document.getElementById("input4").value;
+     
+	
+
+
+
+    for(var bi=0; bi<bak.length; bi++){
+        if(bakI === bak[bi]){
+			//found
+			 var bakV = "item is available ";
+document.getElementById('f3').innerHTML = bakV;
+	flag=true;
+	break;
+
+           
+        }
+		
+		
+      
+else{
+	
+	 var bakV = "item is not available ";
+document.getElementById('f3').innerHTML =bakV;
+}
+
+    
+		
+		
+		
+		
+}}
+
+
+
+
+
+
+<!-- =====9th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip13").click(function(){
+        $(".panel13").slideToggle("slow");
+});});
+
+
+var largeA = [24, 53, 78, 91, 12];
+var large = largeA[0] ;
+
+
+
+var largeNumi;
+for(var largeNumi = 0; largeNumi < largeA.length ; largeNumi++){
+	
+	if( largeA[largeNumi] >= large){
+		
+    large = largeA[largeNumi] ;
+
+
+    
+}
+}
+    
+<!-- =====10th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip14").click(function(){
+        $(".panel14").slideToggle("slow");
+});});
+
+
+var largeA = [24, 53, 78, 91, 12];
+var smalla = largeA[0] ;
+
+
+
+var largeNumi;
+for(var largeNumi = 0; largeNumi < largeA.length ; largeNumi++){
+	
+	if( largeA[largeNumi] <= large){
+		
+    smalla = largeA[largeNumi] ;
+
+
+    
+}
+}
+<!-- =====11th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip15").click(function(){
+        $(".panel15").slideToggle("slow");
+});});
+
+
+<!-- =====12th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip16").click(function(){
+        $(".panel16").slideToggle("slow");
+});});
+
+
+var table5 = "";
+var table5L;
+for(var table5L = 0; table5L <= 100 ; table5L+=5){
+	
+	
+    table5 += table5L + " ,";
+}
+<!-- =====13th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip17").click(function(){
+        $(".panel17").slideToggle("slow");
+});});
+
+
+var stu = ["Ali", "Sami", "Taha", "Inam"]; 
+var scores  = [58, 73, 89, 90];
+var studentsV = "";
+var stuL;
+
+for(var stuL=0; stuL <4; stuL++)
+
+{
+	studentsV += "<table><tr><td> "+stu[stuL]+" </td><td> "+scores[stuL]+" </td></tr></table>";
+
+
+}
+
+
+<!-- =====14th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip18").click(function(){
+        $(".panel18").slideToggle("slow");
+});});
+function f4() {
+
+var scores1  = [12, 45, 3, 22, 34, 50]; 
+
+var stop = document.getElementById("input5").value;
+stop = parseInt(stop);
+
+var sco1 = "";
+var scor;
+      
+for(var scor=0; scor<stop; scor++) { 
+
+
+sco1 += scores1[scor]+"<br/>";
+document.getElementById('f4').innerHTML = sco1 ;
+
+
+if(stop === scores1[scor]){
+	
+break;
+
+}}}
+
+
+<!-- =====15th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip19").click(function(){
+        $(".panel19").slideToggle("slow");
+});});
+
+var nl = [ [1,2,3] , [4,5,6] , [7,8,9] ] ;
+var nlV = "" ;
+var nstl;
+var nstll;
+for(var nstl=0; nstl<1; nstl++){
+	
+for(var nstll=0; nstll<nl.length; nstll++){
+	
+nlV += nl[nstll]+ "<br/>";
+
+}
+}
+<!-- =====16th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip20").click(function(){
+        $(".panel20").slideToggle("slow");
+});});
+function f5() {
+
+
+
+var point = document.getElementById("input6").value;
+
+var point1 = "";
+var pointl;
+      
+for(var pointl=point; pointl >=0; pointl-=0.5) { 
+
+
+point1 +=  pointl + "," ;
+document.getElementById('f5').innerHTML = point1 ;
+
+
+
+
+}}
+
+<!-- =====17th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip21").click(function(){
+        $(".panel21").slideToggle("slow");
+});});
+
+
+
+
+
+var eo = "";
+var eoi;
+for(var eoi = 1;  eoi <= 20 ;  eoi++){
+	
+	if(eoi%2==0){
+eoc =  " is even"  ;
+    }
+else{
+	eoc = " is odd " ;
+
+
+    }
+    eo +=  eoi + eoc + "<br>";
+}
+
+
+
+<!-- =====18th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip22").click(function(){
+        $(".panel22").slideToggle("slow");
+});});
+
+
+
+{ 
+var total = 1; 
+
+for (var i = 1; i <= 7; i += 2) 
+{ 
+
+total =  total * i; 
+
+} }
+
+<!-- =====18th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip23").click(function(){
+        $(".panel23").slideToggle("slow");
+});});
+
+
+function f6() {
+
+
+
+var starz = document.getElementById("input7").value;
+
+
+
+var stars ="" ;
+
+
+for(var i=starz; i>0; i--)
+{
+    for(var c=8; c>0; c--)
+    {
+         if(Math.abs(c-0)<=i)
+             stars += ("*") ;
+         else
+             stars +=(" ");
+    }
+   stars += "<br />";
+}
+
+document.getElementById('f6').innerHTML = stars ;
+
+}
+
+
+
+<!-- =====19th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip24").click(function(){
+        $(".panel24").slideToggle("slow");
+		});
+		});
+		
+var zu1 ="" ;
+
+
+for(var izx=6; izx<=10; izx++)
+{
+    for(var cz=0; cz<6; cz++)
+    {
+         if(Math.abs(1+cz)<=izx)
+             zu1 += ("*") ;
+         else
+             zu1 +=(" ");
+    }
+   zu1 += "<br />";
+}
+
+<!-- =====18th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip25").click(function(){
+        $(".panel25").slideToggle("slow");
+		});
+		});
+		
+var zu ="" ;
+
+
+for(var i=0; i<6; i++)
+{
+    for(var c=0; c<9; c++)
+    {
+         if(Math.abs(1+c)<=i)
+             zu += ("*") ;
+         else
+             zu +=(" ");
+    }
+   zu += "<br />";
+}
+
+
+
+   <!-- =====20th alert ===== -->
+
+
+$(document).ready(function(){
+    $(".flip26").click(function(){
+        $(".panel26").slideToggle("slow");
+		});
+		});
+		
+var zu3 ="" ;
+
+for(var ig=7; ig>0; ig--)
+{
+    for(var cg=8; cg>0; cg--)
+    {
+         if(Math.abs(cg-0)<=ig)
+             zu3 += ("*") ;
+         else
+             zu3 +=(" ");
+    }
+   zu3 += "<br />";
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div id="wraper">
+  <h1>Loops</h1>
+
+<ul>
+
+ <!-- =====1st alert ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to display the message “Hello World” 5 times
+in your browser using for loop.</li>
+
+<div id="flip" class ="flip1">Open solution</div>
+<div id="panel" class ="panel1"><script>document.write (hello)</script></div>
+</div>
+
+
+
+
+<!-- =====2nd ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to print numeric counting from 1 to 10.</li>
+
+<div id="flip" class ="flip2">Open solution</div>
+<div id="panel" class ="panel2"><script>document.write (counting)</script></div>
+
+
+
+
+</div>
+<!-- =====3rd ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to print multiplication table of any number
+using for loop. Table number & length should be taken as an
+input from user.</li>
+
+<div id="flip" class ="flip3">Open solution</div>
+<div id="panel" class ="panel3">
+<input type="number" id="input1" placeholder="Enter the numbe of table ">
+<input type="number" id="input2" placeholder="Enter the numbe of table lenght">
+<button onClick="f1()">write table</button>
+
+<div id="f1" ></div>
+</div>
+
+
+</div>
+<!-- =====4th ===== -->	
+   
+   <div class=" box">
+  <li>You have an array
+A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”]
+Write each element on new line with the help of for loop.</li>
+
+<div id="flip" class ="flip4">Open solution</div>
+<div id="panel" class ="panel4"><script>document.write (mobd)</script></div>
+</div>
+
+<!-- =====5th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to print items of the following array using for
+loop:
+fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”].</li>
+
+<div id="flip" class ="flip5">Open solution</div>
+<div id="panel" class ="panel5"><script>document.write ( fruV) + document.write (fruE)</script></div>
+
+
+</div>
+<!-- =====6th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to initialize an array of N items by using
+prompt. Where N is number of items as entered by the user.</li>
+
+<div id="flip" class ="flip6">Open solution</div>
+<div id="panel" class ="panel6">
+<input type="number" id="input3" placeholder="Enter the numbe of device">
+<button onClick="f2()">Item Name</button>
+<div id="f2" ></div>
+<script>document.write(ii)</script>
+
+
+</div>
+</div>
+
+<!-- =====7th ===== -->	
+   
+   <div class=" box">
+  <li>Generate the following series in your browser. See example
+output.</li>
+<ol start="a">
+<li>Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15</li>
+<div id="flip" class ="flip7">Open solution</div>
+<div id="panel" class ="panel7"><script>document.write (counting7)</script></div>
+<li>Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1</li>
+
+<div id="flip" class ="flip8">Open solution</div>
+<div id="panel" class ="panel8"><script>document.write (rcounting7)</script></div>
+
+<li>Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20</li>
+<div id="flip" class ="flip9">Open solution</div>
+<div id="panel" class ="panel9"><script>document.write (ecounting7)</script></div>
+
+<li>Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19</li>
+<div id="flip" class ="flip10">Open solution</div>
+<div id="panel" class ="panel10"><script>document.write (ocounting7)</script></div>
+
+<li>Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k</li>
+
+<div id="flip" class ="flip11">Open solution</div>
+<div id="panel" class ="panel11"><script>document.write (kcounting7)</script></div>
+</ol>
+</div>
+
+
+<!-- =====8th ===== -->	
+   
+   <div class=" box">
+  <li>You have an array
+A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]
+Write a program to enable “search by user input” in an array.
+After searching, prompt the user whether the given item is
+found in the list or not. Example:</li>
+
+<div id="flip" class ="flip12">Open solution</div>
+<div id="panel" class ="panel12">
+<h4>Welcome to abc bakery!!</h4>
+<input type="text" id="input4" placeholder="What do you want sir/ma'am">
+<button onClick="f3()">show item</button>
+<div id="f3" ></div>
+
+</div></div>
+<!-- =====9th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to identify the largest number in the given
+array.
+A = [24, 53, 78, 91, 12]</li>
+
+<div id="flip" class ="flip13">Open solution</div>
+<div id="panel" class ="panel13">
+<h4>Array Items:</h4>
+<script>document.write (largeA)</script>
+<h4>The largest number is:
+<script>document.write (large)</script></div></h4>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- =====10th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to identify the smallest number in the given
+array.
+A = [24, 53, 78, 91, 12]</li>
+
+<div id="flip" class ="flip14">Open solution</div>
+<div id="panel" class ="panel14">
+<h4>Array Items:</h4>
+<script>document.write (largeA)</script>
+<h4>The smallest number is:
+<script>document.write (smalla)</script></div></h4>
+</div>
+
+
+
+<!-- =====11th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to identify the largest & the smallest
+number in the given array.
+A = [24, 53, 78, 91, 12]</li>
+
+<div id="flip" class ="flip15">Open solution</div>
+<div id="panel" class ="panel15">
+<h4>Array Items:</h4>
+<script>document.write (largeA)</script>
+<h4>The largest number is:
+<script>document.write (large)</script></h4>
+
+<h4>The smallest number is:
+<script>document.write (smalla)</script></h4></div></div>
+
+
+<!-- =====12th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to print multiples of 5 ranging 1 to 100</li>
+
+<div id="flip" class ="flip16">Open solution</div>
+<div id="panel" class ="panel16">
+<script>document.write (table5)</script>
+
+</div>
+</div>
+
+<!-- =====13th ===== -->	
+   
+   <div class=" box">
+  <li>You have given the following arrays:
+var students = ["Ali", "Sami", "Taha", "Inam"];
+var scores = [58, 73, 89, 90];
+FOR
+Loops
+|
+JAVASCRIPT
+Page
+9
+of
+12
+Write a program to generate the following HTML table in your
+browser using JS.</li>
+
+<div id="flip" class ="flip17">Open solution</div>
+<div id="panel" class ="panel17"><script>
+document.write( studentsV);
+</script>
+</div>
+</div>
+
+<!-- =====14th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program that prints number from start of the array
+to desired stop value. Given array:
+var scores = [12, 45, 3, 22, 34, 50];
+(Hint: take stop value from user)
+E.g. if user gives 3 as input value print 12, 45, 3
+if user gives 34 as input value print 12, 45, 3, 22, 34.</li>
+
+<div id="flip" class ="flip18">Open solution</div>
+<div id="panel" class ="panel18">
+<input type="number" id="input5" placeholder="Enter the numbe to stop value">
+<button onClick="f4()">Show value</button>
+<div id="f4" ></div>
+</div>
+</div>
+
+
+<!-- =====15th ===== -->	
+   
+   <div class=" box">
+  <li>You have an array
+A = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+Write each element on new line with the help of nested for
+loops.</li>
+
+<div id="flip" class ="flip19">Open solution</div>
+<div id="panel" class ="panel19"><script>
+document.write(nlV);
+</script>
+</div>
+</div>
+
+<!-- =====16th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to repeatedly print the value of the variable
+num which is input by user. Value should be decreasing by 0.5
+each time, as long as x Value remains positive.</li>
+
+<div id="flip" class ="flip20">Open solution</div>
+<div id="panel" class ="panel20">
+<input type="number" id="input6" placeholder="Enter the number">
+<button onClick="f5()">show value</button>
+<div id="f5" ></div>
+</div>
+</div>
+
+
+<!-- =====17th ===== -->	
+   
+   <div class=" box">
+  <li>The even/odd reporter
+Write a for loop that will iterate from 0 to 20. For each
+iteration, it will check if the current number is even or odd, and
+report that to the screen (e.g. "2 is even")..</li>
+
+<div id="flip" class ="flip21">Open solution</div>
+<div id="panel" class ="panel21"><script>
+document.write(eo);
+</script>
+</div>
+</div>
+<!-- =====18th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to calculate the product of the odd integers
+from 1 to 7.</li>
+
+<div id="flip" class ="flip22">Open solution</div>
+<div id="panel" class ="panel22"><script>
+document.write("the product of the odd integers from 1 to 7 is " + +total);
+</script>
+</div>
+</div>
+
+
+<!-- =====19th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program that will write out a wedge of stars. The user
+will enter the initial number of stars, and the program will write
+out lines of stars where each line has one few star than the
+previous line. Initial number of stars: 7.
+<br>
+*******<br>
+******<br>
+*****<br>
+****<br>
+***<br>
+**<br>
+*
+</li>
+
+<div id="flip" class ="flip23">Open solution</div>
+<div id="panel" class ="panel23">
+<input type="number" id="input7" placeholder="Enter the number">
+<button onClick="f6()">show value</button>
+<div id="f6" ></div>
+</div>
+</div>
+
+<!-- =====20th ===== -->	
+   
+   <div class=" box">
+  <li>Write a program to create the following patterns in your
+browser. Take number of lines as an input.
+<ol>
+<li>
+<br>
+*****<br>
+*****<br>
+*****<br>
+*****</li>
+<div id="flip" class ="flip24">Open solution</div>
+<div id="panel" class ="panel24">
+<script>document.write(zu1) </script>
+</div>
+
+<li>
+<br>
+*<br>
+**<br>
+***<br>
+****<br>
+*****
+</li>
+<div id="flip" class ="flip25">Open solution</div>
+<div id="panel" class ="panel25">
+<script>document.write(zu) </script>
+</div>
+<li>
+<br>
+*****<br>
+****<br>
+***<br>
+**<br>
+*
+</li>
+<div id="flip" class ="flip26">Open solution</div>
+<div id="panel" class ="panel26">
+<script>document.write(zu3) </script>
+</div>
+</div>
+
+
+
+</ol></li>
+
+
+</ul>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</script>
+
+
+ </div>  
+
+</div> 
+
+
+
+
+
+</div>
+ 
+</div>
+</body>
+<html>
